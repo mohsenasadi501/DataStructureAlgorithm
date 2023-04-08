@@ -4,17 +4,15 @@ In the first part of this document you would Learn:
 
 1. **[Big O Notation](#Big-O-Notation)**
 
-2. **Arrays**
+2. **[Arrays](#Arrays)**
 
-3. **Linked Lists**
+3. **[Linked Lists](#LinkedLists)**
 
 4. **Stacks**
 
 5. **Queues**
 
 6. **Hash Tables**
-
-
 
 ## Big-O-Notation
 
@@ -69,4 +67,68 @@ Types of BigO:
 
 ![algorithm.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/algorithm.png)
 
-As it shown in above image constant type grows linearly as the same rate but the logarithmic curve down on some point, logarithmic is more efficent and scalabe compare to linear or other and exponential is the opossit of logarithmic and is not efficent to use and has a lot cost.
+As it shown in above image, constant type algorithms grows linearly as the same rate but the logarithmic curve down on some point, logarithmic is more efficent and scalabe compare to linear or other and exponential is the opossit of logarithmic and is not efficent to use and has a lot cost.
+
+## Arrays
+
+Arrays are simple data structure item use to store data squesntially, if you want to store data by index arrays are the best choice.
+
+Featurse of Array Data Structure:
+
+- Simple Data Structure
+- Greate Data Structure when you khow how many item have
+- The Items ae fixed
+- The length of array is fixed
+- You can not remove or add new Item 
+
+Example of how to edit Array class to add Add,Remove,IndexOf and Print functionality:
+
+```csharp
+internal class Array
+{
+    private int[] array;
+    private int count;
+    public Array(int length)
+    {
+        array = new int[length];
+    }
+
+    public void Add(int item)
+    {
+        if (count == array.Length)
+        {
+            int[] copyArray = array;
+            array = new int[count * 2];
+            for (int index = 0; index < count; index++)
+                array[index] = copyArray[index];
+        }
+        array[count++] = item;
+    }
+    public void Print()
+    {
+        if (count > 0)
+            for (int index = 0; index < count; ++index)
+                Console.WriteLine(array[index]);
+    }
+    public void Remove(int index)
+    {
+        if (index > count || index < 0)
+            throw new IndexOutOfRangeException();
+
+        for (int i = index; i < count; ++i)
+            array[i] = array[i + 1];
+        count--;
+    }
+    public int IndexOf(int value)
+    {
+        for (int i = 0; i < count; i++)
+            if (array[i] == value)
+                return i;
+        return -1;
+    }
+}
+```
+
+
+
+## LinkedLists
