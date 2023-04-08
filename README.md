@@ -1,3 +1,23 @@
+# 1:
+
+In the first part of this document Learning:
+
+1. **Big O Notation**
+
+2. **Arrays**
+
+3. **Linked Lists**
+
+4. **Stacks**
+
+5. **Queues**
+
+6. **Hash Tables**
+
+
+
+###### 1:Big O Notation
+
 We use Big O to describe performance of algorithm and How scalabe algoriths is.
 
 The below code show big O 1(one) becuase the code run in a constant time.
