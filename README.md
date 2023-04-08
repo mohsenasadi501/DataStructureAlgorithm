@@ -2,7 +2,7 @@
 
 In the first part of this document you would Learn:
 
-1. **Big O Notation**
+1. **[Big O Notation]()**
 
 2. **Arrays**
 
@@ -18,9 +18,9 @@ In the first part of this document you would Learn:
 
 #### 1:Big O Notation
 
-We use Big O to describe performance of algorithm and How scalabe algoriths is.
+We use Big O Notation to describe performance of algorithm and how scalabe algorithm is.
 
-The below code show big O 1(one) becuase the code run in a constant time.
+The below code show **O(1)** becuase the code run in a constant time.
 
 ```csharp
  public void log(int[] numbers)
