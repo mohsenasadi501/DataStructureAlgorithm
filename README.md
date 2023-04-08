@@ -67,6 +67,6 @@ Types of BigO:
 
 - Exponential   O(2 ^ n)
 
-![algorithm.png](D:\Development\DSA%20Sample\DataStructureAlgorithm\images\algorithm.png)
+![algorithm.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/algorithm.png)
 
 As it shown in above image constant type grows linearly as the same rate but the logarithmic curve down on some point, logarithmic is more efficent and scalabe compare to linear or other and exponential is the opossit of logarithmic and is not efficent to use and has a lot cost.
