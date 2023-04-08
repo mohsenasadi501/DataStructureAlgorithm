@@ -1,6 +1,6 @@
 # 1:
 
-In the first part of this document Learning:
+In the first part of this document you would Learn:
 
 1. **Big O Notation**
 
@@ -16,7 +16,7 @@ In the first part of this document Learning:
 
 
 
-###### 1:Big O Notation
+#### 1:Big O Notation
 
 We use Big O to describe performance of algorithm and How scalabe algoriths is.
 
