@@ -18,9 +18,9 @@ In the first part of this document you would Learn:
 
 ## Big-O-Notation
 
-We use Big O Notation to describe performance of algorithm and how scalabe algorithm is.
+We use Big O Notation to describe performance of algorithm, runtime complexity and  how scalabe algorithm is.
 
-The below code show **O(1)** becuase the code run in a constant time.
+The below codes show **O(1)** becuase the code run in a constant time.
 
 ```csharp
  public void log(int[] numbers)
@@ -55,10 +55,6 @@ public void LogNestedLoop(int[] numbers)
 }
 ```
 
-Linear rate grows as the same rate but the logarithmic carve down on some point, logarithmic is more efficent and scalabe compare to linear or other.
-
-Exponential (نمایی) is the opossit of logarithmic (لگاریتمی) methods as shown below.
-
 Types of BigO:
 
 - Constant   O(1)
@@ -71,4 +67,6 @@ Types of BigO:
 
 - Exponential   O(2 ^ n)
 
-![algorithm.png](D:\OneDrive\MarkDown\DSA\algorithm.png)
+![algorithm.png](D:\Development\DSA%20Sample\DataStructureAlgorithm\images\algorithm.png)
+
+As it shown in above image constant type grows linearly as the same rate but the logarithmic curve down on some point, logarithmic is more efficent and scalabe compare to linear or other and exponential is the opossit of logarithmic and is not efficent to use and has a lot cost.
