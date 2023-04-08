@@ -2,7 +2,7 @@
 
 In the first part of this document you would Learn:
 
-1. **[Big O Notation](#Big_O_Notation)**
+1. **[Big O Notation](#Big O Notation)**
 
 2. **Arrays**
 
@@ -16,7 +16,7 @@ In the first part of this document you would Learn:
 
 
 
-## Big_O_Notation
+## Big O Notation
 
 We use Big O Notation to describe performance of algorithm and how scalabe algorithm is.
 
