@@ -132,3 +132,5 @@ internal class Array
 ## LinkedLists
 
 Linked List Store Objects in squence unlike Arrays can grows or shrinks automatically likie blow image.
+
+![linkedlist.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/linkedlist.png)
