@@ -77,11 +77,11 @@ Featurse of Array Data Structure:
 
 - Simple Data Structure
 - Greate Data Structure when you khow how many item have
-- The Items ae fixed
+- The Items are fixed
 - The length of array is fixed
 - You can not remove or add new Item 
 
-Example of how to add Array class Add, Remove, IndexOf and Print methods functionality:
+Example of how to add Array class **Add**, **Remove**, **IndexOf ** and Print methods functionality:
 
 ```csharp
 internal class Array
