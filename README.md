@@ -10,7 +10,7 @@ In the first part of this document you would Learn:
 
 4. **[Stacks](#Stacks)**
 
-5. **Queues**
+5. **[Queues](#Queues)**
 
 6. **Hash Tables**
 
@@ -355,3 +355,31 @@ internal class Stack
 	}
 }
 ```
+
+## Queues
+
+Queue is data structure similar to stack but in queue for adding new item to top should remove item from bottom of queue as shown below:
+
+
+
+![queue.png](D:\Development\DSA%20Sample\DataStructureAlgorithm\images\queue.png)
+
+- [x] **Queues are FIFO (First-In First-Out)**
+
+- [x] **Stacks are LIFO (Last-In First-Out)**
+
+Queues are similar to real work queue, that people join the line from the back and leave from front
+
+#### Operations in Queues:
+
+- **enqueue()** Add item to back of the queue
+
+- **dequue()** Remove item from front of queue
+
+- **peek()** Get item from front without remove it
+
+- **isEmpty()**
+
+- **isFull()**
+
+All operation of stacks run **O(1)** in a constant time and we can say is so fast.
