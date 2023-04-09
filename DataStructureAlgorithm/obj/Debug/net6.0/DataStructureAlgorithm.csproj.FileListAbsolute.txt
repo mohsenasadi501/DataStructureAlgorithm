@@ -27,3 +27,4 @@ D:\Development\DSA Sample\DataStructureAlgorithm\DataStructureAlgorithm\obj\Debu
 D:\Development\DSA Sample\DataStructureAlgorithm\DataStructureAlgorithm\obj\Debug\net6.0\ref\DataStructureAlgorithm.dll
 D:\Development\DSA Sample\DataStructureAlgorithm\DataStructureAlgorithm\obj\Debug\net6.0\DataStructureAlgorithm.pdb
 D:\Development\DSA Sample\DataStructureAlgorithm\DataStructureAlgorithm\obj\Debug\net6.0\DataStructureAlgorithm.genruntimeconfig.cache
+D:\Development\DSA Sample\DataStructureAlgorithm\DataStructureAlgorithm\obj\Debug\net6.0\DataStructureAlgorithm.csproj.AssemblyReference.cache

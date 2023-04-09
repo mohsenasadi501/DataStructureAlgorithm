@@ -1,5 +1,11 @@
 ﻿using DataStructureAlgorithm.Part1;
 
+Console.WriteLine("*** Stacks ***");
+
+string str = "MohsenAsadi";
+var  reverser =  new StringReverser();
+Console.WriteLine(reverser.Reverse(str));
+
 Console.WriteLine("*** LinkedList ***");
 LinkedList mLinkedList = new LinkedList();
 mLinkedList.AddLast(10);

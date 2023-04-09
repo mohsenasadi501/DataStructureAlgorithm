@@ -8,7 +8,7 @@ In the first part of this document you would Learn:
 
 3. **[Linked Lists](#LinkedLists)**
 
-4. **Stacks**
+4. **[Stacks](#Stacks)**
 
 5. **Queues**
 
@@ -282,3 +282,46 @@ We have two types of linked Listed Singly and Doubly and what is diffrence betwe
 
 
 ![doubleLinkedList.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/doubleLinkedList.png)
+
+
+
+## Stacks
+
+Stacks are powerfull data structure that help us to solve many complex programming problems.
+
+#### Operations in stacks:
+
+- **push(item)** Add item on top of the stacks
+
+- **pop()** Remove Item on the top
+
+- **peek()**  Return Item in the top without removing the item
+
+- **isEmpty()** Determind stack is empty or not
+
+ All operation of stacks run **O(1)** in a constant time.
+
+
+
+#### Example:
+
+1- We can use stacks to reverse string like blow code:
+
+```csharp
+internal class StringReverser
+{
+	public string Reverse(string input)
+	{
+		string newString = "";
+		Stack<Char> chars = new Stack<Char>();
+		foreach (var item in input.ToArray())
+			chars.Push(item);
+
+		while (chars.Count > 0)
+		{
+			newString += chars.Pop().ToString();
+		}
+		return newString;
+	}
+}
+```
