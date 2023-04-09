@@ -135,7 +135,7 @@ Linked List Store Objects in squence and unlike Arrays can grows or shrink autom
 
 ![linkedlist.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/linkedlist.png)
 
-In linked list we have first and last item of a list and recersively add another items to them and the implementation of linked list can be like below:
+In linked list we have first and last item of a list and recersively add another items to them and the linked list implementation from scratch:
 
 ```csharp
 internal class LinkedList
@@ -303,7 +303,7 @@ Stacks are powerfull data structure that help us to solve many complex programmi
 
 
 
-#### Example:
+#### Examples:
 
 1- We can use stacks to reverse string like blow code:
 
@@ -322,6 +322,36 @@ internal class StringReverser
 			newString += chars.Pop().ToString();
 		}
 		return newString;
+	}
+}
+```
+
+2- Stack implementation from scratch
+
+```csharp
+internal class Stack
+{
+	private int[] items = new int[5];
+	private int count;
+
+	public void push(int item)
+	{
+		if (count == items.Length)
+			throw new StackOverflowException();
+		items[count++] = item;
+
+	}
+	public int pop()
+	{
+		if (count == 0)
+			throw new Exception();
+		return items[--count];
+	}
+	public int peek()
+	{
+		if (count == 0)
+			throw new Exception();
+		return items[--count];
 	}
 }
 ```
