@@ -81,7 +81,7 @@ Featurse of Array Data Structure:
 - The length of array is fixed
 - You can not remove or add new Item 
 
-Example of how to edit Array class to add Add,Remove,IndexOf and Print functionality:
+Example of how to add Array class Add, Remove, IndexOf and Print methods functionality:
 
 ```csharp
 internal class Array
@@ -129,6 +129,6 @@ internal class Array
 }
 ```
 
-
-
 ## LinkedLists
+
+Linked List Store Objects in squence unlike Arrays can grows or shrinks automatically likie blow image.
