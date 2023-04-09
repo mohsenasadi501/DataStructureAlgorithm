@@ -259,6 +259,10 @@ We want to compare in terms of requierd memory and time complexcity.
 
 - Use arrays if you khnow the number of items to store
 
+
+
+**Runtime Complexcity**
+
 | Row | Function name              | Array             | Linked List       |
 |:---:|:-------------------------- |:-----------------:|:-----------------:|
 | 1   | **(LookUp)** By Index      | <mark>O(1)</mark> | O(n)              |
@@ -268,3 +272,13 @@ We want to compare in terms of requierd memory and time complexcity.
 | 5   | **(Delete)** Beginning     | O(n)              | <mark>O(1)</mark> |
 | 6   | **(Delete)** Middle        | O(n)              | O(n)              |
 | 7   | **(Delete)** End           | O(n)              | O(n)              |
+
+### 
+
+### Types of Lisnked Listed:
+
+We have two types of linked Listed Singly and Doubly and what is diffrence between them. The items singly just have link to next item that wehn you want to delete item from end you should loop in all items of Linked Listed but we can add reverse link than each item store next and previose item that case O(1) Big O like image below.
+
+
+
+![doubleLinkedList.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/doubleLinkedList.png)
