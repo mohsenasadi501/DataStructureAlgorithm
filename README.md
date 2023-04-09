@@ -246,3 +246,25 @@ internal class LinkedList
 ```
 
 As you can see above code we have Node class that store the value of item and the next item that create connection to the next item.
+
+### Arrays vs Linked Lists:
+
+We want to compare in terms of requierd memory and time complexcity.
+
+- Static arrays have a fixed size 
+
+- Dynamic arrays grows by 50-100%
+
+- Linked Lists dont wast memory
+
+- Use arrays if you khnow the number of items to store
+
+| Row | Function name              | Array             | Linked List       |
+|:---:|:-------------------------- |:-----------------:|:-----------------:|
+| 1   | **(LookUp)** By Index      | <mark>O(1)</mark> | O(n)              |
+| 2   | **(LookUp)** By Value      | O(n)              | O(n)              |
+| 3   | **(Insert)** Beginning/End | O(n)              | <mark>O(1)</mark> |
+| 4   | **(Insert)** Middle        | O(n)              | O(n)              |
+| 5   | **(Delete)** Beginning     | O(n)              | <mark>O(1)</mark> |
+| 6   | **(Delete)** Middle        | O(n)              | O(n)              |
+| 7   | **(Delete)** End           | O(n)              | O(n)              |
