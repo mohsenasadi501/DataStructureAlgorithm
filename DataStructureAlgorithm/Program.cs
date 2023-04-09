@@ -6,6 +6,13 @@ string str = "MohsenAsadi";
 var  reverser =  new StringReverser();
 Console.WriteLine(reverser.Reverse(str));
 
+Stack<int> stack = new Stack<int>();    
+stack.Push(10);
+stack.Push(20);
+stack.Push(30);
+var item = stack.Pop();
+Console.WriteLine(item);
+
 Console.WriteLine("*** LinkedList ***");
 LinkedList mLinkedList = new LinkedList();
 mLinkedList.AddLast(10);
