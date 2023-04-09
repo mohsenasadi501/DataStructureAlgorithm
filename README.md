@@ -53,17 +53,17 @@ public void LogNestedLoop(int[] numbers)
 }
 ```
 
-Types of BigO:
+##### Types of BigO:
 
-- Constant   O(1)
+| Row | Name        | Big O Notation |
+|:---:|:-----------:|:--------------:|
+| 1   | Constant    | O(1)           |
+| 2   | Logarithmic | O(log n)       |
+| 3   | Linear      | O(n)           |
+| 4   | Quadratic   | O(n^ 2)        |
+| 5   | Exponential | O(2 ^ n)       |
 
-- Logarithmic   O(log n)
 
-- Linear   O(n)
-
-- Quadratic   O(n^ 2)
-
-- Exponential   O(2 ^ n)
 
 ![algorithm.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/algorithm.png)
 
@@ -81,7 +81,7 @@ Featurse of Array Data Structure:
 - The length of array is fixed
 - You can not remove or add new Item 
 
-Example of how to add Array class **Add**, **Remove**, **IndexOf ** and Print methods functionality:
+Example of how to add Array class **Add**, **Remove**, **IndexOf** and **Print** methods functionality:
 
 ```csharp
 internal class Array
@@ -140,108 +140,108 @@ In linked list we have first and last item of a list and recersively add another
 ```csharp
 internal class LinkedList
 {
-	private class Node
-	{
-		public int value;
-		public Node next;
-		public Node(int value)
-		{
-			this.value = value;
-		}
-	}
+    private class Node
+    {
+        public int value;
+        public Node next;
+        public Node(int value)
+        {
+            this.value = value;
+        }
+    }
 
-	private Node first;
-	private Node last;
-	public int size;
+    private Node first;
+    private Node last;
+    public int size;
 
-	public void AddFirst(int item)
-	{
-		var mNode = new Node(item);
-		if (first == null)
-			last = first = mNode;
-		else
-		{
-			mNode.next = first;
-			first = mNode;
-		}
-		size++;
-	}
-	public void AddLast(int item)
-	{
-		var mNode = new Node(item);
-		if (first == null)
-			last = first = mNode;
-		else
-		{
-			last.next = mNode;
-			last = mNode;
-		}
-		size++;
-	}
-	public int IndexOf(int item)
-	{
-		int index = 0;
-		var current = first;
-		while (current != null)
-		{
-			if (current.value == item) return index;
-			current = current.next;
-			index++;
-		}
-		return -1;
-	}
-	public bool Contains(int value)
-	{
-		var current = first;
-		while (current != null)
-		{
-			if (current.value == value) return true;
-			current = current.next;
-		}
-		return false;
-	}
-	public void RemoveFirst()
-	{
-		if (first == null)
-			throw new InvalidOperationException();
-		if (first == last)
-		{
-			first = last = null;
-			size--;
-			return;
-		}
-		var second = first.next;
-		first.next = null;
-		first = second;
-		size--;
-	}
-	public void RemoveLast()
-	{
-		var current = first;
-		while (current != null)
-		{
-			if (current.next == last) break;
-			current = current.next;
-		}
-		last = current;
-		size--;
-	}
-	public int Size()
-	{
-		return size;
-	}
-	public int[] toArray()
-	{
-		int[] result = new int[size];
-		var current = first;
-		int index = 0;
-		while (current != null)
-		{
-			result[index++] = current.value;
-			current = current.next;
-		}
-		return result;
-	}
+    public void AddFirst(int item)
+    {
+        var mNode = new Node(item);
+        if (first == null)
+            last = first = mNode;
+        else
+        {
+            mNode.next = first;
+            first = mNode;
+        }
+        size++;
+    }
+    public void AddLast(int item)
+    {
+        var mNode = new Node(item);
+        if (first == null)
+            last = first = mNode;
+        else
+        {
+            last.next = mNode;
+            last = mNode;
+        }
+        size++;
+    }
+    public int IndexOf(int item)
+    {
+        int index = 0;
+        var current = first;
+        while (current != null)
+        {
+            if (current.value == item) return index;
+            current = current.next;
+            index++;
+        }
+        return -1;
+    }
+    public bool Contains(int value)
+    {
+        var current = first;
+        while (current != null)
+        {
+            if (current.value == value) return true;
+            current = current.next;
+        }
+        return false;
+    }
+    public void RemoveFirst()
+    {
+        if (first == null)
+            throw new InvalidOperationException();
+        if (first == last)
+        {
+            first = last = null;
+            size--;
+            return;
+        }
+        var second = first.next;
+        first.next = null;
+        first = second;
+        size--;
+    }
+    public void RemoveLast()
+    {
+        var current = first;
+        while (current != null)
+        {
+            if (current.next == last) break;
+            current = current.next;
+        }
+        last = current;
+        size--;
+    }
+    public int Size()
+    {
+        return size;
+    }
+    public int[] toArray()
+    {
+        int[] result = new int[size];
+        var current = first;
+        int index = 0;
+        while (current != null)
+        {
+            result[index++] = current.value;
+            current = current.next;
+        }
+        return result;
+    }
 }
 ```
 
