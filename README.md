@@ -362,7 +362,7 @@ Queue is data structure similar to stack but in queue for adding new item to top
 
 
 
-![queue.png](D:\Development\DSA%20Sample\DataStructureAlgorithm\images\queue.png)
+![queue.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/queue.png)
 
 - [x] **Queues are FIFO (First-In First-Out)**
 
@@ -383,3 +383,5 @@ Queues are similar to real work queue, that people join the line from the back a
 - **isFull()**
 
 All operation of stacks run **O(1)** in a constant time and we can say is so fast.
+
+For example if you want to reverse queue in this case again you should use stack, in every situation if you want to reverse you should use stack.
