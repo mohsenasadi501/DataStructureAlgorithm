@@ -1,5 +1,14 @@
 ﻿using DataStructureAlgorithm.Part1;
 
+StackQueue stackQueue = new StackQueue();
+stackQueue.enqueue(10);
+stackQueue.enqueue(20);
+stackQueue.enqueue(30);
+stackQueue.enqueue(40);
+stackQueue.enqueue(50);
+stackQueue.enqueue(60);
+
+
 ArrayQueue queue = new ArrayQueue(5);
 queue.enqueue(1);
 queue.enqueue(2);
