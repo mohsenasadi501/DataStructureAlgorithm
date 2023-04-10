@@ -137,8 +137,6 @@ internal class Array
 | 4   | String            | null          |
 | 5   | User-Defined Type | null          |
 
-
-
 ## LinkedLists
 
 Linked List Store Objects in squence and unlike Arrays can grows or shrink automatically like blow image.
@@ -393,90 +391,86 @@ For example if you want to reverse queue in this case again you should use stack
 ```csharp
 internal class ArrayQueue
 {
-	int[] array;
-	int frontIndex;
-	int backIndex;
-	int count;
+    int[] array;
+    int frontIndex;
+    int backIndex;
+    int count;
 
-	public ArrayQueue(int size)
-	{
-		array = new int[size];
-	}
-	public void enqueue(int item)
-	{
-		if (count >= array.Length)
-			throw new Exception();
-		array[frontIndex] = item;
-		frontIndex = (frontIndex + 1) % array.Length;
-		count++;
-	}
-	public int dequeue()
-	{
-		int current = array[backIndex];
-		array[backIndex] = 0;
-		backIndex = (backIndex + 1) % array.Length;
-		count--;
-		return current;
-	}
-	public int peek()
-	{
-		return array[backIndex];
-	}
-	public Boolean isEmpty()
-	{
-		return count == 0;
-	}
-	public Boolean isFull()
-	{
-		return count == array.Length;
-	}
+    public ArrayQueue(int size)
+    {
+        array = new int[size];
+    }
+    public void enqueue(int item)
+    {
+        if (count >= array.Length)
+            throw new Exception();
+        array[frontIndex] = item;
+        frontIndex = (frontIndex + 1) % array.Length;
+        count++;
+    }
+    public int dequeue()
+    {
+        int current = array[backIndex];
+        array[backIndex] = 0;
+        backIndex = (backIndex + 1) % array.Length;
+        count--;
+        return current;
+    }
+    public int peek()
+    {
+        return array[backIndex];
+    }
+    public Boolean isEmpty()
+    {
+        return count == 0;
+    }
+    public Boolean isFull()
+    {
+        return count == array.Length;
+    }
 }
 ```
 
 Above code use curcular array to solve a problem of fix array size.
-
-
 
 ###### 2: Implement Queue with stack:
 
 ```csharp
 internal class StackQueue
 {
-	Stack<int> stack1;
-	Stack<int> stack2;
-	public StackQueue()
-	{
-		stack1 = new Stack<int>();
-		stack2 = new Stack<int>();
-	}
-	//O(1)
-	public void enqueue(int item)
-	{
-		stack1.Push(item);
-	}
-	//O(n)
-	public int dequeue()
-	{
-		if (stack1.Count == 0 && stack2.Count == 0)
-			throw new Exception();
+    Stack<int> stack1;
+    Stack<int> stack2;
+    public StackQueue()
+    {
+        stack1 = new Stack<int>();
+        stack2 = new Stack<int>();
+    }
+    //O(1)
+    public void enqueue(int item)
+    {
+        stack1.Push(item);
+    }
+    //O(n)
+    public int dequeue()
+    {
+        if (stack1.Count == 0 && stack2.Count == 0)
+            throw new Exception();
 
-		if (stack2.Count == 0)
-			while (stack1.Count > 0)
-			{
-				stack2.Push(stack1.Pop());
-			}
-		return stack2.Pop();
-	}
-	public bool isEmpty()
-	{
-		return stack1.Count == 0 && stack2.Count == 0;
-	}
+        if (stack2.Count == 0)
+            while (stack1.Count > 0)
+            {
+                stack2.Push(stack1.Pop());
+            }
+        return stack2.Pop();
+    }
+    public bool isEmpty()
+    {
+        return stack1.Count == 0 && stack2.Count == 0;
+    }
 }
 ```
 
 Implementing queue with stack need two stack that stack1 for enqueue and stack2 for dequeue.
-
-
 
 **What is PriorityQueue?**
 
@@ -539,19 +533,19 @@ var dictionaryItem = part1.Single(x => x.Key == 0);    //O(1)
 ```csharp
 internal class CharFinder
 {
-	public Char FindFirstNonRepeatingChar(string input)
-	{
-		Dictionary<char, int> map = new Dictionary<char, int>();
+    public Char FindFirstNonRepeatingChar(string input)
+    {
+        Dictionary<char, int> map = new Dictionary<char, int>();
 
-		foreach (var item in input.ToArray())
-		{
-			var count = map.ContainsKey(item) ? map[item] : 0;
-			map[item] = count + 1;
-		}
-		foreach (var item in map)
-			if (item.Value == 1) return item.Key;
-		return ' ';
-	}
+        foreach (var item in input.ToArray())
+        {
+            var count = map.ContainsKey(item) ? map[item] : 0;
+            map[item] = count + 1;
+        }
+        foreach (var item in map)
+            if (item.Value == 1) return item.Key;
+        return ' ';
+    }
 }
 ```
 
@@ -562,75 +556,75 @@ First we count all chars and store in dictionary after that find from dictionary
 ```csharp
 internal class HashTable
 {
-	internal class Entry
-	{
-		public int Key;
-		public string Value;
-		public Entry(int key, string value)
-		{
-			Key = key;
-			Value = value;
-		}
-	}
-	private LinkedList<Entry>[] _array;
-	public HashTable(int size)
-	{
-		_array = new LinkedList<Entry>[size];
-	}
+    internal class Entry
+    {
+        public int Key;
+        public string Value;
+        public Entry(int key, string value)
+        {
+            Key = key;
+            Value = value;
+        }
+    }
+    private LinkedList<Entry>[] _array;
+    public HashTable(int size)
+    {
+        _array = new LinkedList<Entry>[size];
+    }
 
-	public void put(int key, string value)
-	{
-		var hashkey = hash(key);
-		if (_array[hashkey] == null)
-		{
-			var linked = new LinkedList<Entry>();
-			linked.AddLast(new Entry(key, value));
-			_array[hashkey] = linked;
-		}
-		else
-		{
-			foreach (var item in _array[hashkey])
-			{
-				if (item.Key == key)
-				{
-					item.Value = value;
-					return;
-				}
-			}
-			var linkedList = _array[hashkey];
-			linkedList.AddLast(new Entry(key, value));
-		}
-	}
-	public Entry get(int key)
-	{
-		var hashkey = hash(key);
-		var item = _array[hashkey];
-		if (item != null)
-			return item.Single(x => x.Key == key);
-		else
-			return null;
-	}
-	public void remove(int key)
-	{
-		var hashkey = hash(key);
-		if (_array[hashkey] == null)
-			throw new Exception();
-		else
-		{
-			var item = _array[hashkey];
-			if (item.Count == 1)
-				_array[hashkey] = null;
-			else
-			{
-				var innerItem = item.Single(x => x.Key == key);
-				_array[hashkey].Remove(innerItem);
-			}
-		}
-	}
-	private int hash(int key)
-	{
-		return key % _array.Length;
-	}
+    public void put(int key, string value)
+    {
+        var hashkey = hash(key);
+        if (_array[hashkey] == null)
+        {
+            var linked = new LinkedList<Entry>();
+            linked.AddLast(new Entry(key, value));
+            _array[hashkey] = linked;
+        }
+        else
+        {
+            foreach (var item in _array[hashkey])
+            {
+                if (item.Key == key)
+                {
+                    item.Value = value;
+                    return;
+                }
+            }
+            var linkedList = _array[hashkey];
+            linkedList.AddLast(new Entry(key, value));
+        }
+    }
+    public Entry get(int key)
+    {
+        var hashkey = hash(key);
+        var item = _array[hashkey];
+        if (item != null)
+            return item.Single(x => x.Key == key);
+        else
+            return null;
+    }
+    public void remove(int key)
+    {
+        var hashkey = hash(key);
+        if (_array[hashkey] == null)
+            throw new Exception();
+        else
+        {
+            var item = _array[hashkey];
+            if (item.Count == 1)
+                _array[hashkey] = null;
+            else
+            {
+                var innerItem = item.Single(x => x.Key == key);
+                _array[hashkey].Remove(innerItem);
+            }
+        }
+    }
+    private int hash(int key)
+    {
+        return key % _array.Length;
+    }
 }
 ```
 
@@ -644,8 +638,6 @@ In this senario we should hash the key, if the key is integer we get the remain 
 
 Another error might occure that hash function generate two equal hash value, we can not store two item in same index, this is we call a **Collision**  like below image
 
-
-
 <img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/collision.png" title="" alt="collision.png" width="464">
 
 We have three way to fix this issue
@@ -654,14 +646,12 @@ We have three way to fix this issue
 
 As you can see we store A and C item in a index one but in a linked list.
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/chaining.png" title="" alt="chaining.png" width="482">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/chaining.png" alt="chaining.png" width="482">
 
 **2- OpenAddressing**:  In this method we do not insert dublicated data in a linked list, we store them in array it self.
 
-
-
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/linearprobing.png" title="" alt="linearprobing.png" width="455">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/linearprobing.png" alt="linearprobing.png" width="455">
 
 In this methods we increment 1 each time that the item is full to find an empty item. as an image show if these cluster happend we should search free item pass 3 previos item and have cost, another methods is to use **Quadratic Probing**
 
-![linearprobing.png](D:\Development\DSA%20Sample\DataStructureAlgorithm\images\linearprobing.png)
+![linearprobing.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/quadraticprobing.png)
