@@ -51,6 +51,23 @@
             else
                 return null;
         }
+        public void remove(int key)
+        {
+            var hashkey = hash(key);
+            if (_array[hashkey] == null)
+                throw new Exception();
+            else
+            {
+                var item = _array[hashkey];
+                if (item.Count == 1)
+                    _array[hashkey] = null;
+                else
+                {
+                    var innerItem = item.Single(x => x.Key == key);
+                    _array[hashkey].Remove(innerItem);
+                }
+            }
+        }
         private int hash(int key)
         {
             return key % _array.Length;
