@@ -1,13 +1,37 @@
 ﻿using DataStructureAlgorithm.Part1;
 
-Queue<int> queue = new Queue<int>();
-queue.Enqueue(1);
-queue.Enqueue(2);
-queue.Enqueue(3);
-queue.Enqueue(4);
-queue.Enqueue(5);
-queue.Dequeue();
-queue.Dequeue();
+ArrayQueue queue = new ArrayQueue(5);
+queue.enqueue(1);
+queue.enqueue(2);
+queue.enqueue(3);
+queue.enqueue(4);
+queue.enqueue(5);
+
+queue.dequeue();
+queue.dequeue();
+queue.dequeue();
+
+queue.enqueue(6);
+queue.enqueue(7);
+queue.enqueue(8);
+
+queue.dequeue();
+queue.dequeue();
+
+queue.enqueue(9);
+queue.enqueue(10);
+queue.enqueue(11);
+queue.enqueue(12);
+queue.enqueue(13);
+
+//Queue<int> queue = new Queue<int>();
+//queue.Enqueue(1);
+//queue.Enqueue(2);
+//queue.Enqueue(3);
+//queue.Enqueue(4);
+//queue.Enqueue(5);
+//queue.Dequeue();
+//queue.Dequeue();
 
 Console.WriteLine("*** Stacks ***");
 

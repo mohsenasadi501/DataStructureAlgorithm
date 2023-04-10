@@ -11,32 +11,39 @@ namespace DataStructureAlgorithm.Part1
         int[] array;
         int frontIndex;
         int backIndex;
+        int count;
 
-        public ArrayQueue()
+        public ArrayQueue(int size)
         {
-            array = new int[10];
+            array = new int[size];
         }
         public void enqueue(int item)
         {
-            if (array.Length == 0)
-                frontIndex = backIndex = 1;
+            if (count >= array.Length)
+                throw new Exception();
             array[frontIndex] = item;
+            frontIndex = (frontIndex + 1) % array.Length;
+            count++;
         }
         public int dequeue()
         {
-            return 0;
+            int current = array[backIndex];
+            array[backIndex] = 0;
+            backIndex = (backIndex + 1) % array.Length;
+            count--;
+            return current;
         }
         public int peek()
         {
-            return 0;
+            return array[backIndex];
         }
         public Boolean isEmpty()
         {
-            return false;
+            return count == 0;
         }
         public Boolean isFull()
         {
-            return false;
+            return count == array.Length;
         }
     }
 }

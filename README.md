@@ -63,8 +63,6 @@ public void LogNestedLoop(int[] numbers)
 | 4   | Quadratic   | O(n^ 2)        |
 | 5   | Exponential | O(2 ^ n)       |
 
-
-
 ![algorithm.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/algorithm.png)
 
 As it shown in above image, constant type algorithms grows linearly as the same rate but the logarithmic curve down on some point, logarithmic is more efficent and scalabe compare to linear or other and exponential is the opossit of logarithmic and is not efficent to use and has a lot cost.
@@ -259,8 +257,6 @@ We want to compare in terms of requierd memory and time complexcity.
 
 - Use arrays if you khnow the number of items to store
 
-
-
 **Runtime Complexcity**
 
 | Row | Function name              | Array             | Linked List       |
@@ -279,11 +275,7 @@ We want to compare in terms of requierd memory and time complexcity.
 
 We have two types of linked Listed Singly and Doubly and what is diffrence between them. The items singly just have link to next item that wehn you want to delete item from end you should loop in all items of Linked Listed but we can add reverse link than each item store next and previose item that case O(1) Big O like image below.
 
-
-
 ![doubleLinkedList.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/doubleLinkedList.png)
-
-
 
 ## Stacks
 
@@ -298,10 +290,8 @@ Stacks are powerfull data structure that help us to solve many complex programmi
 - **peek()**  Return Item in the top without removing the item
 
 - **isEmpty()** Determind stack is empty or not
-
- All operation of stacks run **O(1)** in a constant time.
-
-
+  
+  All operation of stacks run **O(1)** in a constant time.
 
 #### Examples:
 
@@ -310,19 +300,19 @@ Stacks are powerfull data structure that help us to solve many complex programmi
 ```csharp
 internal class StringReverser
 {
-	public string Reverse(string input)
-	{
-		string newString = "";
-		Stack<Char> chars = new Stack<Char>();
-		foreach (var item in input.ToArray())
-			chars.Push(item);
+    public string Reverse(string input)
+    {
+        string newString = "";
+        Stack<Char> chars = new Stack<Char>();
+        foreach (var item in input.ToArray())
+            chars.Push(item);
 
-		while (chars.Count > 0)
-		{
-			newString += chars.Pop().ToString();
-		}
-		return newString;
-	}
+        while (chars.Count > 0)
+        {
+            newString += chars.Pop().ToString();
+        }
+        return newString;
+    }
 }
 ```
 
@@ -331,36 +321,34 @@ internal class StringReverser
 ```csharp
 internal class Stack
 {
-	private int[] items = new int[5];
-	private int count;
+    private int[] items = new int[5];
+    private int count;
 
-	public void push(int item)
-	{
-		if (count == items.Length)
-			throw new StackOverflowException();
-		items[count++] = item;
+    public void push(int item)
+    {
+        if (count == items.Length)
+            throw new StackOverflowException();
+        items[count++] = item;
 
-	}
-	public int pop()
-	{
-		if (count == 0)
-			throw new Exception();
-		return items[--count];
-	}
-	public int peek()
-	{
-		if (count == 0)
-			throw new Exception();
-		return items[--count];
-	}
+    }
+    public int pop()
+    {
+        if (count == 0)
+            throw new Exception();
+        return items[--count];
+    }
+    public int peek()
+    {
+        if (count == 0)
+            throw new Exception();
+        return items[--count];
+    }
 }
 ```
 
 ## Queues
 
 Queue is data structure similar to stack but in queue for adding new item to top should remove item from bottom of queue as shown below:
-
-
 
 ![queue.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/queue.png)
 
