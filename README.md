@@ -630,7 +630,9 @@ internal class HashTable
 
 for having contant O(1) runtime complexcity we should use array to store, in the above code why we use linked list?  imagine we have an array with 5 fixed size and the key should be between 0 to 4 , if the input key is 11 what happend.
 
-In this senario we should hash the key, if the key is integer we get the remain of key devided by array lentgh, we use % symble (Modulo) and this issue with fix, for example `var inedex = key % array.length`
+In this senario we should hash the key, if the key is integer we get the remain of key devided by array lentgh, we use % symble (Modulo) and this issue with fix, for example:
+
+`var inedex = key % array.length`
 
 `1 = 11% 5;`
 
@@ -638,7 +640,7 @@ In this senario we should hash the key, if the key is integer we get the remain 
 
 Another error might occure that hash function generate two equal hash value, we can not store two item in same index, this is we call a **Collision**  like below image
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/collision.png" title="" alt="collision.png" width="464">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/collision.png" alt="collision.png" width="464">
 
 We have three way to fix this issue
 
