@@ -376,7 +376,7 @@ For example if you want to reverse queue in this case again you should use stack
 
 #### Examples:
 
-The below code show how to create a queue with Array:
+1: The below code show how to create a queue with Array:
 
 ```csharp
 internal class ArrayQueue
@@ -422,3 +422,44 @@ internal class ArrayQueue
 ```
 
 Above code use curcular array to solve a problem of fix array size.
+
+
+
+2: Implement Queue with stack:
+
+```csharp
+internal class StackQueue
+{
+	Stack<int> stack1;
+	Stack<int> stack2;
+	public StackQueue()
+	{
+		stack1 = new Stack<int>();
+		stack2 = new Stack<int>();
+	}
+	//O(1)
+	public void enqueue(int item)
+	{
+		stack1.Push(item);
+	}
+	//O(n)
+	public int dequeue()
+	{
+		if (stack1.Count == 0 && stack2.Count == 0)
+			throw new Exception();
+
+		if (stack2.Count == 0)
+			while (stack1.Count > 0)
+			{
+				stack2.Push(stack1.Pop());
+			}
+		return stack2.Pop();
+	}
+	public bool isEmpty()
+	{
+		return stack1.Count == 0 && stack2.Count == 0;
+	}
+}
+```
+
+Implementing queue with stack need two stack that stack1 for enqueue and stack2 for dequeue.
