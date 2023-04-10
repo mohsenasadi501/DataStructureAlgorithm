@@ -1,7 +1,33 @@
 ﻿using DataStructureAlgorithm.Part1;
 
+Console.WriteLine("*** HashTable ***");
+HashTable hashTable = new HashTable(5);
+hashTable.put(6, "Mohsen");
+hashTable.put(8, "Asadi");
+hashTable.put(11, "Ali");
+hashTable.put(11, "Ehsan");
+Console.WriteLine(hashTable.get(11).Value);
 
-PriorityQueue<int,int> priorityQueue = new PriorityQueue<int,int>();
+
+LinkedList linkedList = new LinkedList();
+linkedList.AddFirst(1);
+linkedList.AddFirst(2);
+linkedList.AddFirst(3);
+linkedList.AddFirst(4);
+linkedList.AddFirst(5);
+
+CharFinder charFinder = new CharFinder();
+Console.WriteLine(charFinder.FindFirstNonRepeatingChar("A Green Apple"));
+
+Dictionary<int, string> part1 = new Dictionary<int, string>();
+part1.Add(0, "Mohsen");     //O(1)
+part1.Add(1, "Jhon");
+var containsValue = part1.ContainsValue("Mohsen");      //O(n)
+var containsKey = part1.ContainsKey(10);                //O(1)
+
+var dictionaryItem = part1.Single(x => x.Key == 0);     //O(1)
+
+PriorityQueue<int, int> priorityQueue = new PriorityQueue<int, int>();
 priorityQueue.Enqueue(2, 1);
 priorityQueue.Enqueue(3, 3);
 priorityQueue.Enqueue(4, 2);
@@ -14,29 +40,29 @@ stackQueue.enqueue(40);
 stackQueue.enqueue(50);
 stackQueue.enqueue(60);
 
-ArrayQueue queue = new ArrayQueue(5);
-queue.enqueue(1);
-queue.enqueue(2);
-queue.enqueue(3);
-queue.enqueue(4);
-queue.enqueue(5);
+//ArrayQueue queue = new ArrayQueue(5);
+//queue.enqueue(1);
+//queue.enqueue(2);
+//queue.enqueue(3);
+//queue.enqueue(4);
+//queue.enqueue(5);
 
-queue.dequeue();
-queue.dequeue();
-queue.dequeue();
+//queue.dequeue();
+//queue.dequeue();
+//queue.dequeue();
 
-queue.enqueue(6);
-queue.enqueue(7);
-queue.enqueue(8);
+//queue.enqueue(6);
+//queue.enqueue(7);
+//queue.enqueue(8);
 
-queue.dequeue();
-queue.dequeue();
+//queue.dequeue();
+//queue.dequeue();
 
-queue.enqueue(9);
-queue.enqueue(10);
-queue.enqueue(11);
-queue.enqueue(12);
-queue.enqueue(13);
+//queue.enqueue(9);
+//queue.enqueue(10);
+//queue.enqueue(11);
+//queue.enqueue(12);
+//queue.enqueue(13);
 
 //Queue<int> queue = new Queue<int>();
 //queue.Enqueue(1);
@@ -50,10 +76,10 @@ queue.enqueue(13);
 Console.WriteLine("*** Stacks ***");
 
 string str = "MohsenAsadi";
-var  reverser =  new StringReverser();
+var reverser = new StringReverser();
 Console.WriteLine(reverser.Reverse(str));
 
-Stack<int> stack = new Stack<int>();    
+Stack<int> stack = new Stack<int>();
 stack.Push(10);
 stack.Push(20);
 stack.Push(30);

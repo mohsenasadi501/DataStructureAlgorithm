@@ -12,7 +12,7 @@ In the first part of this document you would Learn:
 
 5. **[Queues](#Queues)**
 
-6. **Hash Tables**
+6. **[Hash Tables](#HashTables)**
 
 ## Big-O-Notation
 
@@ -126,6 +126,18 @@ internal class Array
     }
 }
 ```
+
+###### Default assigned values of Array:
+
+| Row | DataType          | Default Value |
+|:---:|:-----------------:|:-------------:|
+| 1   | boolean           | false         |
+| 2   | int               | 0             |
+| 3   | double            | 0.0           |
+| 4   | String            | null          |
+| 5   | User-Defined Type | null          |
+
+
 
 ## LinkedLists
 
@@ -477,3 +489,70 @@ priorityQueue.Enqueue(2, 1);
 priorityQueue.Enqueue(3, 3);
 priorityQueue.Enqueue(4, 2);
 ```
+
+## HashTables
+
+Hash tables also called dictionary that give us super fast lookup and we can use it for:
+
+- Spell checkers
+
+- Dictionaries
+
+- Compilers
+
+- Code editors
+
+What do we call other programming languagesh hash tables implementation:
+
+| Java     | JavaScript | Phyton     | c#         |
+|:--------:|:----------:|:----------:|:----------:|
+| Hash Map | Object     | Dictionary | Dictionary |
+
+Store data with key and value pairs.
+
+#### Operations in HashTables:
+
+- Insert()   
+
+- Lookup()
+
+- Delete()
+
+All these operations run in **O(1)** .
+
+Dictionary in C# code with runtime complexcity:
+
+```csharp
+Dictionary<int, string> part1 = new Dictionary<int, string>();
+part1.Add(0, "Mohsen");    //O(1)
+part1.Add(1, "Jhon");
+var containsValue = part1.ContainsValue("Mohsen");    //O(n)
+var containsKey = part1.ContainsKey(10);    //O(1)
+
+var dictionaryItem = part1.Single(x => x.Key == 0);    //O(1)
+```
+
+#### Examples:
+
+###### 1- Find first Non-repeated character:
+
+```csharp
+internal class CharFinder
+{
+	public Char FindFirstNonRepeatingChar(string input)
+	{
+		Dictionary<char, int> map = new Dictionary<char, int>();
+
+		foreach (var item in input.ToArray())
+		{
+			var count = map.ContainsKey(item) ? map[item] : 0;
+			map[item] = count + 1;
+		}
+		foreach (var item in map)
+			if (item.Value == 1) return item.Key;
+		return ' ';
+	}
+}
+```
+
+First we count all chars and store in dictionary after that find from dictionary item which is 1 and return it.
