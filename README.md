@@ -373,3 +373,52 @@ Queues are similar to real work queue, that people join the line from the back a
 All operation of stacks run **O(1)** in a constant time and we can say is so fast.
 
 For example if you want to reverse queue in this case again you should use stack, in every situation if you want to reverse you should use stack.
+
+#### Examples:
+
+The below code show how to create a queue with Array:
+
+```csharp
+internal class ArrayQueue
+{
+	int[] array;
+	int frontIndex;
+	int backIndex;
+	int count;
+
+	public ArrayQueue(int size)
+	{
+		array = new int[size];
+	}
+	public void enqueue(int item)
+	{
+		if (count >= array.Length)
+			throw new Exception();
+		array[frontIndex] = item;
+		frontIndex = (frontIndex + 1) % array.Length;
+		count++;
+	}
+	public int dequeue()
+	{
+		int current = array[backIndex];
+		array[backIndex] = 0;
+		backIndex = (backIndex + 1) % array.Length;
+		count--;
+		return current;
+	}
+	public int peek()
+	{
+		return array[backIndex];
+	}
+	public Boolean isEmpty()
+	{
+		return count == 0;
+	}
+	public Boolean isFull()
+	{
+		return count == array.Length;
+	}
+}
+```
+
+Above code use curcular array to solve a problem of fix array size.
