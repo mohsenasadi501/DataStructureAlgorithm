@@ -556,3 +556,112 @@ internal class CharFinder
 ```
 
 First we count all chars and store in dictionary after that find from dictionary item which is 1 and return it.
+
+2- Create hash table with array and linked list:
+
+```csharp
+internal class HashTable
+{
+	internal class Entry
+	{
+		public int Key;
+		public string Value;
+		public Entry(int key, string value)
+		{
+			Key = key;
+			Value = value;
+		}
+	}
+	private LinkedList<Entry>[] _array;
+	public HashTable(int size)
+	{
+		_array = new LinkedList<Entry>[size];
+	}
+
+	public void put(int key, string value)
+	{
+		var hashkey = hash(key);
+		if (_array[hashkey] == null)
+		{
+			var linked = new LinkedList<Entry>();
+			linked.AddLast(new Entry(key, value));
+			_array[hashkey] = linked;
+		}
+		else
+		{
+			foreach (var item in _array[hashkey])
+			{
+				if (item.Key == key)
+				{
+					item.Value = value;
+					return;
+				}
+			}
+			var linkedList = _array[hashkey];
+			linkedList.AddLast(new Entry(key, value));
+		}
+	}
+	public Entry get(int key)
+	{
+		var hashkey = hash(key);
+		var item = _array[hashkey];
+		if (item != null)
+			return item.Single(x => x.Key == key);
+		else
+			return null;
+	}
+	public void remove(int key)
+	{
+		var hashkey = hash(key);
+		if (_array[hashkey] == null)
+			throw new Exception();
+		else
+		{
+			var item = _array[hashkey];
+			if (item.Count == 1)
+				_array[hashkey] = null;
+			else
+			{
+				var innerItem = item.Single(x => x.Key == key);
+				_array[hashkey].Remove(innerItem);
+			}
+		}
+	}
+	private int hash(int key)
+	{
+		return key % _array.Length;
+	}
+}
+```
+
+for having contant O(1) runtime complexcity we should use array to store, in the above code why we use linked list?  imagine we have an array with 5 fixed size and the key should be between 0 to 4 , if the input key is 11 what happend.
+
+In this senario we should hash the key, if the key is integer we get the remain of key devided by array lentgh, we use % symble (Modulo) and this issue with fix, for example `var inedex = key % array.length`
+
+`1 = 11% 5;`
+
+`1 = 1% 5;`
+
+Another error might occure that hash function generate two equal hash value, we can not store two item in same index, this is we call a **Collision**  like below image
+
+
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/collision.png" title="" alt="collision.png" width="464">
+
+We have three way to fix this issue
+
+**1- Chaining** : Store multiple item in a linked list as shown in a above example.
+
+As you can see we store A and C item in a index one but in a linked list.
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/chaining.png" title="" alt="chaining.png" width="482">
+
+**2- OpenAddressing**:  In this method we do not insert dublicated data in a linked list, we store them in array it self.
+
+
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/linearprobing.png" title="" alt="linearprobing.png" width="455">
+
+In this methods we increment 1 each time that the item is full to find an empty item. as an image show if these cluster happend we should search free item pass 3 previos item and have cost, another methods is to use **Quadratic Probing**
+
+![linearprobing.png](D:\Development\DSA%20Sample\DataStructureAlgorithm\images\linearprobing.png)
