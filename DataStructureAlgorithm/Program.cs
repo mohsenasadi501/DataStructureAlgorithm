@@ -1,5 +1,11 @@
 ﻿using DataStructureAlgorithm.Part1;
 
+
+PriorityQueue<int,int> priorityQueue = new PriorityQueue<int,int>();
+priorityQueue.Enqueue(2, 1);
+priorityQueue.Enqueue(3, 3);
+priorityQueue.Enqueue(4, 2);
+
 StackQueue stackQueue = new StackQueue();
 stackQueue.enqueue(10);
 stackQueue.enqueue(20);
@@ -7,7 +13,6 @@ stackQueue.enqueue(30);
 stackQueue.enqueue(40);
 stackQueue.enqueue(50);
 stackQueue.enqueue(60);
-
 
 ArrayQueue queue = new ArrayQueue(5);
 queue.enqueue(1);

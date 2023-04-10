@@ -376,7 +376,7 @@ For example if you want to reverse queue in this case again you should use stack
 
 #### Examples:
 
-1: The below code show how to create a queue with Array:
+###### 1: The below code show how to create a queue with Array:
 
 ```csharp
 internal class ArrayQueue
@@ -425,7 +425,7 @@ Above code use curcular array to solve a problem of fix array size.
 
 
 
-2: Implement Queue with stack:
+###### 2: Implement Queue with stack:
 
 ```csharp
 internal class StackQueue
@@ -463,3 +463,17 @@ internal class StackQueue
 ```
 
 Implementing queue with stack need two stack that stack1 for enqueue and stack2 for dequeue.
+
+
+
+**What is PriorityQueue?**
+
+PriorityQueue is similar to Queue but it not depend on priority of adding item it depends on the second item that is priority:
+
+```csharp
+// First param of class is calue and second of it is priority
+PriorityQueue<int,int> priorityQueue = new PriorityQueue<int,int>();
+priorityQueue.Enqueue(2, 1);
+priorityQueue.Enqueue(3, 3);
+priorityQueue.Enqueue(4, 2);
+```
