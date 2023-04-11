@@ -11,6 +11,7 @@ tree.insert(10);
 tree.insert(4);
 tree.insert(6);
 tree.insert(1);
+tree.traversePreorder();
 
 Console.WriteLine(tree.find(6));
 Console.WriteLine(tree.find(20));

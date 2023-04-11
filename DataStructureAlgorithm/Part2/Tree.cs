@@ -71,5 +71,17 @@ namespace DataStructureAlgorithm.Part2
             }
             return false;
         }
+        public void traversePreorder()
+        {
+            traversePreorder(root);
+        }
+        private void traversePreorder(Node root)
+        {
+            if (root == null)
+                return;
+            Console.WriteLine(root.value);
+            traversePreorder(root.leftChild);
+            traversePreorder(root.rightChild);
+        }
     }
 }
