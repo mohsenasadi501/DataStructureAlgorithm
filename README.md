@@ -677,3 +677,35 @@ In this part you would Learn:
 5. **Graphs**
 
 6. **Undirected Graphs**
+
+
+
+## BinaryTrees
+
+Tree is a data structure that store elements in hierarchy, refer to elements called nodes and lines and connected called edghes.
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/tree.png" title="" alt="tree.png" width="478">
+
+**Usage**:
+
+- Represent hierarchical data
+
+- Databases
+
+- Autocompletion
+
+- Compilers
+
+- Compression(Mp3 ,..)
+
+
+
+This is a special type of binary tree called **Binary Search Tree** because it allows us to quickly lookup data in this tree values of any right node is always greater than left one and have **Logarithmic** time complexity
+
+<img title="" src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/binarysearchtree.png" alt="binarysearchtree.png" width="393">
+
+What about runtime complexcity of operations in binary search tree
+
+<img title="" src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/binarysearchtreeOp.png" alt="binarysearchtreeOp.png" width="424">
+
+As you can see in an above image, all operation in binary search treee run logarithmic.
