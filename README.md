@@ -666,7 +666,7 @@ In this methods we increment 1 each time that the item is full to find an empty 
 
 In this part you would Learn:
 
-1. **Binary Trees**
+1. **[Binary Trees](#BinaryTrees)**
 
 2. **AVL Trees**
 
@@ -782,3 +782,39 @@ internal class Tree
 	}
 }
 ```
+
+#### Traversing Trees:
+
+There are some approach to traverse tree that classified in to two main category 
+
+- **Breadth First**
+  
+  Also called level order tarversing that you should visit all the nodes at the same level before visiting the nodes at the next level.
+  
+  <img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/levelordertraverse.png" title="" alt="levelordertraverse.png" width="505">
+  
+  As you can see in the above image, the order is first you visit 7 then 4 and 9 then 1,6,8 and 10.
+  
+  
+
+- **Depth First**
+  
+  In this method we have three diffrent ways
+  
+  1. **Pre-order** (Root - Left - Right)
+     
+     <img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/preorder.png" title="" alt="preorder.png" width="404">
+     
+     
+  
+  2. **In-order** (Left - Root - Right)
+     
+     <img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/inorder.png" title="" alt="inorder.png" width="410">
+     
+     
+  
+  3. **Post-order** (Left - Right - Root)
+     
+     <img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/postorder.png" title="" alt="postorder.png" width="396">
+     
+     
