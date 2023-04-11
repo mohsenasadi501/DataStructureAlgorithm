@@ -684,7 +684,7 @@ In this part you would Learn:
 
 Tree is a data structure that store elements in hierarchy, refer to elements called nodes and lines and connected called edghes.
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/tree.png" title="" alt="tree.png" width="478">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/tree.png" alt="tree.png" width="478">
 
 **Usage**:
 
@@ -702,10 +702,83 @@ Tree is a data structure that store elements in hierarchy, refer to elements cal
 
 This is a special type of binary tree called **Binary Search Tree** because it allows us to quickly lookup data in this tree values of any right node is always greater than left one and have **Logarithmic** time complexity
 
-<img title="" src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/binarysearchtree.png" alt="binarysearchtree.png" width="393">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/binarysearchtree.png" alt="binarysearchtree.png" width="393">
 
 What about runtime complexcity of operations in binary search tree
 
-<img title="" src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/binarysearchtreeOp.png" alt="binarysearchtreeOp.png" width="424">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/binarysearchtreeOp.png" alt="binarysearchtreeOp.png" width="424">
 
 As you can see in an above image, all operation in binary search treee run logarithmic.
+
+#### Example:
+
+In the ablow example we want to implement insert and find operations in binary search tree.
+
+```csharp
+internal class Tree
+{
+	internal class Node
+	{
+		public int value;
+		public Node leftChild;
+		public Node rightChild;
+		public Node(int value)
+		{
+			this.value = value;
+		}
+	}
+	private Node root;
+	public Tree()
+	{
+	}
+
+	public void insert(int item)
+	{
+		// if root is null add first item to the root item
+		if (root == null)
+			root = new Node(item);
+		else
+		{
+			var current = root;
+			while (current != null)
+			{
+				if (current.value < item)
+				{
+					if (current.rightChild != null)
+						current = current.rightChild;
+					else
+					{
+						current.rightChild = new Node(item);
+						break;
+					}
+
+				}
+				else
+				{
+					if (current.leftChild != null)
+						current = current.leftChild;
+					else
+					{
+						current.leftChild = new Node(item);
+						break;
+					}
+				}
+			}
+		}
+	}
+	public bool find(int value)
+	{
+		var current = root;
+		while (current != null)
+		{
+			if (current.value < value)
+				current = current.rightChild;
+			else if(current.value > null)
+				current = current.leftChild;
+			else
+				return true;
+		}
+		return false;
+	}
+}
+```
