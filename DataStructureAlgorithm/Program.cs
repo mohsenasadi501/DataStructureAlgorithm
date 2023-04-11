@@ -1,7 +1,9 @@
 ﻿using DataStructureAlgorithm.Part1;
 using DataStructureAlgorithm.Part2;
 
-Tree tree =  new Tree();
+Console.WriteLine("*** Binary Search Tree ***");
+
+Tree tree = new Tree();
 tree.insert(7);
 tree.insert(9);
 tree.insert(8);
@@ -9,6 +11,9 @@ tree.insert(10);
 tree.insert(4);
 tree.insert(6);
 tree.insert(1);
+
+Console.WriteLine(tree.find(6));
+Console.WriteLine(tree.find(20));
 
 Console.WriteLine("*** HashTable ***");
 HashTable hashTable = new HashTable(5);

@@ -59,7 +59,17 @@ namespace DataStructureAlgorithm.Part2
         }
         public bool find(int value)
         {
-            return true;
+            var current = root;
+            while (current != null)
+            {
+                if (current.value < value)
+                    current = current.rightChild;
+                else if(current.value > null)
+                    current = current.leftChild;
+                else
+                    return true;
+            }
+            return false;
         }
     }
 }
