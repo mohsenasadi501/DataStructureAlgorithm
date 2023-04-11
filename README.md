@@ -791,7 +791,7 @@ There are some approach to traverse tree that classified in to two main category
   
   Also called level order tarversing that you should visit all the nodes at the same level before visiting the nodes at the next level.
   
-  <img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/levelordertraverse.png" title="" alt="levelordertraverse.png" width="505">
+  <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/levelordertraverse.png" alt="levelordertraverse.png" width="505">
   
   As you can see in the above image, the order is first you visit 7 then 4 and 9 then 1,6,8 and 10.
   
@@ -803,18 +803,18 @@ There are some approach to traverse tree that classified in to two main category
   
   1. **Pre-order** (Root - Left - Right)
      
-     <img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/preorder.png" title="" alt="preorder.png" width="404">
+     <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/preorder.png" alt="preorder.png" width="404">
      
      
   
   2. **In-order** (Left - Root - Right)
      
-     <img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/inorder.png" title="" alt="inorder.png" width="410">
+     <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/inorder.png" alt="inorder.png" width="410">
      
      
   
   3. **Post-order** (Left - Right - Root)
      
-     <img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/postorder.png" title="" alt="postorder.png" width="396">
+     <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/postorder.png" alt="postorder.png" width="396">
      
      
