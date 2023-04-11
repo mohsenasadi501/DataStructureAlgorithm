@@ -1,4 +1,4 @@
-# 1:
+# 1: Linear Data Structure
 
 In the first part of this document you would Learn:
 
@@ -25,7 +25,7 @@ The below codes show **O(1)** becuase the code run in a constant time.
  {
      //o(1)
      Console.WriteLine(numbers[0]);
-  }
+ }
 ```
 
 ```csharp
@@ -36,7 +36,8 @@ The below codes show **O(1)** becuase the code run in a constant time.
      //o(n)
      foreach (var item in numbers)
          Console.WriteLine(item);
-         //o(m)
+
+     //o(m)
      foreach(var item in texts)
          Console.WriteLine(item);
   }
@@ -65,16 +66,15 @@ public void LogNestedLoop(int[] numbers)
 
 ![algorithm.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/algorithm.png)
 
-As it shown in above image, constant type algorithms grows linearly as the same rate but the logarithmic curve down on some point, logarithmic is more efficent and scalabe compare to linear or other and exponential is the opossit of logarithmic and is not efficent to use and has a lot cost.
+As it shown in above image, constant type algorithms grows linearly as the same rate but the logarithmic curve down on some point, logarithmic is more efficent and scalabe compare to linear or others. Exponential is the opossit of logarithmic and is not efficent to use and has a lot cost.
 
 ## Arrays
 
-Arrays are simple data structure item use to store data squesntially, if you want to store data by index arrays are the best choice.
+Arrays are a simple data structure type use to store data squesntially, if you want to store data by index arrays are the best choice.
 
 Featurse of Array Data Structure:
 
 - Simple Data Structure
-- Greate Data Structure when you khow how many item have
 - The Items are fixed
 - The length of array is fixed
 - You can not remove or add new Item 
@@ -139,11 +139,13 @@ internal class Array
 
 ## LinkedLists
 
-Linked List Store Objects in squence and unlike Arrays can grows or shrink automatically like blow image.
+Linked List Store Objects in squence, unlike Arrays can grows or shrink automatically like blow image.
 
 ![linkedlist.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/linkedlist.png)
 
-In linked list we have first and last item of a list and recersively add another items to them and the linked list implementation from scratch:
+In linked list we have first and last item of a list and recersively add another items to them.
+
+The linked list implementation from scratch:
 
 ```csharp
 internal class LinkedList
@@ -657,3 +659,21 @@ As you can see we store A and C item in a index one but in a linked list.
 In this methods we increment 1 each time that the item is full to find an empty item. as an image show if these cluster happend we should search free item pass 3 previos item and have cost, another methods is to use **Quadratic Probing**
 
 ![linearprobing.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/quadraticprobing.png)
+
+
+
+# 2:Non-Linear DataStructure
+
+In this part you would Learn:
+
+1. **Binary Trees**
+
+2. **AVL Trees**
+
+3. **Heaps**
+
+4. **Tries**
+
+5. **Graphs**
+
+6. **Undirected Graphs**
