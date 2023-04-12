@@ -64,7 +64,7 @@ namespace DataStructureAlgorithm.Part2
             {
                 if (current.value < value)
                     current = current.rightChild;
-                else if(current.value > null)
+                else if (current.value > null)
                     current = current.leftChild;
                 else
                     return true;
@@ -82,6 +82,31 @@ namespace DataStructureAlgorithm.Part2
             Console.WriteLine(root.value);
             traversePreorder(root.leftChild);
             traversePreorder(root.rightChild);
+        }
+        public void traverseInorder()
+        {
+            traverseInorder(root);
+        }
+        public void traverseInorder(Node root)
+        {
+            if (root == null)
+            {
+                return;
+            }
+            traverseInorder(root.leftChild);
+            Console.WriteLine(root.value);
+            traverseInorder(root.rightChild);
+        }
+        public int height()
+        {
+            return height(root);
+        }
+        public int height(Node root)
+        {
+            if (root == null) return -1;
+            if (root.leftChild == null && root.rightChild == null)
+                return 0;
+            return 1 + Math.Max(height(root.leftChild), height(root.rightChild));
         }
     }
 }

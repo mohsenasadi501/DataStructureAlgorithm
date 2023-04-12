@@ -3,6 +3,8 @@ using DataStructureAlgorithm.Part2;
 
 Console.WriteLine("*** Binary Search Tree ***");
 
+var fac = new Recursion().factorial(5);
+
 Tree tree = new Tree();
 tree.insert(7);
 tree.insert(9);
@@ -11,7 +13,13 @@ tree.insert(10);
 tree.insert(4);
 tree.insert(6);
 tree.insert(1);
+Console.WriteLine("pre order");
 tree.traversePreorder();
+
+Console.WriteLine("in order");
+tree.traverseInorder();
+
+Console.WriteLine("The Height is:" + tree.height());
 
 Console.WriteLine(tree.find(6));
 Console.WriteLine(tree.find(20));
