@@ -841,7 +841,7 @@ There is a formula to calculate the height of tree, we should calculate left and
 
 
 
-<img title="" src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/heightTree.png" alt="heightTree.png" width="422"> 
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/heightTree.png" alt="heightTree.png" width="422"> 
 
 ```csharp
 public int height(Node root)
