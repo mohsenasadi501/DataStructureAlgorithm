@@ -796,45 +796,59 @@ There are some approach to traverse tree that classified in to two main category
   1. **Pre-order** (Root - Left - Right)
      
      ![postorder.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/preorder.png)
-     
-     
-     
-     ```csharp
-     private void traversePreorder(Node root)
+
+```csharp
+ private void traversePreorder(Node root)
+ {
+     if (root == null)
+         return;
+     Console.WriteLine(root.value);
+     traversePreorder(root.leftChild);
+     traversePreorder(root.rightChild);
+ }
+```
+
+2. **In-order** (Left - Root - Right)
+   
+   ![preorder.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/inorder.png)
+
+```csharp
+ public void traverseInorder(Node root)
+ {
+     if (root == null)
      {
-     	if (root == null)
-     		return;
-     	Console.WriteLine(root.value);
-     	traversePreorder(root.leftChild);
-     	traversePreorder(root.rightChild);
+         return;
      }
-     ```
-  
-  2. **In-order** (Left - Root - Right)
-     
-     ![preorder.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/inorder.png)
-     
-     
-     
-     ```csharp
-     public void traverseInorder(Node root)
-     {
-     	if (root == null)
-     	{
-     		return;
-     	}
-     	traverseInorder(root.leftChild);
-     	Console.WriteLine(root.value);
-     	traverseInorder(root.rightChild);
-     }
-     ```
-  
-  3. **Post-order** (Left - Right - Root)
-     
-     ![preorder.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/postorder.png)
-     
-     
-     
-     ```csharp
-     
-     ```
+     traverseInorder(root.leftChild);
+     Console.WriteLine(root.value);
+     traverseInorder(root.rightChild);
+ }
+```
+
+3. **Post-order** (Left - Right - Root)
+   
+   ![preorder.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/postorder.png)
+
+
+
+#### Depth & Height
+
+Depth is the number of edghes from root to the target node and height is the opposite of depth, height of leaf in tree is equal to zero.
+
+There is a formula to calculate the height of tree, we should calculate left and right of the tree and compare both of them:
+
+`1 + max( height(L), height(R) )`
+
+
+
+<img title="" src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/heightTree.png" alt="heightTree.png" width="422"> 
+
+```csharp
+public int height(Node root)
+{
+	if (root == null) return -1;
+	if (root.leftChild == null && root.rightChild == null)
+		return 0;
+	return 1 + Math.Max(height(root.leftChild), height(root.rightChild));
+}
+```
