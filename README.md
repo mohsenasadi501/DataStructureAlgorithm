@@ -660,8 +660,6 @@ In this methods we increment 1 each time that the item is full to find an empty 
 
 ![linearprobing.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/quadraticprobing.png)
 
-
-
 # 2:Non-Linear DataStructure
 
 In this part you would Learn:
@@ -677,8 +675,6 @@ In this part you would Learn:
 5. **Graphs**
 
 6. **Undirected Graphs**
-
-
 
 ## BinaryTrees
 
@@ -698,8 +694,6 @@ Tree is a data structure that store elements in hierarchy, refer to elements cal
 
 - Compression(Mp3 ,..)
 
-
-
 This is a special type of binary tree called **Binary Search Tree** because it allows us to quickly lookup data in this tree values of any right node is always greater than left one and have **Logarithmic** time complexity
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/binarysearchtree.png" alt="binarysearchtree.png" width="393">
@@ -717,69 +711,69 @@ In the ablow example we want to implement insert and find operations in binary s
 ```csharp
 internal class Tree
 {
-	internal class Node
-	{
-		public int value;
-		public Node leftChild;
-		public Node rightChild;
-		public Node(int value)
-		{
-			this.value = value;
-		}
-	}
-	private Node root;
-	public Tree()
-	{
-	}
+    internal class Node
+    {
+        public int value;
+        public Node leftChild;
+        public Node rightChild;
+        public Node(int value)
+        {
+            this.value = value;
+        }
+    }
+    private Node root;
+    public Tree()
+    {
+    }
 
-	public void insert(int item)
-	{
-		// if root is null add first item to the root item
-		if (root == null)
-			root = new Node(item);
-		else
-		{
-			var current = root;
-			while (current != null)
-			{
-				if (current.value < item)
-				{
-					if (current.rightChild != null)
-						current = current.rightChild;
-					else
-					{
-						current.rightChild = new Node(item);
-						break;
-					}
+    public void insert(int item)
+    {
+        // if root is null add first item to the root item
+        if (root == null)
+            root = new Node(item);
+        else
+        {
+            var current = root;
+            while (current != null)
+            {
+                if (current.value < item)
+                {
+                    if (current.rightChild != null)
+                        current = current.rightChild;
+                    else
+                    {
+                        current.rightChild = new Node(item);
+                        break;
+                    }
 
-				}
-				else
-				{
-					if (current.leftChild != null)
-						current = current.leftChild;
-					else
-					{
-						current.leftChild = new Node(item);
-						break;
-					}
-				}
-			}
-		}
-	}
-	public bool find(int value)
-	{
-		var current = root;
-		while (current != null)
-		{
-			if (current.value < value)
-				current = current.rightChild;
-			else if(current.value > null)
-				current = current.leftChild;
-			else
-				return true;
-		}
-		return false;
-	}
+                }
+                else
+                {
+                    if (current.leftChild != null)
+                        current = current.leftChild;
+                    else
+                    {
+                        current.leftChild = new Node(item);
+                        break;
+                    }
+                }
+            }
+        }
+    }
+    public bool find(int value)
+    {
+        var current = root;
+        while (current != null)
+        {
+            if (current.value < value)
+                current = current.rightChild;
+            else if(current.value > null)
+                current = current.leftChild;
+            else
+                return true;
+        }
+        return false;
+    }
 }
 ```
 
@@ -794,8 +788,6 @@ There are some approach to traverse tree that classified in to two main category
   <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/levelordertraverse.png" alt="levelordertraverse.png" width="505">
   
   As you can see in the above image, the order is first you visit 7 then 4 and 9 then 1,6,8 and 10.
-  
-  
 
 - **Depth First**
   
@@ -803,18 +795,46 @@ There are some approach to traverse tree that classified in to two main category
   
   1. **Pre-order** (Root - Left - Right)
      
-     <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/preorder.png" alt="preorder.png" width="404">
+     ![postorder.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/preorder.png)
      
      
+     
+     ```csharp
+     private void traversePreorder(Node root)
+     {
+     	if (root == null)
+     		return;
+     	Console.WriteLine(root.value);
+     	traversePreorder(root.leftChild);
+     	traversePreorder(root.rightChild);
+     }
+     ```
   
   2. **In-order** (Left - Root - Right)
      
-     <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/inorder.png" alt="inorder.png" width="410">
+     ![preorder.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/inorder.png)
      
      
+     
+     ```csharp
+     public void traverseInorder(Node root)
+     {
+     	if (root == null)
+     	{
+     		return;
+     	}
+     	traverseInorder(root.leftChild);
+     	Console.WriteLine(root.value);
+     	traverseInorder(root.rightChild);
+     }
+     ```
   
   3. **Post-order** (Left - Right - Root)
      
-     <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/postorder.png" alt="postorder.png" width="396">
+     ![preorder.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/postorder.png)
      
      
+     
+     ```csharp
+     
+     ```
