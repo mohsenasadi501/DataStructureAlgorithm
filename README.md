@@ -912,7 +912,7 @@ public bool equals(Node first, Node second)
 
 As we khow in binary search tree, right nodes should greater than left nodes traversing to leaf nodes. the first way for check each node is to check all down nodes and it cost a lot, what about the below image
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/validatetree.png" title="" alt="validatetree.png" width="430">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/validatetree.png" alt="validatetree.png" width="430">
 
 ```csharp
 public bool isBinarySearchTree()
