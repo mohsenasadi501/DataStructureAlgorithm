@@ -108,5 +108,31 @@ namespace DataStructureAlgorithm.Part2
                 return 0;
             return 1 + Math.Max(height(root.leftChild), height(root.rightChild));
         }
+
+        //O(log(n)
+        public int min()
+        {
+            if (root == null)
+                throw new Exception();
+
+            var current = root;
+            var last = current;
+            while (current != null)
+            {
+                last = current;
+                current = current.leftChild;
+            }
+            return last.value;
+        }
+        // O(n)
+        public int min(Node root)
+        {
+            if (root.leftChild == null && root.rightChild == null) return root.value;
+
+            var left = min(root.leftChild);
+            var right = min(root.rightChild);
+
+            return Math.Min(Math.Min(left, right), root.value);
+        }
     }
 }

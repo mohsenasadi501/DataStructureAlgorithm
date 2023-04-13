@@ -829,9 +829,7 @@ There are some approach to traverse tree that classified in to two main category
    
    ![preorder.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/postorder.png)
 
-
-
-#### Depth & Height
+#### Depth & Height:
 
 Depth is the number of edghes from root to the target node and height is the opposite of depth, height of leaf in tree is equal to zero.
 
@@ -839,16 +837,53 @@ There is a formula to calculate the height of tree, we should calculate left and
 
 `1 + max( height(L), height(R) )`
 
-
-
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/heightTree.png" alt="heightTree.png" width="422"> 
 
 ```csharp
 public int height(Node root)
 {
-	if (root == null) return -1;
-	if (root.leftChild == null && root.rightChild == null)
-		return 0;
-	return 1 + Math.Max(height(root.leftChild), height(root.rightChild));
+    if (root == null) return -1;
+    if (root.leftChild == null && root.rightChild == null)
+        return 0;
+    return 1 + Math.Max(height(root.leftChild), height(root.rightChild));
+}
+```
+
+#### Example:
+
+Find a minimum value in a Tree:
+
+We can implement in two way, first the easiest way is to traverse in all nodes of tree in with recursion that is runtime complexcity of method is **O(n)**
+
+```csharp
+// O(n)
+public int min(Node root)
+{
+	if ( root.leftChild == null && root.rightChild == null) 
+        return root.value;
+	var left = min(root.leftChild);
+	var right = min(root.rightChild);
+
+	return Math.Min(Math.Min(left, right), root.value);
+}
+```
+
+As you know in the Binary Search Tree the minimum value always in na left nodes and we should search it in leftChild, because of this the runtime complexity is **O(log(n))**
+
+```csharp
+//O(log(n)
+public int min()
+{
+	if (root == null)
+		throw new Exception();
+
+	var current = root;
+	var last = current;
+	while (current != null)
+	{
+		last = current;
+		current = current.leftChild;
+	}
+	return last.value;
 }
 ```

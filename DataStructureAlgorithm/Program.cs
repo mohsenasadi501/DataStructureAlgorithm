@@ -13,6 +13,10 @@ tree.insert(10);
 tree.insert(4);
 tree.insert(6);
 tree.insert(1);
+
+Console.WriteLine("minimum value of tree");
+Console.WriteLine(tree.min());
+
 Console.WriteLine("pre order");
 tree.traversePreorder();
 
