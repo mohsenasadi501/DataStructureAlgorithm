@@ -905,3 +905,26 @@ public bool equals(Node first, Node second)
 	return false;
 }
 ```
+
+
+
+3- Validating Binary Search Tree:
+
+As we khow in binary search tree, right nodes should greater than left nodes traversing to leaf nodes. the first way for check each node is to check all down nodes and it cost a lot, what about the below image
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/validatetree.png" title="" alt="validatetree.png" width="430">
+
+```csharp
+public bool isBinarySearchTree()
+{
+	return isBinarySearchTree(root, int.MinValue, int.MaxValue);
+}
+public bool isBinarySearchTree(Node root, int min, int max)
+{
+	if (root == null) return true;
+	if (root.value < min || root.value > max) return false;
+
+	return isBinarySearchTree(root.leftChild, min, root.value - 1)
+		&& isBinarySearchTree(root.leftChild, root.value + 1, max);
+}
+```
