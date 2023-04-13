@@ -851,7 +851,7 @@ public int height(Node root)
 
 #### Example:
 
-Find a minimum value in a Tree:
+1- Find a minimum value in a Tree:
 
 We can implement in two way, first the easiest way is to traverse in all nodes of tree in with recursion that is runtime complexcity of method is **O(n)**
 
@@ -885,5 +885,23 @@ public int min()
 		current = current.leftChild;
 	}
 	return last.value;
+}
+```
+
+
+
+2- Check two tree that is equal or not:
+
+```csharp
+public bool equals(Node first, Node second)
+{
+	if(first == null && second == null) return true;
+	if(first != null && second != null)
+	{
+		return first.value == second.value
+			&& equals(first.leftChild, second.leftChild)
+			&& equals(first.rightChild, second.rightChild);
+	}
+	return false;
 }
 ```

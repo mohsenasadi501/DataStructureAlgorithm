@@ -134,5 +134,20 @@ namespace DataStructureAlgorithm.Part2
 
             return Math.Min(Math.Min(left, right), root.value);
         }
+        public bool equals(Tree tree)
+        {
+            return equals(tree.root, root);
+        }
+        public bool equals(Node first, Node second)
+        {
+            if(first == null && second == null) return true;
+            if(first != null && second != null)
+            {
+                return first.value == second.value
+                    && equals(first.leftChild, second.leftChild)
+                    && equals(first.rightChild, second.rightChild);
+            }
+            return false;
+        }
     }
 }
