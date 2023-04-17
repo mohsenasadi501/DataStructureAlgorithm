@@ -17,11 +17,15 @@ tree.insert(1);
 Console.WriteLine("minimum value of tree");
 Console.WriteLine(tree.min());
 
-Console.WriteLine("pre order");
+Console.WriteLine("Pre Order");
 tree.traversePreorder();
 
-Console.WriteLine("in order");
+Console.WriteLine("In Order");
 tree.traverseInorder();
+
+Console.WriteLine("Post Order");
+tree.traversePostorder();
+
 
 Console.WriteLine("The Height is:" + tree.height());
 

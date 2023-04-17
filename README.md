@@ -833,6 +833,19 @@ There are some approach to traverse tree, It classified in to two main categorie
    
    ![preorder.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/postorder.png)
 
+```csharp
+public void traversePostorder(Node root)
+{
+	if (root == null)
+	{
+		return;
+	}
+	traversePostorder(root.leftChild);
+	traversePostorder(root.rightChild);
+	Console.WriteLine(root.value);
+}
+```
+
 #### Depth & Height:
 
 Depth is the number of edghes from root to the target node and height is the opposite of depth, height of leaf in tree is equal to zero.
