@@ -678,7 +678,7 @@ In this part you would Learn:
 
 ## BinaryTrees
 
-Tree is a data structure that store elements in hierarchy, refer to elements called nodes and lines and connected called edghes.
+Tree is a data structure that store elements in hierarchy, refer to elements called nodes and  connected lines called edghes.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/tree.png" alt="tree.png" width="478">
 
@@ -693,16 +693,20 @@ Tree is a data structure that store elements in hierarchy, refer to elements cal
 - Compilers
 
 - Compression(Mp3 ,..)
+  
+  
 
-This is a special type of binary tree called **Binary Search Tree** because it allows us to quickly lookup data in this tree values of any right node is always greater than left one and have **Logarithmic** time complexity
+#### Binary Search Tree
+
+This is a special type of binary tree called **Binary Search Tree (BST)** because it allows us to quickly lookup data in this tree. Values of any right node is always greater than left one and have **Logarithmic** time complexity
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/binarysearchtree.png" alt="binarysearchtree.png" width="393">
 
-What about runtime complexcity of operations in binary search tree
+What about runtime complexity of operations in BST
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/binarysearchtreeOp.png" alt="binarysearchtreeOp.png" width="424">
 
-As you can see in an above image, all operation in binary search treee run logarithmic.
+As you can see in an above image, all operation in BST run logarithmic.
 
 #### Example:
 
@@ -779,15 +783,15 @@ internal class Tree
 
 #### Traversing Trees:
 
-There are some approach to traverse tree that classified in to two main category 
+There are some approach to traverse tree, It classified in to two main categories
 
 - **Breadth First**
   
-  Also called level order tarversing that you should visit all the nodes at the same level before visiting the nodes at the next level.
+  Also called **Level Order** tarversing that you should visit all the nodes at the same level before visiting the nodes at the next level.
   
   <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/levelordertraverse.png" alt="levelordertraverse.png" width="505">
   
-  As you can see in the above image, the order is first you visit 7 then 4 and 9 then 1,6,8 and 10.
+  As you can see in the above image, first you visit 7 then 4,9,1,6,8 and 10.
 
 - **Depth First**
   
@@ -859,12 +863,12 @@ We can implement in two way, first the easiest way is to traverse in all nodes o
 // O(n)
 public int min(Node root)
 {
-	if ( root.leftChild == null && root.rightChild == null) 
+    if ( root.leftChild == null && root.rightChild == null) 
         return root.value;
-	var left = min(root.leftChild);
-	var right = min(root.rightChild);
+    var left = min(root.leftChild);
+    var right = min(root.rightChild);
 
-	return Math.Min(Math.Min(left, right), root.value);
+    return Math.Min(Math.Min(left, right), root.value);
 }
 ```
 
@@ -874,39 +878,35 @@ As you know in the Binary Search Tree the minimum value always in na left nodes 
 //O(log(n)
 public int min()
 {
-	if (root == null)
-		throw new Exception();
+    if (root == null)
+        throw new Exception();
 
-	var current = root;
-	var last = current;
-	while (current != null)
-	{
-		last = current;
-		current = current.leftChild;
-	}
-	return last.value;
+    var current = root;
+    var last = current;
+    while (current != null)
+    {
+        last = current;
+        current = current.leftChild;
+    }
+    return last.value;
 }
 ```
-
-
 
 2- Check two tree that is equal or not:
 
 ```csharp
 public bool equals(Node first, Node second)
 {
-	if(first == null && second == null) return true;
-	if(first != null && second != null)
-	{
-		return first.value == second.value
-			&& equals(first.leftChild, second.leftChild)
-			&& equals(first.rightChild, second.rightChild);
-	}
-	return false;
+    if(first == null && second == null) return true;
+    if(first != null && second != null)
+    {
+        return first.value == second.value
+            && equals(first.leftChild, second.leftChild)
+            && equals(first.rightChild, second.rightChild);
+    }
+    return false;
 }
 ```
-
-
 
 3- Validating Binary Search Tree:
 
@@ -917,14 +917,14 @@ As we khow in binary search tree, right nodes should greater than left nodes tra
 ```csharp
 public bool isBinarySearchTree()
 {
-	return isBinarySearchTree(root, int.MinValue, int.MaxValue);
+    return isBinarySearchTree(root, int.MinValue, int.MaxValue);
 }
 public bool isBinarySearchTree(Node root, int min, int max)
 {
-	if (root == null) return true;
-	if (root.value < min || root.value > max) return false;
+    if (root == null) return true;
+    if (root.value < min || root.value > max) return false;
 
-	return isBinarySearchTree(root.leftChild, min, root.value - 1)
-		&& isBinarySearchTree(root.leftChild, root.value + 1, max);
+    return isBinarySearchTree(root.leftChild, min, root.value - 1)
+        && isBinarySearchTree(root.leftChild, root.value + 1, max);
 }
 ```

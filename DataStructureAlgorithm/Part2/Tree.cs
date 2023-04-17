@@ -97,6 +97,20 @@ namespace DataStructureAlgorithm.Part2
             Console.WriteLine(root.value);
             traverseInorder(root.rightChild);
         }
+        public void traversePostorder()
+        {
+            traversePostorder(root);
+        }
+        public void traversePostorder(Node root)
+        {
+            if (root == null)
+            {
+                return;
+            }
+            traversePostorder(root.leftChild);
+            traversePostorder(root.rightChild);
+            Console.WriteLine(root.value);
+        }
         public int height()
         {
             return height(root);
