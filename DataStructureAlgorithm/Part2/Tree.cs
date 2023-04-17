@@ -120,7 +120,10 @@ namespace DataStructureAlgorithm.Part2
             if (root == null) return -1;
             if (root.leftChild == null && root.rightChild == null)
                 return 0;
-            return 1 + Math.Max(height(root.leftChild), height(root.rightChild));
+            int leftHeight = height(root.leftChild);
+            int rightHeight = height(root.rightChild);
+
+            return 1 + Math.Max(leftHeight, rightHeight);
         }
 
         //O(log(n)

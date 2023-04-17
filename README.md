@@ -16,7 +16,7 @@ In the first part of this document you would Learn:
 
 ## Big-O-Notation
 
-We use Big O Notation to describe performance of algorithm, runtime complexity and  how scalabe algorithm is.
+We use Big O Notation to describe performance of algorithm, time complexity and  how scalabe algorithm is.
 
 The below codes show **O(1)** becuase the code run in a constant time.
 
@@ -67,6 +67,10 @@ public void LogNestedLoop(int[] numbers)
 ![algorithm.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/algorithm.png)
 
 As it shown in above image, constant type algorithms grows linearly as the same rate but the logarithmic curve down on some point, logarithmic is more efficent and scalabe compare to linear or others. Exponential is the opossit of logarithmic and is not efficent to use and has a lot cost.
+
+### What is time complexity?
+
+Space complexity refers to the total amount of memory space used by an algorithm/program, including the space of input values for execution.
 
 ## Arrays
 
@@ -269,7 +273,7 @@ We want to compare in terms of requierd memory and time complexcity.
 
 - Use arrays if you khnow the number of items to store
 
-**Runtime Complexcity**
+**Time Complexcity**
 
 | Row | Function name              | Array             | Linked List       |
 |:---:|:-------------------------- |:-----------------:|:-----------------:|
@@ -516,7 +520,7 @@ Store data with key and value pairs.
 
 All these operations run in **O(1)** .
 
-Dictionary in C# code with runtime complexcity:
+Dictionary in C# code with time complexcity:
 
 ```csharp
 Dictionary<int, string> part1 = new Dictionary<int, string>();
@@ -630,7 +634,7 @@ internal class HashTable
 }
 ```
 
-for having contant O(1) runtime complexcity we should use array to store, in the above code why we use linked list?  imagine we have an array with 5 fixed size and the key should be between 0 to 4 , if the input key is 11 what happend.
+for having contant O(1) time complexcity we should use array to store, in the above code why we use linked list?  imagine we have an array with 5 fixed size and the key should be between 0 to 4 , if the input key is 11 what happend.
 
 In this senario we should hash the key, if the key is integer we get the remain of key devided by array lentgh, we use % symble (Modulo) and this issue with fix, for example:
 
@@ -678,7 +682,7 @@ In this part you would Learn:
 
 ## BinaryTrees
 
-Tree is a data structure that store elements in hierarchy, refer to elements called nodes and  connected lines called edghes.
+Tree is a data structure that store elements in hierarchy, refer to elements called nodes and  connected lines called edges.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/tree.png" alt="tree.png" width="478">
 
@@ -702,7 +706,7 @@ This is a special type of binary tree called **Binary Search Tree (BST)** becaus
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/binarysearchtree.png" alt="binarysearchtree.png" width="393">
 
-What about runtime complexity of operations in BST
+What about time complexity of operations in BST
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/binarysearchtreeOp.png" alt="binarysearchtreeOp.png" width="424">
 
@@ -848,11 +852,17 @@ public void traversePostorder(Node root)
 
 #### Depth & Height:
 
-Depth is the number of edghes from root to the target node and height is the opposite of depth, height of leaf in tree is equal to zero.
+Depth property is the number of edges from root to the target node and height property is the opposite of depth, height of leaf in tree is equal to zero.
 
-There is a formula to calculate the height of tree, we should calculate left and right of the tree and compare both of them:
+We have two ways to calculate height:
 
-`1 + max( height(L), height(R) )`
+- Recursive way
+
+- Iterative way
+
+There is a recursive formula to calculate the height of tree, we should calculate left and right of the tree and compare both of them:
+
+`Height = 1 + max(height(L), height(R))`
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/heightTree.png" alt="heightTree.png" width="422"> 
 
@@ -870,7 +880,7 @@ public int height(Node root)
 
 1- Find a minimum value in a Tree:
 
-We can implement in two way, first the easiest way is to traverse in all nodes of tree in with recursion that is runtime complexcity of method is **O(n)**
+We can implement in two way, first the easiest way is to traverse in all nodes of tree in with recursion that is time complexcity of method is **O(n)**
 
 ```csharp
 // O(n)
@@ -885,7 +895,7 @@ public int min(Node root)
 }
 ```
 
-As you know in the Binary Search Tree the minimum value always in na left nodes and we should search it in leftChild, because of this the runtime complexity is **O(log(n))**
+As you know in the Binary Search Tree the minimum value always in na left nodes and we should search it in leftChild, because of this the time complexity is **O(log(n))**
 
 ```csharp
 //O(log(n)
