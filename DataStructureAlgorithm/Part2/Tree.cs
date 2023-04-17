@@ -125,8 +125,6 @@ namespace DataStructureAlgorithm.Part2
 
             return 1 + Math.Max(leftHeight, rightHeight);
         }
-
-        //O(log(n)
         public int min()
         {
             if (root == null)
@@ -141,7 +139,6 @@ namespace DataStructureAlgorithm.Part2
             }
             return last.value;
         }
-        // O(n)
         public int min(Node root)
         {
             if (root.leftChild == null && root.rightChild == null) return root.value;

@@ -14,6 +14,18 @@ tree.insert(4);
 tree.insert(6);
 tree.insert(1);
 
+Tree tree1 = new Tree();
+tree1.insert(7);
+tree1.insert(9);
+tree1.insert(8);
+tree1.insert(10);
+tree1.insert(4);
+tree1.insert(6);
+tree1.insert(1);
+
+Console.WriteLine("Check Identical of two array");
+Console.WriteLine(tree.equals(tree1));
+
 Console.WriteLine("minimum value of tree");
 Console.WriteLine(tree.min());
 

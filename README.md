@@ -68,7 +68,7 @@ public void LogNestedLoop(int[] numbers)
 
 As it shown in above image, constant type algorithms grows linearly as the same rate but the logarithmic curve down on some point, logarithmic is more efficent and scalabe compare to linear or others. Exponential is the opossit of logarithmic and is not efficent to use and has a lot cost.
 
-### What is time complexity?
+### What is Space Complexity?
 
 Space complexity refers to the total amount of memory space used by an algorithm/program, including the space of input values for execution.
 
@@ -714,7 +714,7 @@ As you can see in an above image, all operation in BST run logarithmic.
 
 #### Example:
 
-In the ablow example we want to implement insert and find operations in binary search tree.
+The implementation of insert and find method in BST.
 
 ```csharp
 internal class Tree
@@ -867,6 +867,7 @@ There is a recursive formula to calculate the height of tree, we should calculat
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/heightTree.png" alt="heightTree.png" width="422"> 
 
 ```csharp
+// O(n)
 public int height(Node root)
 {
     if (root == null) return -1;
@@ -895,7 +896,7 @@ public int min(Node root)
 }
 ```
 
-As you know in the Binary Search Tree the minimum value always in na left nodes and we should search it in leftChild, because of this the time complexity is **O(log(n))**
+As you know in the Binary Search Tree the minimum value always in a left nodes and we should search in leftChild, because of this the time complexity is **O(log(n))**
 
 ```csharp
 //O(log(n)
@@ -915,11 +916,16 @@ public int min()
 }
 ```
 
-2- Check two tree that is equal or not:
+Also if you want to find the greatest value in BST, we should do the opposit and traverse to left of tree.
+
+
+
+2- Identify two trees are identical or not:
 
 ```csharp
 public bool equals(Node first, Node second)
 {
+    //if two tree are null 
     if(first == null && second == null) return true;
     if(first != null && second != null)
     {
@@ -930,6 +936,8 @@ public bool equals(Node first, Node second)
     return false;
 }
 ```
+
+
 
 3- Validating Binary Search Tree:
 
