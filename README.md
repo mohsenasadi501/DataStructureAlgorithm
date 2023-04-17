@@ -670,7 +670,7 @@ In this part you would Learn:
 
 1. **[Binary Trees](#BinaryTrees)**
 
-2. **AVL Trees**
+2. **[AVL Trees](#AVLTrees)**
 
 3. **Heaps**
 
@@ -941,7 +941,7 @@ public bool equals(Node first, Node second)
 
 3- Validating Binary Search Tree:
 
-As we khow in binary search tree, right nodes should greater than left nodes traversing to leaf nodes. the first way for check each node is to check all down nodes and it cost a lot, what about the below image
+As we know in binary search tree, right nodes should greater than left nodes traversing to leaf nodes. The first way for check each node is to traverse all nodes and it cost a lot, what about the below image
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/validatetree.png" alt="validatetree.png" width="430">
 
@@ -959,3 +959,27 @@ public bool isBinarySearchTree(Node root, int min, int max)
         && isBinarySearchTree(root.leftChild, root.value + 1, max);
 }
 ```
+
+## AVLTrees
+
+As i mentioned before every operation in BTS is run on O(log(n)) time complexity that this condition happends when the tree is balanced.
+
+In the balanced tree height of every node should be:
+
+`height(left) - height(right) <= 1`
+
+AVL tree is an balanced tree that after insert, delete operatoin your tree is balanced.
+
+
+
+#### Self-Balancing Tree
+
+- AVL Tree (Adelson-Velsky and Landis)
+
+- Red-black Trees
+
+- B-trees
+
+- Splay Trees
+
+- 2-3 Trees
