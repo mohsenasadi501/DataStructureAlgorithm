@@ -968,7 +968,7 @@ In the balanced tree height of every node should be:
 
 `height(left) - height(right) <= 1`
 
-AVL tree is an balanced tree that after insert, delete operatoin your tree is balanced.
+AVL tree are special type of BST that automatically re-balance themselves every time we add or remove nodes.
 
 
 
@@ -983,3 +983,39 @@ AVL tree is an balanced tree that after insert, delete operatoin your tree is ba
 - Splay Trees
 
 - 2-3 Trees
+
+
+
+### Rotations
+
+We have four types of rotation:
+
+- Left (LL)
+
+- Right (RR)
+
+- Left-Right (LR)
+
+- Right-Left (RL)
+
+
+
+We have factor to check the balance of tree called balanced factor:
+
+`BF = height(left) - height(right)`
+
+` -1 <= BF <= 1`
+
+BF should be 0,1,-1 if is greater or lower than these number, the tree should re balanced itself.
+
+### Left (LL)
+
+We can calculate  BF of each child and node with value of 1 is not balance and the heavy is on the right we have to perform left rotation
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/leftRotation.png" title="" alt="leftRotation.png" width="254">
+
+After balance it 
+
+<img title="" src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/leftRotation-perform.png" alt="leftRotation-perform.png" width="210">
+
+### Right (RR)
