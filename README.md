@@ -1008,14 +1008,46 @@ We have factor to check the balance of tree called balanced factor:
 
 BF should be 0,1,-1 if is greater or lower than these number, the tree should re balanced itself.
 
-### Left (LL)
+### Left Rotation(LL)
 
 We can calculate  BF of each child and node with value of 1 is not balance and the heavy is on the right we have to perform left rotation
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/leftRotation.png" alt="leftRotation.png" width="254">
 
-After balance it 
+After Left Rotation and tree balanced
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/leftRotation-perform.png" alt="leftRotation-perform.png" width="210">
 
-### Right (RR)
+
+
+### Right Rotation(RR)
+
+As you can see in below image the heavy of left is more than right and the tree is unbalanced and need to rotate to right.
+
+
+
+<img title="" src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/rightRotation.png" alt="rightRotation.png" width="203">
+
+After Left Rotation and tree balanced
+
+
+
+<img title="" src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/leftRotation-perform.png" alt="leftRotation-perform.png" width="181">
+
+
+
+### Left-Right Rotation(LR)
+
+In the below image we have double rotation with left and right 
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/left-rightRotation.png" title="" alt="left-rightRotation.png" width="193">
+
+We should first rotate like below image
+
+<img title="" src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/left-rightRotationPerform1.png" alt="left-rightRotationPerform1.png" width="196">
+
+Then we have rotate to right  same as below image and now the tree is balanced
+
+
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/left-rightRotationPerform2.png" title="" alt="left-rightRotationPerform2.png" width="195">
