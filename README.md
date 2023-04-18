@@ -1026,13 +1026,11 @@ As you can see in below image the heavy of left is more than right and the tree 
 
 
 
-<img title="" src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/rightRotation.png" alt="rightRotation.png" width="203">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/rightRotation.png" alt="rightRotation.png" width="203">
 
 After Left Rotation and tree balanced
 
-
-
-<img title="" src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/leftRotation-perform.png" alt="leftRotation-perform.png" width="181">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/leftRotation-perform.png" alt="leftRotation-perform.png" width="181">
 
 
 
@@ -1040,14 +1038,12 @@ After Left Rotation and tree balanced
 
 In the below image we have double rotation with left and right 
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/left-rightRotation.png" title="" alt="left-rightRotation.png" width="193">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/left-rightRotation.png" alt="left-rightRotation.png" width="193">
 
 We should first rotate like below image
 
-<img title="" src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/left-rightRotationPerform1.png" alt="left-rightRotationPerform1.png" width="196">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/left-rightRotationPerform1.png" alt="left-rightRotationPerform1.png" width="196">
 
 Then we have rotate to right  same as below image and now the tree is balanced
 
-
-
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/left-rightRotationPerform2.png" title="" alt="left-rightRotationPerform2.png" width="195">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/left-rightRotationPerform2.png" alt="left-rightRotationPerform2.png" width="195">
