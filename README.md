@@ -1012,10 +1012,10 @@ BF should be 0,1,-1 if is greater or lower than these number, the tree should re
 
 We can calculate  BF of each child and node with value of 1 is not balance and the heavy is on the right we have to perform left rotation
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/leftRotation.png" title="" alt="leftRotation.png" width="254">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/leftRotation.png" alt="leftRotation.png" width="254">
 
 After balance it 
 
-<img title="" src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/leftRotation-perform.png" alt="leftRotation-perform.png" width="210">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/leftRotation-perform.png" alt="leftRotation-perform.png" width="210">
 
 ### Right (RR)
