@@ -1052,10 +1052,14 @@ Then we have rotate to right  same as below image and now the tree is balanced
 
 ### Right-Left Rotation(RL)
 
-This is opposite of LR Rotation and we should perform right left totation
+This is opposite of LR Rotation and we should perform right left rotation
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/rightleftRotationPerform1.png" title="" alt="rightleftRotationPerform1.png" width="180">
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/rightleftRotation.png" title="" alt="rightleftRotation.png" width="169">
 
-After that we rotate like below image and tree is balanced
+First we should rotate like below image 
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/rightleftRotationPerform2.png" title="" alt="rightleftRotationPerform2.png" width="185">
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/rightleftRotationPerform1.png" title="" alt="rightleftRotationPerform1.png" width="172">
+
+Final rotation
+
+![rightleftRotationPerform2.png](D:\Development\DSA%20Sample\DataStructureAlgorithm\images\rightleftRotationPerform2.png)
