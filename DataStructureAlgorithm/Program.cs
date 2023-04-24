@@ -11,6 +11,8 @@ heapTree.insert(4);
 heapTree.insert(6);
 heapTree.insert(1);
 
+heapTree.remove();
+
 Console.WriteLine("*** AVL Search Tree ***");
 AvlTree avlTree = new AvlTree();
 avlTree.insert(7);
