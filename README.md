@@ -1075,3 +1075,17 @@ We have two types of heap: **MaxHeap** that sorted Accenting and **MinHeap** sor
 In heaps only we can delete the root node, and to fill it we should fill the root node with last leaf of tree and bubbling down if heap tree is **MaxHeap** and the time complexity of removing from this tree is **O(log n)**
 
 Another operration in heap tree is find the maximun value that is super easy, root node value is the greatest value in tree and run on constant time **O(1)**
+
+
+
+#### Bulding Heaps
+
+We usually implemeting heap using array and we dont need class with node , leftChild and rightChild.
+
+When we want to insert item in array we should determind the indexes of each node, that we can use the formola below ro each node.
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/heaparray.png" title="" alt="heaparray.png" width="466">
+
+
+
+The formola of calculate parent index is: `ParentIndex = (Index -1) / 2`

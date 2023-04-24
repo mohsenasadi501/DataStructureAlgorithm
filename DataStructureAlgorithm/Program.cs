@@ -1,6 +1,15 @@
 ﻿using DataStructureAlgorithm.Part1;
 using DataStructureAlgorithm.Part2;
 
+Console.WriteLine("Heap Implementation");
+HeapTree heapTree = new HeapTree();
+heapTree.insert(7);
+heapTree.insert(9);
+heapTree.insert(8);
+heapTree.insert(10);
+heapTree.insert(4);
+heapTree.insert(6);
+heapTree.insert(1);
 
 Console.WriteLine("*** AVL Search Tree ***");
 AvlTree avlTree = new AvlTree();
