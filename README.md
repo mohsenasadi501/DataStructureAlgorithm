@@ -672,7 +672,7 @@ In this part you would Learn:
 
 2. **[AVL Trees](#AVLTrees)**
 
-3. **Heaps**
+3. **[Heaps](#Heaps)**
 
 4. **Tries**
 
@@ -697,8 +697,6 @@ Tree is a data structure that store elements in hierarchy, refer to elements cal
 - Compilers
 
 - Compression(Mp3 ,..)
-  
-  
 
 #### Binary Search Tree
 
@@ -840,13 +838,13 @@ There are some approach to traverse tree, It classified in to two main categorie
 ```csharp
 public void traversePostorder(Node root)
 {
-	if (root == null)
-	{
-		return;
-	}
-	traversePostorder(root.leftChild);
-	traversePostorder(root.rightChild);
-	Console.WriteLine(root.value);
+    if (root == null)
+    {
+        return;
+    }
+    traversePostorder(root.leftChild);
+    traversePostorder(root.rightChild);
+    Console.WriteLine(root.value);
 }
 ```
 
@@ -918,8 +916,6 @@ public int min()
 
 Also if you want to find the greatest value in BST, we should do the opposit and traverse to left of tree.
 
-
-
 2- Identify two trees are identical or not:
 
 ```csharp
@@ -936,8 +932,6 @@ public bool equals(Node first, Node second)
     return false;
 }
 ```
-
-
 
 3- Validating Binary Search Tree:
 
@@ -970,8 +964,6 @@ In the balanced tree height of every node should be:
 
 AVL tree are special type of BST that automatically re-balance themselves every time we add or remove nodes.
 
-
-
 #### Self-Balancing Tree
 
 - AVL Tree (Adelson-Velsky and Landis)
@@ -984,8 +976,6 @@ AVL tree are special type of BST that automatically re-balance themselves every 
 
 - 2-3 Trees
 
-
-
 ### Rotations
 
 We have four types of rotation:
@@ -997,8 +987,6 @@ We have four types of rotation:
 - Left-Right (LR)
 
 - Right-Left (RL)
-
-
 
 We have factor to check the balance of tree called balanced factor:
 
@@ -1018,21 +1006,15 @@ After Left Rotation and tree balanced
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/leftRotation-perform.png" alt="leftRotation-perform.png" width="210">
 
-
-
 ### Right Rotation(RR)
 
 As you can see in below image the heavy of left is more than right and the tree is unbalanced and need to rotate to right.
-
-
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/rightRotation.png" alt="rightRotation.png" width="203">
 
 After Left Rotation and tree balanced
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/leftRotation-perform.png" alt="leftRotation-perform.png" width="181">
-
-
 
 ### Left-Right Rotation(LR)
 
@@ -1048,8 +1030,6 @@ Then we have rotate to right  same as below image and now the tree is balanced
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/left-rightRotationPerform2.png" alt="left-rightRotationPerform2.png" width="195">
 
-
-
 ### Right-Left Rotation(RL)
 
 This is opposite of LR Rotation and we should perform right left rotation
@@ -1063,3 +1043,29 @@ First we should rotate like below image
 Final rotation
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/rightleftRotationPerform2.png" alt="rightleftRotationPerform2.png" width="179">
+
+
+
+
+
+## Heaps
+
+Heap is special type of tree with two properties.
+
+1. Tree is should be compelte (Nodes should fill from left to right)
+
+2. The value of every node is greater than or to its children
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/heap.png" title="" alt="heap.png" width="383">
+
+We have two types of heap: **MaxHeap** that sorted Accenting and **MinHeap** sorted Deccenting 
+
+###### Heap Applications:
+
+- Sorting (HeapSort)
+
+- Graph Algorithms (shortest path)
+
+- Priority queues
+
+- Find the Kth smallest/largest value
