@@ -1056,7 +1056,7 @@ Heap is special type of tree with two properties.
 
 2. The value of every node is greater than or to its children
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/heap.png" title="" alt="heap.png" width="383">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/heap.png" alt="heap.png" width="383">
 
 We have two types of heap: **MaxHeap** that sorted Accenting and **MinHeap** sorted Deccenting 
 
@@ -1069,3 +1069,9 @@ We have two types of heap: **MaxHeap** that sorted Accenting and **MinHeap** sor
 - Priority queues
 
 - Find the Kth smallest/largest value
+
+
+
+In heaps only we can delete the root node, and to fill it we should fill the root node with last leaf of tree and bubbling down if heap tree is **MaxHeap** and the time complexity of removing from this tree is **O(log n)**
+
+Another operration in heap tree is find the maximun value that is super easy, root node value is the greatest value in tree and run on constant time **O(1)**
