@@ -1,6 +1,18 @@
 ﻿using DataStructureAlgorithm.Part1;
 using DataStructureAlgorithm.Part2;
 
+
+Console.WriteLine("*** AVL Search Tree ***");
+AvlTree avlTree = new AvlTree();
+avlTree.insert(7);
+avlTree.insert(9);
+avlTree.insert(8);
+avlTree.insert(10);
+avlTree.insert(4);
+avlTree.insert(6);
+avlTree.insert(1);
+
+
 Console.WriteLine("*** Binary Search Tree ***");
 
 var fac = new Recursion().factorial(5);
