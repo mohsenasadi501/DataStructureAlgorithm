@@ -1084,7 +1084,7 @@ We usually implemeting heap using array and we dont need class with node , leftC
 
 When we want to insert item in array we should determind the indexes of each node, that we can use the formola below ro each node.
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/heaparray.png" title="" alt="heaparray.png" width="466">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/heaparray.png" alt="heaparray.png" width="466">
 
 
 
