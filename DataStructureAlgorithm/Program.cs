@@ -1,6 +1,11 @@
 ﻿using DataStructureAlgorithm.Part1;
 using DataStructureAlgorithm.Part2;
 
+Console.WriteLine("Tries Implementation");
+TriesTree triesTree = new TriesTree();
+triesTree.insert("mohsen");
+triesTree.insert("mohammad");
+
 Console.WriteLine("Heap Implementation");
 HeapTree heapTree = new HeapTree();
 heapTree.insert(7);

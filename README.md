@@ -674,7 +674,7 @@ In this part you would Learn:
 
 3. **[Heaps](#Heaps)**
 
-4. **Tries**
+4. **[Tries](#Tries)**
 
 5. **Graphs**
 
@@ -1089,3 +1089,25 @@ When we want to insert item in array we should determind the indexes of each nod
 
 
 The formola of calculate parent index is: `ParentIndex = (Index -1) / 2`
+
+
+
+## Tries
+
+ Tries is another types of tree but is not BST one, each child can have several nodes.
+
+<img title="" src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/triesTree.png" alt="triesTree.png" width="431">
+
+We use tries for auto complete, for example google search.
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/triesComplexity.png" title="" alt="triesComplexity.png" width="443">
+
+We are not duplicationg in this charecter as you can see above, we can have up to 26 subtree for each node in english language and the root should be empty.
+
+The time complexity of operation of this tree is depend on lentgh of word 
+
+- **Lookup  O(L)**
+
+- **Insert     O(L)**
+
+- **Delete   O(L)**
