@@ -1044,10 +1044,6 @@ Final rotation
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/rightleftRotationPerform2.png" alt="rightleftRotationPerform2.png" width="179">
 
-
-
-
-
 ## Heaps
 
 Heap is special type of tree with two properties.
@@ -1070,13 +1066,9 @@ We have two types of heap: **MaxHeap** that sorted Accenting and **MinHeap** sor
 
 - Find the Kth smallest/largest value
 
-
-
 In heaps only we can delete the root node, and to fill it we should fill the root node with last leaf of tree and bubbling down if heap tree is **MaxHeap** and the time complexity of removing from this tree is **O(log n)**
 
 Another operration in heap tree is find the maximun value that is super easy, root node value is the greatest value in tree and run on constant time **O(1)**
-
-
 
 #### Bulding Heaps
 
@@ -1086,11 +1078,7 @@ When we want to insert item in array we should determind the indexes of each nod
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/heaparray.png" alt="heaparray.png" width="466">
 
-
-
 The formola of calculate parent index is: `ParentIndex = (Index -1) / 2`
-
-
 
 ## Tries
 
@@ -1111,3 +1099,38 @@ The time complexity of operation of this tree is depend on lentgh of word
 - **Insert     O(L)**
 
 - **Delete   O(L)**
+
+We can implement tries with Array and Hashmap too.
+
+Array Implemetation:
+
+```csharp
+internal class TriesTree
+{
+	public Node root = new Node(' ');
+	public class Node
+	{
+		public static int ALPHABET_SIZE = 26;
+		public char Value { get; set; }
+		public Node[] Children = new Node[ALPHABET_SIZE];
+		public bool isEndOfWord;
+
+		public Node(char value)
+		{
+			Value = value;
+		}
+	}
+	public void insert(string word)
+	{
+		var current = root;
+		foreach (var item in word.ToCharArray())
+		{
+			var index = item - 'a';
+			if (current.Children[index] == null)
+				current.Children[index] = new Node(item);
+			current = current.Children[index];
+		}
+		current.isEndOfWord = true;
+	}
+}
+```
