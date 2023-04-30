@@ -1084,11 +1084,11 @@ The formola of calculate parent index is: `ParentIndex = (Index -1) / 2`
 
  Tries is another types of tree but is not BST one, each child can have several nodes.
 
-<img title="" src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/triesTree.png" alt="triesTree.png" width="431">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/triesTree.png" alt="triesTree.png" width="431">
 
 We use tries for auto complete, for example google search.
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/triesComplexity.png" title="" alt="triesComplexity.png" width="443">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/triesComplexity.png" alt="triesComplexity.png" width="443">
 
 We are not duplicationg in this charecter as you can see above, we can have up to 26 subtree for each node in english language and the root should be empty.
 
