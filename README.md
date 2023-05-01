@@ -676,11 +676,11 @@ In this part you would Learn:
 
 4. **[Tries](#Tries)**
 
-5. **Graphs**
+5. **[Graphs](#Graphs)**
 
 6. **Undirected Graphs**
 
-## BinaryTrees
+## BinaryTre es
 
 Tree is a data structure that store elements in hierarchy, refer to elements called nodes and  connected lines called edges.
 
@@ -1107,35 +1107,33 @@ Array Implemetation:
 ```csharp
 internal class TriesTree
 {
-	public Node root = new Node(' ');
-	public class Node
-	{
-		public static int ALPHABET_SIZE = 26;
-		public char Value { get; set; }
-		public Node[] Children = new Node[ALPHABET_SIZE];
-		public bool isEndOfWord;
+    public Node root = new Node(' ');
+    public class Node
+    {
+        public static int ALPHABET_SIZE = 26;
+        public char Value { get; set; }
+        public Node[] Children = new Node[ALPHABET_SIZE];
+        public bool isEndOfWord;
 
-		public Node(char value)
-		{
-			Value = value;
-		}
-	}
-	public void insert(string word)
-	{
-		var current = root;
-		foreach (var item in word.ToCharArray())
-		{
-			var index = item - 'a';
-			if (current.Children[index] == null)
-				current.Children[index] = new Node(item);
-			current = current.Children[index];
-		}
-		current.isEndOfWord = true;
-	}
+        public Node(char value)
+        {
+            Value = value;
+        }
+    }
+    public void insert(string word)
+    {
+        var current = root;
+        foreach (var item in word.ToCharArray())
+        {
+            var index = item - 'a';
+            if (current.Children[index] == null)
+                current.Children[index] = new Node(item);
+            current = current.Children[index];
+        }
+        current.isEndOfWord = true;
+    }
 }
 ```
-
-
 
 ## Graphs
 
@@ -1181,6 +1179,26 @@ If you know how many nodes you need and you are not going to add item this type 
 
 ### Adjacency List
 
-Second Approach **(Adjacency List)** and implement with array of linked list and every element of array has a linked list and contains nodes that is more space efficeint with the first one and  space complexity is **O(V)**
+Second Approach **(Adjacency List)** and implement with array of linked list and every element of array has a linked list and contains nodes that is more space efficeint with the first one and  space complexity is **O(V + E)**
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/adjacencyList.png" alt="adjacencyList.png" width="412">
+
+The worst case scenario is when every node is connected to every other node we say we have **Dense Graph**
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/densegraph.png" title="" alt="densegraph.png" width="364">
+
+##### TimeCompexity:
+
+K = Number of edges of each Nodes.
+
+**Average scenario:**
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/graphtimecomplexity.png" title="" alt="graphtimecomplexity.png" width="405">
+
+**Worst case scenario:**
+
+![graphtimecomplexityWorse.png](D:\Development\DSA%20Sample\DataStructureAlgorithm\images\graphtimecomplexityWorse.png)
+
+
+
+As you can see in an above images if you have dense graph both approche take the same amount of  apace and time comlexity of Matrix is better, so if we dealing with dense graph is better to impplementing with Matrix but in reality Adjancency List is better than Matrix One.
