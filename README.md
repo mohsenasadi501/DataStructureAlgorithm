@@ -678,8 +678,6 @@ In this part you would Learn:
 
 5. **[Graphs](#Graphs)**
 
-6. **Undirected Graphs**
-
 ## BinaryTre es
 
 Tree is a data structure that store elements in hierarchy, refer to elements called nodes and  connected lines called edges.
