@@ -1134,3 +1134,53 @@ internal class TriesTree
 	}
 }
 ```
+
+
+
+## Graphs
+
+We use graphs for connected objects, exp: people on a social media platform and we can say tree is kind of graph without cycle and root node.
+
+Instead of Node in trees we call **Vertex** in graphs
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/graph.png" title="" alt="graph.png" width="281">
+
+If two node connected directly to each other we called **adjacent** or neighbor 
+
+If edges have direction we say is a **Directed Graph** like twitter, if you follow someone is  connection from your account to their account and is one way direction and undirected graphs are facebook and linkedin.
+
+Each edges can have weight like below that we use it to represent how strong connection is.
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/weightGraph.png" title="" alt="weightGraph.png" width="296">
+
+### Adjacency Matrix
+
+First approach **(Adjacency Matrix)** is to use two dimentional array and implement using hash table like below
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/twodgraph.png" title="" alt="twodgraph.png" width="371">
+
+If two node is connected the value it should be 1 othervise 0.
+
+The problem of this approach is amount of space need and space complexity is **O(n^2)** and grow fast.
+
+##### Operations Time Complexity:
+
+- Add Edge = **O(1)**
+
+- Remove Edge = **O(1)**
+
+- Query Edge = **O(1)**
+
+- Find Neighboars = **O(V)**
+
+- Add Node = **O(V^2)**
+
+- Remove Node = **O(V^2)**
+
+If you know how many nodes you need and you are not going to add item this type is greate to use because time complexity of edges is **O(1)**
+
+### Adjacency List
+
+Second Approach **(Adjacency List)** and implement with array of linked list and every element of array has a linked list and contains nodes that is more space efficeint with the first one and  space complexity is **O(V)**
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/adjacencyList.png" title="" alt="adjacencyList.png" width="412">
