@@ -1143,7 +1143,7 @@ We use graphs for connected objects, exp: people on a social media platform and 
 
 Instead of Node in trees we call **Vertex** in graphs
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/graph.png" title="" alt="graph.png" width="281">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/graph.png" alt="graph.png" width="281">
 
 If two node connected directly to each other we called **adjacent** or neighbor 
 
@@ -1151,13 +1151,13 @@ If edges have direction we say is a **Directed Graph** like twitter, if you foll
 
 Each edges can have weight like below that we use it to represent how strong connection is.
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/weightGraph.png" title="" alt="weightGraph.png" width="296">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/weightGraph.png" alt="weightGraph.png" width="296">
 
 ### Adjacency Matrix
 
 First approach **(Adjacency Matrix)** is to use two dimentional array and implement using hash table like below
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/twodgraph.png" title="" alt="twodgraph.png" width="371">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/twodgraph.png" alt="twodgraph.png" width="371">
 
 If two node is connected the value it should be 1 othervise 0.
 
@@ -1183,4 +1183,4 @@ If you know how many nodes you need and you are not going to add item this type 
 
 Second Approach **(Adjacency List)** and implement with array of linked list and every element of array has a linked list and contains nodes that is more space efficeint with the first one and  space complexity is **O(V)**
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/adjacencyList.png" title="" alt="adjacencyList.png" width="412">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/adjacencyList.png" alt="adjacencyList.png" width="412">
