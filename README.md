@@ -1185,7 +1185,7 @@ Second Approach **(Adjacency List)** and implement with array of linked list and
 
 The worst case scenario is when every node is connected to every other node we say we have **Dense Graph**
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/densegraph.png" title="" alt="densegraph.png" width="364">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/densegraph.png" alt="densegraph.png" width="364">
 
 ##### TimeCompexity:
 
@@ -1193,12 +1193,12 @@ K = Number of edges of each Nodes.
 
 **Average scenario:**
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/graphtimecomplexity.png" title="" alt="graphtimecomplexity.png" width="405">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/graphtimecomplexity.png" alt="graphtimecomplexity.png" width="405">
 
 **Worst case scenario:**
 
-![graphtimecomplexityWorse.png](D:\Development\DSA%20Sample\DataStructureAlgorithm\images\graphtimecomplexityWorse.png)
+![graphtimecomplexityWorse.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/graphtimecomplexityWorse.png)
 
 
 
-As you can see in an above images if you have dense graph both approche take the same amount of  apace and time comlexity of Matrix is better, so if we dealing with dense graph is better to impplementing with Matrix but in reality Adjancency List is better than Matrix One.
+As you can see in an above images if you have dense graph both approche take the same amount of  apace and time comlexity of Matrix is better, so if we dealing with dense graph is better to impplementing with Matrix but in reality **Adjancency List** is better than Matrix One.
