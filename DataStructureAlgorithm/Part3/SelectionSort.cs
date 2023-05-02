@@ -10,7 +10,6 @@ namespace DataStructureAlgorithm.Part3
     {
         public void sort(int[] array)
         {
-            // find the minumum item in array
             for (int j = 0; j < array.Length; j++)
             {
                 int minindex = j;

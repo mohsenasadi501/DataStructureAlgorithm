@@ -1293,3 +1293,28 @@ Now we should repeat this action in unsorted part until all array item sorted.
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/ssTimeComlexity.png" alt="ssTimeComlexity.png" width="310">
 
 This is a fairly slow algorithm
+
+Selection sort implementation
+
+```csharp
+public class SelectionSort
+{
+	public void sort(int[] array)
+	{
+		for (int j = 0; j < array.Length; j++)
+		{
+			int minindex = j;
+			for (int index = minindex; index < array.Length; index++)
+				if (array[minindex] > array[index])
+					minindex = index;
+			swap(array, minindex, j);   
+		}
+	}
+	private void swap(int[] array, int index1, int index2)
+	{
+		var temp = array[index1];
+		array[index1] = array[index2];
+		array[index2] = temp;
+	}
+}
+```
