@@ -1280,16 +1280,16 @@ public class BubbleSort
 
 In this sort we need to find a minimum item in array that is 1 in index 3 we need to swap item to item zero , Now 1 is in the correct position.
 
-<img title="" src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/selectionSort.png" alt="selectionSort.png" width="307">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/selectionSort.png" alt="selectionSort.png" width="307">
 
 Then our array has two parts, sorted and unsorted like below.
 
-<img title="" src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/selectionsortpart.png" alt="selectionsortpart.png" width="296">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/selectionsortpart.png" alt="selectionsortpart.png" width="296">
 
 Now we should repeat this action in unsorted part until all array item sorted.
 
 #### Time Complexity:
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/ssTimeComlexity.png" title="" alt="ssTimeComlexity.png" width="310">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/ssTimeComlexity.png" alt="ssTimeComlexity.png" width="310">
 
 This is a fairly slow algorithm
