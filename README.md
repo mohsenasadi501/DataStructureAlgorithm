@@ -1223,7 +1223,7 @@ In sorting algorithm we learn:
 
 This is the simplest type of sort algorithm
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/bubbleSort.png" title="" alt="bubbleSort.png" width="389"> 
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/bubbleSort.png" alt="bubbleSort.png" width="389"> 
 
 We should scan array item from left to right, if item is out of order swap them.
 
@@ -1231,11 +1231,11 @@ In the below image we should iterate array 5 time that eqaul to length of array 
 
 #### Time Complexity:
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/bsTimeComplexity.png" title="" alt="bsTimeComplexity.png" width="341">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/bsTimeComplexity.png" alt="bsTimeComplexity.png" width="341">
 
 As you can see if array is fully unsorted the worst scenario will happend and as below image shown this sorting algorithm is Inefficient because in a red area.
 
-<img title="" src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/complexity%20chart.png" alt="complexity chart.png" width="465">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/complexity%20chart.png" alt="complexity chart.png" width="465">
 
 
 
