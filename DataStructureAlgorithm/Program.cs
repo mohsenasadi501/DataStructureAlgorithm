@@ -2,6 +2,11 @@
 using DataStructureAlgorithm.Part2;
 using DataStructureAlgorithm.Part3;
 
+Console.WriteLine("Selection Sort Implementation");
+var selectionSortArray = new int[] { 4, 5, 3, 8, 2, 1 };
+SelectionSort selectionSort = new SelectionSort();
+selectionSort.sort(selectionSortArray);
+
 Console.WriteLine("Bubble Sort Implementation");
 var sortArray = new int[] { 4, 5, 3, 8, 2, 1 };
 BubbleSort bubbleSort = new BubbleSort();
