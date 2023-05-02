@@ -1330,3 +1330,25 @@ The best way to to undrestand insertion sort is playing a card game, imagin each
 #### Time Complexity:
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/iscomplexityTime.png" alt="iscomplexityTime.png" width="300">
+
+Insersion sort implementation
+
+```csharp
+public class InsertionSort
+{
+	public void sort(int[] array)
+	{
+		for (int i = 1; i < array.Length; i++)
+		{
+			var current = array[i];
+			var j = i - 1;
+			while (j >= 0 && array[j] > current)
+			{
+				array[j + 1] = array[j];
+				j--;
+			}
+			array[j + 1] = current;
+		}
+	}
+}
+```
