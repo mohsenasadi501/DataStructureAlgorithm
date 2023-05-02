@@ -2,6 +2,11 @@
 using DataStructureAlgorithm.Part2;
 using DataStructureAlgorithm.Part3;
 
+Console.WriteLine("Insertion Sort Implementation");
+var insersionselectionSortArray = new int[] { 4, 5, 3, 8, 2, 1 };
+InsertionSort insertionSort = new InsertionSort();
+insertionSort.sort(insersionselectionSortArray);
+
 Console.WriteLine("Selection Sort Implementation");
 var selectionSortArray = new int[] { 4, 5, 3, 8, 2, 1 };
 SelectionSort selectionSort = new SelectionSort();
