@@ -1,5 +1,11 @@
 ﻿using DataStructureAlgorithm.Part1;
 using DataStructureAlgorithm.Part2;
+using DataStructureAlgorithm.Part3;
+
+Console.WriteLine("Bubble Sort Implementation");
+var sortArray = new int[] { 4, 5, 3, 8, 2, 1 };
+BubbleSort bubbleSort = new BubbleSort();
+bubbleSort.sort(sortArray);
 
 Console.WriteLine("Tries Implementation");
 TriesTree triesTree = new TriesTree();

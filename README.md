@@ -1197,6 +1197,79 @@ K = Number of edges of each Nodes.
 
 ![graphtimecomplexityWorse.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/graphtimecomplexityWorse.png)
 
-
-
 As you can see in an above images if you have dense graph both approche take the same amount of  apace and time comlexity of Matrix is better, so if we dealing with dense graph is better to impplementing with Matrix but in reality **Adjancency List** is better than Matrix One.
+
+# 3: Algorithms
+
+In the first part of this document you would Learn:
+
+1. **[Sorting](#Sorting)**
+
+2. **[Searching](#Searching)**
+
+3. **[String Manipulation](#StringManipulation)**
+
+## Sorting
+
+In sorting algorithm we learn:
+
+- How they work
+
+- Time & space complexity
+
+- Implementation
+
+### Bubble Sort
+
+This is the simplest type of sort algorithm
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/bubbleSort.png" title="" alt="bubbleSort.png" width="389"> 
+
+We should scan array item from left to right, if item is out of order swap them.
+
+In the below image we should iterate array 5 time that eqaul to length of array and each iteration we should compare <u>0 & 1</u> , <u>1 & 2</u> , <u>2 & 3</u> , <u>3 & 4 </u>
+
+#### Time Complexity:
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/bsTimeComplexity.png" title="" alt="bsTimeComplexity.png" width="341">
+
+As you can see if array is fully unsorted the worst scenario will happend and as below image shown this sorting algorithm is Inefficient because in a red area.
+
+<img title="" src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/complexity%20chart.png" alt="complexity chart.png" width="465">
+
+
+
+We have two optimization in below code, first we add isSorted bool field that when just one item is unsorted , we dont need to iterate all array member.
+
+Another optimization after each loop in array, we sort one member, however there is no need to iterate again to all member and we can decrease second loop each time.
+
+```csharp
+public class BubbleSort
+{
+    public void sort(int[] array)
+    {
+        bool isSorted = false;
+        for (int i = 0; i < array.Length; i++)
+        {
+            isSorted = true;
+            for (int j = 1; j < array.Length - 1; j++)
+            {
+                if (array[j] < array[j - 1])
+                {
+                    swap(array, j, j - 1);
+                    isSorted = false;
+                }
+            }
+        }
+
+        if (isSorted)
+            return;
+    }
+    private void swap(int[] array, int index1, int index2)
+    {
+        var temp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = temp;
+    }
+}
+```
