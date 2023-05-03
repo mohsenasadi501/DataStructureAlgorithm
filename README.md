@@ -1355,26 +1355,26 @@ We call merge sort  as **Divide and Conquer** algorithm, it works by recursively
 
 
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/mergeSort.png" title="" alt="mergeSort.png" width="356">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/mergeSort.png" alt="mergeSort.png" width="356">
 
 We should find a index of the middle by dividing length of array.
 
 `middle = length/2 => 5/2 = 2`
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/first%20mergesort.png" title="" alt="first mergesort.png" width="359">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/first%20mergesort.png" alt="first mergesort.png" width="359">
 
 First we focus on left sub-array and find the middle and split it.
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/secondmergesort.png" title="" alt="secondmergesort.png" width="356">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/secondmergesort.png" alt="secondmergesort.png" width="356">
 
 Now we have single item array and we should merge and combine two left array
 
-<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/thirdmergesort.png" title="" alt="thirdmergesort.png" width="354">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/thirdmergesort.png" alt="thirdmergesort.png" width="354">
 
 Now we should repeat to right array and split and merge it.
 
 #### Time Complexity:
 
-![mergesorttimeComplexity.png](D:\Development\DSA%20Sample\DataStructureAlgorithm\images\mergesorttimeComplexity.png)
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/mergesorttimeComplexity.png" alt="mergesorttimeComplexity.png" width="268">
 
 This algorithm is more efficent than previose algorithm but it cost alocating more space.
