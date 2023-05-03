@@ -2,6 +2,11 @@
 using DataStructureAlgorithm.Part2;
 using DataStructureAlgorithm.Part3;
 
+Console.WriteLine("Merge Sort Implementation");
+var mergeSortArray = new int[] { 4, 5, 3, 8, 2, 1 };
+MergeSort mergeSort = new MergeSort();
+mergeSort.sort(mergeSortArray);
+
 Console.WriteLine("Insertion Sort Implementation");
 var insersionselectionSortArray = new int[] { 4, 5, 3, 8, 2, 1 };
 InsertionSort insertionSort = new InsertionSort();
