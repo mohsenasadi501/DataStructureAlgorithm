@@ -1237,8 +1237,6 @@ As you can see if array is fully unsorted the worst scenario will happend and as
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/complexity%20chart.png" alt="complexity chart.png" width="465">
 
-
-
 We have two optimization in below code, first we add isSorted bool field that when just one item is unsorted , we dont need to iterate all array member.
 
 Another optimization after each loop in array, we sort one member, however there is no need to iterate again to all member and we can decrease second loop each time.
@@ -1274,8 +1272,6 @@ public class BubbleSort
 }
 ```
 
-
-
 ### Selection Sort
 
 In this sort we need to find a minimum item in array that is 1 in index 3 we need to swap item to item zero , Now 1 is in the correct position.
@@ -1299,27 +1295,25 @@ Selection sort implementation
 ```csharp
 public class SelectionSort
 {
-	public void sort(int[] array)
-	{
-		for (int j = 0; j < array.Length; j++)
-		{
-			int minindex = j;
-			for (int index = minindex; index < array.Length; index++)
-				if (array[minindex] > array[index])
-					minindex = index;
-			swap(array, minindex, j);   
-		}
-	}
-	private void swap(int[] array, int index1, int index2)
-	{
-		var temp = array[index1];
-		array[index1] = array[index2];
-		array[index2] = temp;
-	}
+    public void sort(int[] array)
+    {
+        for (int j = 0; j < array.Length; j++)
+        {
+            int minindex = j;
+            for (int index = minindex; index < array.Length; index++)
+                if (array[minindex] > array[index])
+                    minindex = index;
+            swap(array, minindex, j);   
+        }
+    }
+    private void swap(int[] array, int index1, int index2)
+    {
+        var temp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = temp;
+    }
 }
 ```
-
-
 
 ### Insertion Sort
 
@@ -1336,19 +1330,51 @@ Insersion sort implementation
 ```csharp
 public class InsertionSort
 {
-	public void sort(int[] array)
-	{
-		for (int i = 1; i < array.Length; i++)
-		{
-			var current = array[i];
-			var j = i - 1;
-			while (j >= 0 && array[j] > current)
-			{
-				array[j + 1] = array[j];
-				j--;
-			}
-			array[j + 1] = current;
-		}
-	}
+    public void sort(int[] array)
+    {
+        for (int i = 1; i < array.Length; i++)
+        {
+            var current = array[i];
+            var j = i - 1;
+            while (j >= 0 && array[j] > current)
+            {
+                array[j + 1] = array[j];
+                j--;
+            }
+            array[j + 1] = current;
+        }
+    }
 }
 ```
+
+### Merge Sort
+
+The idea of merge soft is to break down a list into smaller and smaller sub list sort those and merge back to each other to compeletly sorted list. we should divided an array until we can not devided any more and should compare each array that have single item to sort them and again merge it.
+
+We call merge sort  as **Divide and Conquer** algorithm, it works by recursively dividing a problem into smaller sub problem until is easy to be solve.
+
+
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/mergeSort.png" title="" alt="mergeSort.png" width="356">
+
+We should find a index of the middle by dividing length of array.
+
+`middle = length/2 => 5/2 = 2`
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/first%20mergesort.png" title="" alt="first mergesort.png" width="359">
+
+First we focus on left sub-array and find the middle and split it.
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/secondmergesort.png" title="" alt="secondmergesort.png" width="356">
+
+Now we have single item array and we should merge and combine two left array
+
+<img src="file:///D:/Development/DSA%20Sample/DataStructureAlgorithm/images/thirdmergesort.png" title="" alt="thirdmergesort.png" width="354">
+
+Now we should repeat to right array and split and merge it.
+
+#### Time Complexity:
+
+![mergesorttimeComplexity.png](D:\Development\DSA%20Sample\DataStructureAlgorithm\images\mergesorttimeComplexity.png)
+
+This algorithm is more efficent than previose algorithm but it cost alocating more space.
