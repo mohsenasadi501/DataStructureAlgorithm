@@ -16,7 +16,7 @@ In the first part of this document you would Learn:
 
 ## Big-O-Notation
 
-We use Big O Notation to describe performance of algorithm, time complexity and  how scalabe algorithm is.
+We use Big O Notation to describe performance of algorithm, time complexity and space complexity express it and  how scalabe algorithm is.
 
 The below codes show **O(1)** becuase the code run in a constant time.
 
@@ -71,6 +71,11 @@ As it shown in above image, constant type algorithms grows linearly as the same 
 ### What is Space Complexity?
 
 Space complexity refers to the total amount of memory space used by an algorithm/program, including the space of input values for execution.
+
+### What is Time Complexity?
+
+It calculates the time taken to run an algorithm as the input grows. In other words, it calculates the worst-case time complexity of an algorithm. Big O Notation in Data Structure describes the upper bound of an algorithm's runtime.
+
 
 ## Arrays
 
