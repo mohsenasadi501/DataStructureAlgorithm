@@ -151,7 +151,7 @@ internal class Array
 
 ## LinkedLists
 
-Linked List stores objects in sequence, unlike Arrays, which can grow or shrink automatically like a blow image.
+Linked List stores objects in sequence, unlike Arrays, which can grow or shrink automatically like a below image.
 
 ![linkedlist.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/linkedlist.png)
 
