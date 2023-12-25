@@ -151,11 +151,11 @@ internal class Array
 
 ## LinkedLists
 
-Linked List Store Objects in sequence, unlike Arrays can grows or shrink automatically like blow image.
+Linked List Store Objects in sequence, unlike Arrays, can grow or shrink automatically like a blow image.
 
 ![linkedlist.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/linkedlist.png)
 
-In linked list we have first and last item of a list and recersively add another items to them.
+In the linked list we have the first and last item of a list and recursively add another items to them.
 
 The linked list implementation from scratch:
 
@@ -267,7 +267,7 @@ internal class LinkedList
 }
 ```
 
-As you can see above code we have Node class that store the value of item and the next item that create connection to the next item.
+As you can see above code we have a Node class that stores the value of the item and the next item that creates a connection to the next item.
 
 ### Arrays vs Linked Lists:
 
