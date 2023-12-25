@@ -295,9 +295,9 @@ We want to compare in terms of space and time complexity.
 
 ### 
 
-### Types of Lisnked Listed:
+### Types of Linked Listed:
 
-We have two types of linked Listed Singly and Doubly and what is diffrence between them. The items singly just have link to next item that wehn you want to delete item from end you should loop in all items of Linked Listed but we can add reverse link than each item store next and previose item that case O(1) Big O like image below.
+We have two types of LinkedIn listed Singly and Doubly and what is the difference between them? The items singly just have a link to the next item when you want to delete the item from the end you should loop in all items of Linked Listed but we can add a reverse link to each item stored next and previous item that case O(1) Big O like image below.
 
 ![doubleLinkedList.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/doubleLinkedList.png)
 
