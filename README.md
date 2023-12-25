@@ -1,6 +1,6 @@
 # 1: Linear Data Structure
 
-In the first part of this document you would Learn:
+In the first part of this document you will learn:
 
 1. **[Big O Notation](#Big-O-Notation)**
 
@@ -16,9 +16,9 @@ In the first part of this document you would Learn:
 
 ## Big-O-Notation
 
-We use Big O Notation to describe performance of algorithm, time complexity and space complexity express it and  how scalabe algorithm is.
+We use Big O Notation to describe the performance of the algorithm, time complexity and space complexity to express it and how scalable the algorithm is.
 
-The below codes show **O(1)** becuase the code run in a constant time.
+The below codes show **O(1)** because the code runs in a constant time.
 
 ```csharp
  public void log(int[] numbers)
@@ -66,7 +66,10 @@ public void LogNestedLoop(int[] numbers)
 
 ![algorithm.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/algorithm.png)
 
-As it shown in above image, constant type algorithms grows linearly as the same rate but the logarithmic curve down on some point, logarithmic is more efficent and scalabe compare to linear or others. Exponential is the opossit of logarithmic and is not efficent to use and has a lot cost.
+
+
+
+As shown in the above image, constant-type algorithms grow linearly at the same rate but the logarithmic curve is down at some point, logarithmic is more efficient and scalable compared to linear or others. Exponential is the opposite of logarithmic and is not efficient to use and has a lot cost.
 
 ### What is Space Complexity?
 
@@ -79,7 +82,7 @@ It calculates the time taken to run an algorithm as the input grows. In other wo
 
 ## Arrays
 
-Arrays are a simple data structure type use to store data squesntially, if you want to store data by index arrays are the best choice.
+Arrays are a simple data structure type use to store data sequentially, if you want to store data by index arrays are the best choice.
 
 Featurse of Array Data Structure:
 
@@ -148,7 +151,7 @@ internal class Array
 
 ## LinkedLists
 
-Linked List Store Objects in squence, unlike Arrays can grows or shrink automatically like blow image.
+Linked List Store Objects in sequence, unlike Arrays can grows or shrink automatically like blow image.
 
 ![linkedlist.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/linkedlist.png)
 
