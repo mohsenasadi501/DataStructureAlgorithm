@@ -297,25 +297,25 @@ We want to compare in terms of space and time complexity.
 
 ### Types of Linked Listed:
 
-We have two types of LinkedIn listed Singly and Doubly and what is the difference between them? The items singly just have a link to the next item when you want to delete the item from the end you should loop in all items of Linked Listed but we can add a reverse link to each item stored next and previous item that case O(1) Big O like image below.
+We have two types of LinkedIn listed Singly and Doubly and what is the difference between them? The items singly just have a link to the next item when you want to delete the item from the end you should loop in all items of Linked Listed but we can add a reverse link to each item stored next and previous item that case O(1) Big O like the image below.
 
 ![doubleLinkedList.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/doubleLinkedList.png)
 
 ## Stacks
 
-Stacks are powerfull data structure that help us to solve many complex programming problems.
+Stacks are powerful data structures that help us to solve many complex programming problems.
 
-#### Operations in stacks:
+#### Operations in Stacks:
 
 - **push(item)** Add item on top of the stacks
 
-- **pop()** Remove Item on the top
+- **pop()** Remove an item from the top
 
-- **peek()**  Return Item in the top without removing the item
+- **peek()**  Return an item from the top without removing the item
 
-- **isEmpty()** Determind stack is empty or not
+- **isEmpty()** Determine stack is empty or not
   
-  All operation of stacks run **O(1)** in a constant time.
+  All operations of stacks run **O(1)** in a constant time.
 
 #### Examples:
 
