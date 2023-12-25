@@ -82,13 +82,13 @@ It calculates the time taken to run an algorithm as the input grows. In other wo
 
 ## Arrays
 
-Arrays are a simple data structure type use to store data sequentially, if you want to store data by index arrays are the best choice.
+Arrays are a simple data structure type used to store data sequentially, if you want to store data by index arrays are the best choice.
 
-Featurse of Array Data Structure:
+Features of Array Data Structure:
 
 - Simple Data Structure
 - The Items are fixed
-- The length of array is fixed
+- The length of the array is fixed
 - You can not remove or add new Item 
 
 Example of how to add Array class **Add**, **Remove**, **IndexOf** and **Print** methods functionality:
