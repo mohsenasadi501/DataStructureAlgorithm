@@ -304,10 +304,11 @@ We have two types of LinkedIn listed Singly and Doubly and what is the differenc
 ## Stacks
 
 Stacks are powerful data structures that help us to solve many complex programming problems.
+A Stack is a linear data structure that follows the LIFO (Last-In-First-Out) principle. It contains only one pointer top pointer pointing to the topmost element of the stack. Whenever an element is added to the stack, it is added on the top of the stack, and the element can be deleted only from the stack.
 
 #### Operations in Stacks:
 
-- **push(item)** Add item on top of the stacks
+- **push(item)** Add an item on top of the stacks
 
 - **pop()** Remove an item from the top
 
@@ -372,7 +373,7 @@ internal class Stack
 
 ## Queues
 
-Queue is data structure similar to stack but in queue for adding new item to top should remove item from bottom of queue as shown below:
+The Queue is data structure similar to the stack but in the queue for adding a new item to the top should remove the item from the bottom of the queue as shown below:
 
 ![queue.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/queue.png)
 
