@@ -271,17 +271,17 @@ As you can see above code we have a Node class that stores the value of the item
 
 ### Arrays vs Linked Lists:
 
-We want to compare in terms of requierd memory and time complexcity.
+We want to compare in terms of space and time complexity.
 
 - Static arrays have a fixed size 
 
-- Dynamic arrays grows by 50-100%
+- Dynamic arrays grow by 50-100%
 
-- Linked Lists dont wast memory
+- Linked Lists don't waste memory
 
-- Use arrays if you khnow the number of items to store
+- Use arrays if you know the number of items to store
 
-**Time Complexcity**
+**Time Complexity**
 
 | Row | Function name              | Array             | Linked List       |
 |:---:|:-------------------------- |:-----------------:|:-----------------:|
