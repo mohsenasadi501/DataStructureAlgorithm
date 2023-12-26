@@ -962,15 +962,15 @@ public bool isBinarySearchTree(Node root, int min, int max)
 }
 ```
 
-## AVLTrees
+## AVL Trees
 
-As i mentioned before every operation in BTS is run on O(log(n)) time complexity that this condition happends when the tree is balanced.
+As mentioned before every operation in BTS is run on O(log(n)) which this condition happens when the tree is balanced.
 
-In the balanced tree height of every node should be:
+In the balanced tree, the height of every node should be:
 
 `height(left) - height(right) <= 1`
 
-AVL tree are special type of BST that automatically re-balance themselves every time we add or remove nodes.
+AVL trees are a special type of BST that automatically re-balance themselves every time we add or remove nodes.
 
 #### Self-Balancing Tree
 
@@ -996,17 +996,17 @@ We have four types of rotation:
 
 - Right-Left (RL)
 
-We have factor to check the balance of tree called balanced factor:
+We have a factor to check the balance of the tree called the balanced factor:
 
 `BF = height(left) - height(right)`
 
 ` -1 <= BF <= 1`
 
-BF should be 0,1,-1 if is greater or lower than these number, the tree should re balanced itself.
+BF should be 0,1,-1 if is greater or lower than these numbers, the tree should re-balanced itself.
 
 ### Left Rotation(LL)
 
-We can calculate  BF of each child and node with value of 1 is not balance and the heavy is on the right we have to perform left rotation
+We can calculate the BF of each child and node with a value of 1 is not balanced and the heavy is on the right we have to perform left rotation
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/leftRotation.png" alt="leftRotation.png" width="254">
 
@@ -1016,35 +1016,35 @@ After Left Rotation and tree balanced
 
 ### Right Rotation(RR)
 
-As you can see in below image the heavy of left is more than right and the tree is unbalanced and need to rotate to right.
+As you can see in the below image the heavier left is than the right and the tree is unbalanced and needs to rotate to right.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/rightRotation.png" alt="rightRotation.png" width="203">
 
-After Left Rotation and tree balanced
+After Left Rotation and tree-balanced
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/leftRotation-perform.png" alt="leftRotation-perform.png" width="181">
 
 ### Left-Right Rotation(LR)
 
-In the below image we have double rotation with left and right 
+In the below image, we have a double rotation with left and right 
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/left-rightRotation.png" alt="left-rightRotation.png" width="193">
 
-We should first rotate like below image
+We should first rotate like the below image
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/left-rightRotationPerform1.png" alt="left-rightRotationPerform1.png" width="196">
 
-Then we have rotate to right  same as below image and now the tree is balanced
+Then we rotate it to the right same as in the below image and now the tree is balanced
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/left-rightRotationPerform2.png" alt="left-rightRotationPerform2.png" width="195">
 
 ### Right-Left Rotation(RL)
 
-This is opposite of LR Rotation and we should perform right left rotation
+This is the opposite of LR Rotation and we should perform right-left rotation
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/rightleftRotation.png" alt="rightleftRotation.png" width="169">
 
-First we should rotate like below image 
+First, we should rotate like the below image 
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/rightleftRotationPerform1.png" alt="rightleftRotationPerform1.png" width="172">
 
