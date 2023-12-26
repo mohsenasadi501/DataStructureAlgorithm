@@ -1207,11 +1207,11 @@ K = Number of edges of each Node.
 
 ![graphtimecomplexityWorse.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/graphtimecomplexityWorse.png)
 
-As you can see in the above images if you have a dense graph both approaches take the same amount of space and the time complexity of the Matrix is better, so if we dealing with a dense graph is better to implement with Matrix but in reality, **Adjancency List**** is better than Matrix One.
+As you can see in the above images if you have a dense graph both approaches take the same amount of space and the time complexity of the Matrix is better, so if we dealing with a dense graph is better to implement with Matrix but in reality, **Adjancency List** is better than Matrix One.
 
 # 3: Algorithms
 
-In the first part of this document you would Learn:
+In this part of the document you will learn:
 
 1. **[Sorting](#Sorting)**
 
@@ -1221,9 +1221,9 @@ In the first part of this document you would Learn:
 
 ## Sorting
 
-In sorting algorithm we learn:
+In the Sorting algorithm, we learn:
 
-- How they work
+- How do they work?
 
 - Time & space complexity
 
@@ -1231,25 +1231,25 @@ In sorting algorithm we learn:
 
 ### Bubble Sort
 
-This is the simplest type of sort algorithm
+This one is the simplest type of sort algorithm:
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/bubbleSort.png" alt="bubbleSort.png" width="389"> 
 
-We should scan array item from left to right, if item is out of order swap them.
+We should scan Array items from left to right, if items are out of order swap them.
 
-In the below image we should iterate array 5 time that eqaul to length of array and each iteration we should compare <u>0 & 1</u> , <u>1 & 2</u> , <u>2 & 3</u> , <u>3 & 4 </u>
+In the below image, we should iterate an Array 5 times that is equal to the length of the Array and each iteration we should compare <u>0 & 1</u> , <u>1 & 2</u> , <u>2 & 3</u> , <u>3 & 4 </u>
 
 #### Time Complexity:
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/bsTimeComplexity.png" alt="bsTimeComplexity.png" width="341">
 
-As you can see if array is fully unsorted the worst scenario will happend and as below image shown this sorting algorithm is Inefficient because in a red area.
+As you can see if Array is fully unsorted the worst scenario will happen and as the below image shown this sorting algorithm is Inefficient because of a red area.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/complexity%20chart.png" alt="complexity chart.png" width="465">
 
-We have two optimization in below code, first we add isSorted bool field that when just one item is unsorted , we dont need to iterate all array member.
+We have two optimizations in the below code, first, we add a Sorted bool field that when just one item is unsorted, we don't need to iterate all array members.
 
-Another optimization after each loop in array, we sort one member, however there is no need to iterate again to all member and we can decrease second loop each time.
+Another optimization after each loop in Array, we sort one member, however, there is no need to iterate again to all members and we can decrease the second loop each time.
 
 ```csharp
 public class BubbleSort
