@@ -306,6 +306,9 @@ We have two types of LinkedIn listed Singly and Doubly and what is the differenc
 Stacks are powerful data structures that help us to solve many complex programming problems.
 A Stack is a linear data structure that follows the LIFO (Last-In-First-Out) principle. It contains only one pointer top pointer pointing to the topmost element of the stack. Whenever an element is added to the stack, it is added on the top of the stack, and the element can be deleted only from the stack.
 
+- [x] **Stacks are LIFO (Last-In First-Out)**
+This term refers to the fact that new elements are added to the beginning of the stack, and the first element to be retrieved is the last added element.
+
 #### Operations in Stacks:
 
 - **push(item)** Add an item on top of the stacks
@@ -378,26 +381,24 @@ A queue can be defined as an ordered list that enables insert operations to be p
 ![queue.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/queue.png)
 
 - [x] **Queues are FIFO (First-In First-Out)**
-
-- [x] **Stacks are LIFO (Last-In First-Out)**
+It means the first element to be retrieved from the queue is the first added element.
 
 Queues are similar to real work queues, in which people join the line from the back and leave from the front.
 
 #### Operations in Queues:
 
-- **enqueue(**)** Add an item to the back of the queue.
+- **enqueue(**) Add an item to the back of the queue.
 
 - **dequue()** Remove an item from the front of the queue.
 
-- **peek(**)** Get an item from the front without removing it.
+- **peek(**) Get an item from the front without removing it.
 
 - **isEmpty()**
 
 - **isFull()**
 
-All operations of Que run **O(1)** in a constant time and we can say is so fast.
+All operations of Queues run **O(1)** in a constant time and we can say is so fast.
 
-For example, if you want to reverse the queue in this case again you should use the Stack, in every situation if you want to reverse you should use the Stack.
 
 #### Examples:
 
