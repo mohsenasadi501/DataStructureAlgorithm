@@ -1359,35 +1359,34 @@ public class InsertionSort
 
 ### Merge Sort
 
-The idea of merge soft is to break down a list into smaller and smaller sub list sort those and merge back to each other to compeletly sorted list. we should divided an array until we can not devided any more and should compare each array that have single item to sort them and again merge it.
+The idea of merge sort is to break down a list into smaller and smaller sub-lists sort those and merge them back to each other to a completely sorted list. we should divide an array until we can not divide anymore and should compare each array that has a single item to sort them and again merge them.
 
-We call merge sort  as **Divide and Conquer** algorithm, it works by recursively dividing a problem into smaller sub problem until is easy to be solve.
-
+We call merge sort as **Divide and** Conquer** algorithm, it works by recursively dividing a problem into smaller sub-problems until is easy to solve.
 
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/mergeSort.png" alt="mergeSort.png" width="356">
 
-We should find a index of the middle by dividing length of array.
+We should find an index of the middle by dividing the length of the array.
 
 `middle = length/2 => 5/2 = 2`
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/first%20mergesort.png" alt="first mergesort.png" width="359">
 
-First we focus on left sub-array and find the middle and split it.
+First, we focus on the left sub-array to find the middle and split it.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/secondmergesort.png" alt="secondmergesort.png" width="356">
 
-Now we have single item array and we should merge and combine two left array
+Now we have a single item array and we should merge and combine two left Array.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/thirdmergesort.png" alt="thirdmergesort.png" width="354">
 
-Now we should repeat to right array and split and merge it.
+Now we should repeat to the right array and split and merge it.
 
 #### Time Complexity:
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/mergesorttimeComplexity.png" alt="mergesorttimeComplexity.png" width="268">
 
-This algorithm is more efficent than previose algorithm but it cost alocating more space.
+This algorithm is more efficient than the previous algorithm but it costs allocating more space.
 
 Merge Sort Implementation:
 
