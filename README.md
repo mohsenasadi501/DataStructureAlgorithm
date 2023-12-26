@@ -675,9 +675,8 @@ In this method, we increment 1 each time that the item is full to find an empty 
 
 ![linearprobing.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/quadraticprobing.png)
 
-# 2:Non-Linear DataStructure
-
-In this part you will lean:
+# 2: Non-Linear DataStructure
+In this part, you will learn:
 
 1. **[Binary Trees](#BinaryTrees)**
 
@@ -691,7 +690,7 @@ In this part you will lean:
 
 ## BinaryTre es
 
-Tree is a data structure that store elements in hierarchy, refer to elements called nodes and  connected lines called edges.
+The Tree is a data structure that stores elements in the hierarchy, referring to elements called nodes and connected lines called edges.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/tree.png" alt="tree.png" width="478">
 
@@ -709,19 +708,19 @@ Tree is a data structure that store elements in hierarchy, refer to elements cal
 
 #### Binary Search Tree
 
-This is a special type of binary tree called **Binary Search Tree (BST)** because it allows us to quickly lookup data in this tree. Values of any right node is always greater than left one and have **Logarithmic** time complexity
+This is a special type of binary tree called **Binary Search Tree (BST)** because it allows us to quickly look up data in this tree. Values of any right node are always greater than left one and have **Logarithmic** time complexity
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/binarysearchtree.png" alt="binarysearchtree.png" width="393">
 
-What about time complexity of operations in BST
+What about the time complexity of operations in BST?
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/binarysearchtreeOp.png" alt="binarysearchtreeOp.png" width="424">
 
-As you can see in an above image, all operation in BST run logarithmic.
+As you can see in the above image, all operations in BST run logarithmic.
 
 #### Example:
 
-The implementation of insert and find method in BST.
+The implementation of the insert and find method in BST.
 
 ```csharp
 internal class Tree
