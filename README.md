@@ -493,7 +493,7 @@ internal class StackQueue
 PriorityQueue is similar to Queue but it does not depend on the priority of adding an item it depends on the second item that is a priority:
 
 ```csharp
-// First param of class is calue and second of it is priority
+// First param of class is value and second of it is priority
 PriorityQueue<int,int> priorityQueue = new PriorityQueue<int,int>();
 priorityQueue.Enqueue(2, 1);
 priorityQueue.Enqueue(3, 3);
@@ -502,7 +502,7 @@ priorityQueue.Enqueue(4, 2);
 
 ## HashTables
 
-Hash tables also called dictionary that give us super fast lookup and we can use it for:
+Hash tables also called Dictionary, give us super fast lookup and we can use it for:
 
 - Spell checkers
 
@@ -512,7 +512,7 @@ Hash tables also called dictionary that give us super fast lookup and we can use
 
 - Code editors
 
-What do we call other programming languagesh hash tables implementation:
+What do we call other programming languages' Hash Tables implementation:
 
 | Java     | JavaScript | Phyton     | c#         |
 |:--------:|:----------:|:----------:|:----------:|
@@ -528,9 +528,9 @@ Store data with key and value pairs.
 
 - Delete()
 
-All these operations run in **O(1)** .
+All these operations run in **O(1)**.
 
-Dictionary in C# code with time complexcity:
+Dictionary in C# code with time complexity:
 
 ```csharp
 Dictionary<int, string> part1 = new Dictionary<int, string>();
@@ -544,7 +544,7 @@ var dictionaryItem = part1.Single(x => x.Key == 0);    //O(1)
 
 #### Examples:
 
-###### 1- Find first Non-repeated character:
+###### 1- Find the first Non-repeated character:
 
 ```csharp
 internal class CharFinder
@@ -565,9 +565,9 @@ internal class CharFinder
 }
 ```
 
-First we count all chars and store in dictionary after that find from dictionary item which is 1 and return it.
+First, we count all chars and store them in the dictionary after that find from the dictionary item which is 1 and return it.
 
-2- Create hash table with array and linked list:
+2- Create a Hash Table with Array and Linked List:
 
 ```csharp
 internal class HashTable
@@ -644,9 +644,9 @@ internal class HashTable
 }
 ```
 
-for having contant O(1) time complexcity we should use array to store, in the above code why we use linked list?  imagine we have an array with 5 fixed size and the key should be between 0 to 4 , if the input key is 11 what happend.
+for having constant O(1) time complexity we should use Array to store, in the above code why do we use Linked List?  imagine we have an Array with 5 fixed sizes and the key should be between 0 to 4, if the input key is 11 what happens?
 
-In this senario we should hash the key, if the key is integer we get the remain of key devided by array lentgh, we use % symble (Modulo) and this issue with fix, for example:
+In this scenario we should hash the key, if the key is an integer we get the remain of the key divided by array length, we use the % symbol (Modulo) and this issue with fixed, for example:
 
 `var inedex = key % array.length`
 
@@ -654,29 +654,30 @@ In this senario we should hash the key, if the key is integer we get the remain 
 
 `1 = 1% 5;`
 
-Another error might occure that hash function generate two equal hash value, we can not store two item in same index, this is we call a **Collision**  like below image
+Another error might occur that the hash function generates two equal hash values, we can not store two items in the same index, this is what we call a **Collision**  like the below image
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/collision.png" alt="collision.png" width="464">
 
-We have three way to fix this issue
+We have three ways to fix this issue
 
-**1- Chaining** : Store multiple item in a linked list as shown in a above example.
+**1-Chaining** : Store multiple items in a Linked List as shown in the above example.
 
-As you can see we store A and C item in a index one but in a linked list.
+As you can see we store A and C items in an index one but in a linked list.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/chaining.png" alt="chaining.png" width="482">
 
-**2- OpenAddressing**:  In this method we do not insert dublicated data in a linked list, we store them in array it self.
+**2- OpenAddressing**:  In this method, we do not insert duplicated data in the Linked List, we store them in an Array itself.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/linearprobing.png" alt="linearprobing.png" width="455">
 
-In this methods we increment 1 each time that the item is full to find an empty item. as an image show if these cluster happend we should search free item pass 3 previos item and have cost, another methods is to use **Quadratic Probing**
+In this method, we increment 1 each time that the item is full to find an empty item. As the image shows if these clusters happen we should search for free items past 3 previous items and have cost, another method is to use
+ **Quadratic Probing**
 
 ![linearprobing.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/quadraticprobing.png)
 
 # 2:Non-Linear DataStructure
 
-In this part you would Learn:
+In this part you will lean:
 
 1. **[Binary Trees](#BinaryTrees)**
 
