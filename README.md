@@ -323,7 +323,7 @@ This term refers to the fact that new elements are added to the beginning of the
 
 #### Examples:
 
-1- We can use stacks to reverse string like blow code:
+1- We can use stacks to reverse strings like below code:
 
 ```csharp
 internal class StringReverser
@@ -402,7 +402,7 @@ All operations of Queues run **O(1)** in a constant time and we can say is so fa
 
 #### Examples:
 
-###### 1: The below code show how to create a queue with Array:
+###### 1: The below code shows how to create a queue with Array:
 
 ```csharp
 internal class ArrayQueue
@@ -447,7 +447,7 @@ internal class ArrayQueue
 }
 ```
 
-Above code use curcular array to solve a problem of fix array size.
+above code uses a circular array to solve a problem of fixed array size.
 
 ###### 2: Implement Queue with stack:
 
@@ -486,11 +486,11 @@ internal class StackQueue
 }
 ```
 
-Implementing queue with stack need two stack that stack1 for enqueue and stack2 for dequeue.
+Implementing a queue with stack needs two stacks, stack1 for enqueue and stack2 for dequeue.
 
 **What is PriorityQueue?**
 
-PriorityQueue is similar to Queue but it not depend on priority of adding item it depends on the second item that is priority:
+PriorityQueue is similar to Queue but it does not depend on the priority of adding an item it depends on the second item that is a priority:
 
 ```csharp
 // First param of class is calue and second of it is priority
