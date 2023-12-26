@@ -514,11 +514,10 @@ Hash tables also called Dictionary, give us super fast lookup and we can use it 
 
 What do we call other programming languages' Hash Tables implementation:
 
-| Java     | JavaScript | Phyton     | c#         |
+| Java     | JavaScript | Phyton     | C#         |
 |:--------:|:----------:|:----------:|:----------:|
 | Hash Map | Object     | Dictionary | Dictionary |
 
-Store data with key and value pairs.
 
 #### Operations in HashTables:
 
@@ -528,7 +527,7 @@ Store data with key and value pairs.
 
 - Delete()
 
-All these operations run in **O(1)**.
+Hash Table Store data with key and value pairs and All above operations run in **O(1)**.
 
 Dictionary in C# code with time complexity:
 
@@ -666,11 +665,12 @@ As you can see we store A and C items in an index one but in a linked list.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/chaining.png" alt="chaining.png" width="482">
 
-**2- OpenAddressing**:  In this method, we do not insert duplicated data in the Linked List, we store them in an Array itself.
+**2- Open Addressing**:  In this method, we do not insert duplicated data in the Linked List, we store them in an Array itself.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/linearprobing.png" alt="linearprobing.png" width="455">
 
-In this method, we increment 1 each time that the item is full to find an empty item. As the image shows if these clusters happen we should search for free items past 3 previous items and have cost, another method is to use
+In this method, we increment 1 each time that the item is full to find an empty item. As the image shows if these clusters happen we should search for free items past 3 previous items and have cost, another method is to use.
+
  **Quadratic Probing**
 
 ![linearprobing.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/quadraticprobing.png)
