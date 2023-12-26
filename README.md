@@ -965,13 +965,20 @@ public bool isBinarySearchTree(Node root, int min, int max)
 ## AVL Trees
 
 As mentioned before every operation in BTS is run on O(log(n)) which this condition happens when the tree is balanced.
+AVL trees are a special type of BST that automatically re-balance themselves every time we add or remove nodes.
 
 In the balanced tree, the height of every node should be:
 
 `height(left) - height(right) <= 1`
 
-AVL trees are a special type of BST that automatically re-balance themselves every time we add or remove nodes.
+We have a factor to check the balance of the tree called the balanced factor:
 
+`BF = height(left) - height(right)`
+
+` -1 <= BF <= 1`
+
+BF should be 0,1,-1 if is greater or lower than these numbers, the tree should re-balanced itself.
+ 
 #### Self-Balancing Tree
 
 - AVL Tree (Adelson-Velsky and Landis)
@@ -985,7 +992,7 @@ AVL trees are a special type of BST that automatically re-balance themselves eve
 - 2-3 Trees
 
 ### Rotations
-
+A tree rotation is necessary when we have inserted or deleted a node which leaves the tree in an unbalanced state.
 We have four types of rotation:
 
 - Left (LL)
@@ -995,14 +1002,6 @@ We have four types of rotation:
 - Left-Right (LR)
 
 - Right-Left (RL)
-
-We have a factor to check the balance of the tree called the balanced factor:
-
-`BF = height(left) - height(right)`
-
-` -1 <= BF <= 1`
-
-BF should be 0,1,-1 if is greater or lower than these numbers, the tree should re-balanced itself.
 
 ### Left Rotation(LL)
 
