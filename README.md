@@ -1053,15 +1053,15 @@ Final rotation
 
 ## Heaps
 
-Heap is special type of tree with two properties.
+Heaps are a special type of tree with two properties.
 
-1. Tree is should be compelte (Nodes should fill from left to right)
+1. The Tree should be complete (Nodes should fill from left to right)
 
 2. The value of every node is greater than or to its children
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/heap.png" alt="heap.png" width="383">
 
-We have two types of heap: **MaxHeap** that sorted Accenting and **MinHeap** sorted Deccenting 
+We have two types of Heap: **MaxHeap** which sorted Accenting and **MinHeap** sorted Descending 
 
 ###### Heap Applications:
 
@@ -1073,19 +1073,19 @@ We have two types of heap: **MaxHeap** that sorted Accenting and **MinHeap** sor
 
 - Find the Kth smallest/largest value
 
-In heaps only we can delete the root node, and to fill it we should fill the root node with last leaf of tree and bubbling down if heap tree is **MaxHeap** and the time complexity of removing from this tree is **O(log n)**
+In Heaps only we can delete the root node, and to fill it we should fill the root node with the last leaf of the tree and bubble down if the Heap tree is **MaxHeap** and the time complexity of removing from this tree is **O(log n)**
 
-Another operration in heap tree is find the maximun value that is super easy, root node value is the greatest value in tree and run on constant time **O(1)**
+Another operation in the Heap tree is to find the maximum value that is super easy, the root node value is the greatest in a tree and runs on constant time **O(1)**
 
 #### Bulding Heaps
 
-We usually implemeting heap using array and we dont need class with node , leftChild and rightChild.
+We usually implement Heap using Array and we don't need a class with node, leftChild and rightChild.
 
-When we want to insert item in array we should determind the indexes of each node, that we can use the formola below ro each node.
+When we want to insert an item in Array we should determine the indexes of each node, so that we can use the formula below for each node.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/heaparray.png" alt="heaparray.png" width="466">
 
-The formola of calculate parent index is: `ParentIndex = (Index -1) / 2`
+The formula of calculating parent index is: `ParentIndex = (Index -1) / 2`
 
 ## Tries
 
