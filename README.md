@@ -451,6 +451,8 @@ above code uses a circular array to solve a problem of fixed array size.
 
 ###### 2: Implement Queue with stack:
 
+Implementing a queue with stack needs two stacks, stack1 for enqueue and stack2 for dequeue.
+
 ```csharp
 internal class StackQueue
 {
@@ -485,8 +487,6 @@ internal class StackQueue
     }
 }
 ```
-
-Implementing a queue with stack needs two stacks, stack1 for enqueue and stack2 for dequeue.
 
 **What is PriorityQueue?**
 
