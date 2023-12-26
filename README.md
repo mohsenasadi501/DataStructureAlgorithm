@@ -1076,7 +1076,7 @@ We have two types of Heap: **MaxHeap** which sorted nodes Accenting and **MinHea
 
 In Heaps, we can only delete the root node, and to fill it we should fill the root node with the last leaf of the tree and bubble down if the Heap tree is **MaxHeap** and the time complexity of removing from this tree is **O(log n)**.
 
-Another operation in the Heap tree is to find the maximum value that is super easy, the root node value is the greatest node value in a tree and runs on constant time **O(1)**.
+Another operation in the Heap tree is to find the maximum value that is super easy, the root node value is the greatest in a tree and runs on constant time **O(1)**.
 
 #### Building Heaps
 
@@ -1098,9 +1098,9 @@ We use tries for auto-complete, for example, google search.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/triesComplexity.png" alt="triesComplexity.png" width="443">
 
-We are not duplicating this character as you can see above, we can have up to 26 subtrees for each node in English language and the root should be empty.
+We are not duplicating this character as you can see above, we can have up to 26 subtrees for each node in the English language and the root should be empty.
 
-The time complexity of the operation of this tree depends on lentgh of the word.
+The time complexity of the operation of this tree depends on the length of the word.
 
 - **Lookup  O(L)**
 
