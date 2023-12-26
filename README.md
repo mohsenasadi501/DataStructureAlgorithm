@@ -1237,13 +1237,13 @@ This one is the simplest type of sort algorithm:
 
 We should scan Array items from left to right, if items are out of order swap them.
 
-In the below image, we should iterate an Array 5 times that is equal to the length of the Array and each iteration we should compare <u>0 & 1</u> , <u>1 & 2</u> , <u>2 & 3</u> , <u>3 & 4 </u>
+In the below image, we should iterate an Array 5 times that is equal to the length of the Array and for each iteration, we should compare <u>0 & 1</u> , <u>1 & 2</u> , <u>2 & 3</u> , <u>3 & 4 </u>
 
 #### Time Complexity:
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/bsTimeComplexity.png" alt="bsTimeComplexity.png" width="341">
 
-As you can see if Array is fully unsorted the worst scenario will happen and as the below image shown this sorting algorithm is Inefficient because of a red area.
+As you can see if the Array is fully unsorted the worst scenario will happen and as the below image shows this sorting algorithm is Inefficient because of a red area.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/complexity%20chart.png" alt="complexity chart.png" width="465">
 
