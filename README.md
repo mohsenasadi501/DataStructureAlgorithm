@@ -887,7 +887,7 @@ public int height(Node root)
 
 1- Find a minimum value in a Tree:
 
-We can implement it in two ways, first, the easiest way is to traverse all nodes of Tree in with recursion that is time complexity of method is **O(n)**
+We can implement it in two ways, first, the easiest way is to traverse all nodes of the Tree with recursion that is time complexity of the method is **O**(n)**
 
 ```csharp
 // O(n)
@@ -902,7 +902,7 @@ public int min(Node root)
 }
 ```
 
-As you know in the Binary Search Tree the minimum value is always in the left nodes and we should search in left child, because of this the time complexity is **O(log(n))**
+As you know in the Binary Search Tree the minimum value is always in the left nodes and we should search in the left child, because of this the time complexity is **O(log(n))**
 
 ```csharp
 //O(log(n)
