@@ -1145,29 +1145,29 @@ internal class TriesTree
 
 ## Graphs
 
-We use graphs for connected objects, exp: people on a social media platform and we can say tree is kind of graph without cycle and root node.
+We use graphs for connected objects, exp: people on a social media platform and we can say the tree is a kind of graph without a cycle and root node.
 
 Instead of Node in trees we call **Vertex** in graphs
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/graph.png" alt="graph.png" width="281">
 
-If two node connected directly to each other we called **adjacent** or neighbor 
+If two nodes are connected directly to each other we call **adjacent** or neighbor 
 
-If edges have direction we say is a **Directed Graph** like twitter, if you follow someone is  connection from your account to their account and is one way direction and undirected graphs are facebook and linkedin.
+If edges have direction we say is a **Directed Graph** like Twitter, if you follow someone is a connection from your account to their account and is the one-way direction and undirected graphs are Facebook and LinkedIn.
 
-Each edges can have weight like below that we use it to represent how strong connection is.
+Each edge can have a Weight like the below image that we use to represent how strong the connection is.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/weightGraph.png" alt="weightGraph.png" width="296">
 
 ### Adjacency Matrix
 
-First approach **(Adjacency Matrix)** is to use two dimentional array and implement using hash table like below
+The first approach **(**Adjacency Matrix)** is to use a two-dimensional Array and implement using a Hash Table like the below image:
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/twodgraph.png" alt="twodgraph.png" width="371">
 
-If two node is connected the value it should be 1 othervise 0.
+If two nodes are connected, the value should be 1 otherwise 0.
 
-The problem of this approach is amount of space need and space complexity is **O(n^2)** and grow fast.
+The problem with this approach is the amount of space needed and space complexity is **O(n^2**)** and grows fast.
 
 ##### Operations Time Complexity:
 
@@ -1183,21 +1183,21 @@ The problem of this approach is amount of space need and space complexity is **O
 
 - Remove Node = **O(V^2)**
 
-If you know how many nodes you need and you are not going to add item this type is greate to use because time complexity of edges is **O(1)**
+If you know how many nodes you need and you are not going to add an item this type is great to use because the time complexity of edges is **O(1)**
 
 ### Adjacency List
 
-Second Approach **(Adjacency List)** and implement with array of linked list and every element of array has a linked list and contains nodes that is more space efficeint with the first one and  space complexity is **O(V + E)**
+The second Approach **(Adjacency List)** and implemented with an Array of Linked Lists every element of an Array has a Linked List and contains nodes that are more space efficient with the first one and  space complexity is **O(V + E)**
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/adjacencyList.png" alt="adjacencyList.png" width="412">
 
-The worst case scenario is when every node is connected to every other node we say we have **Dense Graph**
+The worst-case scenario is when every node is connected to every other node we say we have a **Dense Graph**
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/densegraph.png" alt="densegraph.png" width="364">
 
 ##### TimeCompexity:
 
-K = Number of edges of each Nodes.
+K = Number of edges of each Node.
 
 **Average scenario:**
 
@@ -1207,7 +1207,7 @@ K = Number of edges of each Nodes.
 
 ![graphtimecomplexityWorse.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/graphtimecomplexityWorse.png)
 
-As you can see in an above images if you have dense graph both approche take the same amount of  apace and time comlexity of Matrix is better, so if we dealing with dense graph is better to impplementing with Matrix but in reality **Adjancency List** is better than Matrix One.
+As you can see in the above images if you have a dense graph both approaches take the same amount of space and the time complexity of the Matrix is better, so if we dealing with a dense graph is better to implement with Matrix but in reality, **Adjancency List**** is better than Matrix One.
 
 # 3: Algorithms
 
