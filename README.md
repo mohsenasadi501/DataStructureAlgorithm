@@ -373,7 +373,7 @@ internal class Stack
 
 ## Queues
 
-The Queue is data structure similar to the stack but in the queue for adding a new item to the top should remove the item from the bottom of the queue as shown below:
+A queue can be defined as an ordered list that enables insert operations to be performed at one end called Back(REAR) and delete operations to be performed at another end called FRONT as shown below:
 
 ![queue.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/queue.png)
 
@@ -381,23 +381,23 @@ The Queue is data structure similar to the stack but in the queue for adding a n
 
 - [x] **Stacks are LIFO (Last-In First-Out)**
 
-Queues are similar to real work queue, that people join the line from the back and leave from front
+Queues are similar to real work queues, in which people join the line from the back and leave from the front.
 
 #### Operations in Queues:
 
-- **enqueue()** Add item to back of the queue
+- **enqueue(**)** Add an item to the back of the queue.
 
-- **dequue()** Remove item from front of queue
+- **dequue()** Remove an item from the front of the queue.
 
-- **peek()** Get item from front without remove it
+- **peek(**)** Get an item from the front without removing it.
 
 - **isEmpty()**
 
 - **isFull()**
 
-All operation of stacks run **O(1)** in a constant time and we can say is so fast.
+All operations of Que run **O(1)** in a constant time and we can say is so fast.
 
-For example if you want to reverse queue in this case again you should use stack, in every situation if you want to reverse you should use stack.
+For example, if you want to reverse the queue in this case again you should use the Stack, in every situation if you want to reverse you should use the Stack.
 
 #### Examples:
 
