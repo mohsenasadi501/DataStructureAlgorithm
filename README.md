@@ -688,7 +688,7 @@ In this part, you will learn:
 
 5. **[Graphs](#Graphs)**
 
-## BinaryTre es
+## Binary Trees
 
 The Tree is a data structure that stores elements in the hierarchy, referring to elements called nodes and connected lines called edges.
 
@@ -708,7 +708,7 @@ The Tree is a data structure that stores elements in the hierarchy, referring to
 
 #### Binary Search Tree
 
-This is a special type of binary tree called **Binary Search Tree (BST)** because it allows us to quickly look up data in this tree. Values of any right node are always greater than left one and have **Logarithmic** time complexity
+This is a special type of binary tree called **Binary Search Tree (BST)** because it allows us to quickly look up data in this tree. Values of any right node are always greater than the left one and have **Logarithmic** time complexity.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/binarysearchtree.png" alt="binarysearchtree.png" width="393">
 
@@ -793,11 +793,11 @@ internal class Tree
 
 #### Traversing Trees:
 
-There are some approach to traverse tree, It classified in to two main categories
+There are some approaches to traverse the tree, It classified into two main categories
 
 - **Breadth First**
   
-  Also called **Level Order** tarversing that you should visit all the nodes at the same level before visiting the nodes at the next level.
+  Also called **Level Order** traversing which you should visit all the nodes at the same level before visiting the nodes at the next level.
   
   <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/levelordertraverse.png" alt="levelordertraverse.png" width="505">
   
@@ -805,7 +805,7 @@ There are some approach to traverse tree, It classified in to two main categorie
 
 - **Depth First**
   
-  In this method we have three diffrent ways
+  In this method, we have three different ways
   
   1. **Pre-order** (Root - Left - Right)
      
@@ -858,7 +858,7 @@ public void traversePostorder(Node root)
 
 #### Depth & Height:
 
-Depth property is the number of edges from root to the target node and height property is the opposite of depth, height of leaf in tree is equal to zero.
+The Depth property of a Tree is the number of edges from the root to the target node and the height property is the opposite of depth, the height of the leaf in a tree is equal to zero.
 
 We have two ways to calculate height:
 
@@ -866,7 +866,7 @@ We have two ways to calculate height:
 
 - Iterative way
 
-There is a recursive formula to calculate the height of tree, we should calculate left and right of the tree and compare both of them:
+There is a recursive formula to calculate the height of the Tree, we should calculate the left and right of the tree and compare both of them:
 
 `Height = 1 + max(height(L), height(R))`
 
@@ -887,7 +887,7 @@ public int height(Node root)
 
 1- Find a minimum value in a Tree:
 
-We can implement in two way, first the easiest way is to traverse in all nodes of tree in with recursion that is time complexcity of method is **O(n)**
+We can implement it in two ways, first, the easiest way is to traverse all nodes of Tree in with recursion that is time complexity of method is **O(n)**
 
 ```csharp
 // O(n)
@@ -902,7 +902,7 @@ public int min(Node root)
 }
 ```
 
-As you know in the Binary Search Tree the minimum value always in a left nodes and we should search in leftChild, because of this the time complexity is **O(log(n))**
+As you know in the Binary Search Tree the minimum value is always in the left nodes and we should search in left child, because of this the time complexity is **O(log(n))**
 
 ```csharp
 //O(log(n)
@@ -922,9 +922,9 @@ public int min()
 }
 ```
 
-Also if you want to find the greatest value in BST, we should do the opposit and traverse to left of tree.
+Also if you want to find the greatest value in BST, we should do the opposite and traverse to the left of the tree.
 
-2- Identify two trees are identical or not:
+2- Identify whether two trees are identical or not:
 
 ```csharp
 public bool equals(Node first, Node second)
@@ -943,7 +943,7 @@ public bool equals(Node first, Node second)
 
 3- Validating Binary Search Tree:
 
-As we know in binary search tree, right nodes should greater than left nodes traversing to leaf nodes. The first way for check each node is to traverse all nodes and it cost a lot, what about the below image
+As we know in the binary search tree, right nodes should be greater than left nodes traversing to leaf nodes. The first way to check each node is to traverse all nodes and it costs a lot.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/validatetree.png" alt="validatetree.png" width="430">
 
