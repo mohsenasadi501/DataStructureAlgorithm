@@ -1284,7 +1284,7 @@ public class BubbleSort
 
 ### Selection Sort
 
-In this sort we need to find a minimum item in array that is 1 in index 3 we need to swap item to item zero , Now 1 is in the correct position.
+In this sort we need to find a minimum item in Array that is 1 in index 3 we need to swap the item to item zero, Now 1 is in the correct position.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/selectionSort.png" alt="selectionSort.png" width="307">
 
@@ -1292,7 +1292,7 @@ Then our array has two parts, sorted and unsorted like below.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/selectionsortpart.png" alt="selectionsortpart.png" width="296">
 
-Now we should repeat this action in unsorted part until all array item sorted.
+Now we should repeat this action in the unsorted part until all array items are sorted.
 
 #### Time Complexity:
 
@@ -1327,7 +1327,7 @@ public class SelectionSort
 
 ### Insertion Sort
 
-The best way to to undrestand insertion sort is playing a card game, imagin each array represent a card, every time you get a card insert it in a right position, first you get 8 then you get 2 insert it before then you get 4, you should insert it between 2 and 8 and 1 insert before all item and finally get 3 insert it after 2.
+The best way to understand insertion sort is by playing a card game, imagine each Array represents a card, every time you get a card insert it in the right position, first you get 8 then you get 2 insert it before then you get 4, you should insert it between 2 and 8 and 1 insert before all item and finally get 3 insert it after 2.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/insertionSort.png" alt="insertionSort.png" width="338">
 
