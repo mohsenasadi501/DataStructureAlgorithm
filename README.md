@@ -647,7 +647,7 @@ for having constant O(1) time complexity we should use Array to store, in the ab
 
 In this scenario we should hash the key, if the key is an integer we get the remain of the key divided by array length, we use the % symbol (Modulo) and this issue with fixed, for example:
 
-`var inedex = key % array.length`
+`var index = key % array.length`
 
 `1 = 11% 5;`
 
@@ -671,7 +671,16 @@ As you can see we store A and C items in an index one but in a linked list.
 
 In this method, we increment 1 each time that the item is full to find an empty item. As the image shows if these clusters happen we should search for free items past 3 previous items and have cost, another method is to use.
 
- **Quadratic Probing**
+**Types of Open Addressing:**
+
+1- Linear Probing:
+We linearly probe/look for the next slot. If slot [hash(x)%size] is full, we try [hash(x)%size+1]. If that is full too, we try [hash(x)%size+2]…until an available space is found. Linear Probing has the best cache performance but the downside includes primary and secondary clustering.
+
+2- Quadratic Probing:
+We look for the i²th iteration. If slot [hash(x)%size] is full, we try [(hash(x)+1*1)%size]. If that is also full, we try [(hash(x)+2*2)%size]…until an available space is found. Secondary clustering might arise here and there is no guarantee of finding a slot in this approach.
+
+3- Double Hashing:
+We use a second hash function hash2(x) and look for the i*hash2(x) slot. If slot [hash(x)%size] is full, we try [(hash(x)+1*hash2(x))%size]. If that is full too, we try [(hash(x)+2*hash2(x))%size]…until an available space is found. No primary or secondary clustering but lot more computation here.
 
 ![linearprobing.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/quadraticprobing.png)
 
