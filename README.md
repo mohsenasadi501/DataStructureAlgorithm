@@ -1,5 +1,7 @@
 # 1: Linear Data Structure
 
+Linear data structures are organized in a particular order, and it is done so because the elements are ordered in a particular pattern.
+
 In the first part of this document you will learn:
 
 1. **[Big O Notation](#Big-O-Notation)**
@@ -16,7 +18,7 @@ In the first part of this document you will learn:
 
 ## Big-O-Notation
 
-We use Big O Notation to describe the performance of the algorithm, time complexity and space complexity to express it and how scalable the algorithm is.
+We use Big O Notation to describe the performance of the algorithm, time complexity and space complexity to express it, and how scalable the algorithm is.
 
 The below codes show **O(1)** because the code runs in a constant time.
 
@@ -682,6 +684,8 @@ As you can see we store A and C items in an index one but in a linked list.
 
 # 2: Non-Linear DataStructure
 
+Nonlinear elements of data structures aren't ordered in a particular way, as opposed to linear structures. They are arranged in a hierarchical manner in which each element may be linked to one element. The graph and tree-based structures divide those that are nonlinear.
+
 In this part, you will learn:
 
 1. **[Binary Trees](#BinaryTrees)**
@@ -698,6 +702,8 @@ In this part, you will learn:
 
 The Tree is a data structure that stores elements in the hierarchy, referring to elements called nodes and connected lines called edges.
 
+A Binary Tree, which is the most basic form of a tree structure, is a data structure where each node has at most two children. Those two children are referred to as the left and right children.
+
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/tree.png" alt="tree.png" width="478">
 
 **Usage**:
@@ -706,11 +712,43 @@ The Tree is a data structure that stores elements in the hierarchy, referring to
 
 - Databases
 
-- Autocompletion
+- AutoCompletion
 
 - Compilers
 
 - Compression(Mp3 ,..)
+  
+  
+
+**Different Types of Binary Search Tree:**
+
+![binarySearchTreeType.png](C:\Users\Mohsen\Desktop\binarySearchTreeType.png)
+
+
+
+1. **Full Binary Tree**
+   
+   We have a full binary tree when every node of the tree has two or zero children.
+   
+   
+
+2. **Complete Binary Tree**
+   
+   A complete binary tree is formed when every level of the tree is completely filled, except possibly from the last one. Also, the last level has all nodes as left as possible.
+   
+   
+
+3. **Perfect Binary Tree**
+   
+   We get a perfect binary tree when all internal tree nodes have two children, as well as all leaves, are uniformed by having the same depth.
+   
+   
+
+4. **Balanced Binary Tree**
+   
+   A balanced binary tree is formed when the tree’s height is O(Log n), with n being the number of nodes. We will explain this later on with AVL and Red-Black trees which are the most commonly used balanced binary search trees.
+
+
 
 #### Binary Search Tree
 
