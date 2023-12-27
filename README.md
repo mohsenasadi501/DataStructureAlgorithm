@@ -66,9 +66,6 @@ public void LogNestedLoop(int[] numbers)
 
 ![algorithm.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/algorithm.png)
 
-
-
-
 As shown in the above image, constant-type algorithms grow linearly at the same rate but the logarithmic curve is down at some point, logarithmic is more efficient and scalable compared to linear or others. Exponential is the opposite of logarithmic and is not efficient to use and has a lot cost.
 
 ### What is Space Complexity?
@@ -78,7 +75,6 @@ Space complexity refers to the total amount of memory space used by an algorith
 ### What is Time Complexity?
 
 It calculates the time taken to run an algorithm as the input grows. In other words, it calculates the worst-case time complexity of an algorithm. Big O Notation in Data Structure describes the upper bound of an algorithm's runtime.
-
 
 ## Arrays
 
@@ -307,7 +303,7 @@ Stacks are powerful data structures that help us to solve many complex programmi
 A Stack is a linear data structure that follows the LIFO (Last-In-First-Out) principle. It contains only one pointer top pointer pointing to the topmost element of the stack. Whenever an element is added to the stack, it is added on the top of the stack, and the element can be deleted only from the stack.
 
 - [x] **Stacks are LIFO (Last-In First-Out)**
-This term refers to the fact that new elements are added to the beginning of the stack, and the first element to be retrieved is the last added element.
+  This term refers to the fact that new elements are added to the beginning of the stack, and the first element to be retrieved is the last added element.
 
 #### Operations in Stacks:
 
@@ -381,7 +377,7 @@ A queue can be defined as an ordered list that enables insert operations to be p
 ![queue.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/queue.png)
 
 - [x] **Queues are FIFO (First-In First-Out)**
-It means the first element to be retrieved from the queue is the first added element.
+  It means the first element to be retrieved from the queue is the first added element.
 
 Queues are similar to real work queues, in which people join the line from the back and leave from the front.
 
@@ -398,7 +394,6 @@ Queues are similar to real work queues, in which people join the line from the b
 - **isFull()**
 
 All operations of Queues run **O(1)** in a constant time and we can say is so fast.
-
 
 #### Examples:
 
@@ -517,7 +512,6 @@ What do we call other programming languages' Hash Tables implementation:
 | Java     | JavaScript | Phyton     | C#         |
 |:--------:|:----------:|:----------:|:----------:|
 | Hash Map | Object     | Dictionary | Dictionary |
-
 
 #### Operations in HashTables:
 
@@ -659,7 +653,7 @@ Another error might occur that the hash function generates two equal hash values
 
 We have three ways to fix this issue
 
-**1-Chaining** : Store multiple items in a Linked List as shown in the above example.
+**1-Chaining**: Store multiple items in a Linked List as shown in the above example.
 
 As you can see we store A and C items in an index one but in a linked list.
 
@@ -667,24 +661,27 @@ As you can see we store A and C items in an index one but in a linked list.
 
 **2- Open Addressing**:  In this method, we do not insert duplicated data in the Linked List, we store them in an Array itself.
 
-<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/linearprobing.png" alt="linearprobing.png" width="455">
 
-In this method, we increment 1 each time that the item is full to find an empty item. As the image shows if these clusters happen we should search for free items past 3 previous items and have cost, another method is to use.
 
 **Types of Open Addressing:**
 
-1- Linear Probing:
-We linearly probe/look for the next slot. If slot [hash(x)%size] is full, we try [hash(x)%size+1]. If that is full too, we try [hash(x)%size+2]…until an available space is found. Linear Probing has the best cache performance but the downside includes primary and secondary clustering.
+- **Linear Probing:**
+  We linearly probe/look for the next slot. If slot [hash(x)%size] is full, we try [hash(x)%size+1]. If that is full too, we try [hash(x)%size+2]…until an available space is found. Linear Probing has the best cache performance but the downside includes primary and secondary clustering.
 
-2- Quadratic Probing:
-We look for the i²th iteration. If slot [hash(x)%size] is full, we try [(hash(x)+1*1)%size]. If that is also full, we try [(hash(x)+2*2)%size]…until an available space is found. Secondary clustering might arise here and there is no guarantee of finding a slot in this approach.
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/linearprobing.png" alt="linearprobing.png" width="455">
 
-3- Double Hashing:
-We use a second hash function hash2(x) and look for the i*hash2(x) slot. If slot [hash(x)%size] is full, we try [(hash(x)+1*hash2(x))%size]. If that is full too, we try [(hash(x)+2*hash2(x))%size]…until an available space is found. No primary or secondary clustering but lot more computation here.
 
-![linearprobing.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/quadraticprobing.png)
+
+- **Quadratic Probing:**
+  We look for the i²th iteration. If slot [hash(x)%size] is full, we try [(hash(x)+1*1)%size]. If that is also full, we try [(hash(x)+2*2)%size]…until an available space is found. Secondary clustering might arise here and there is no guarantee of finding a slot in this approach.
+  
+  
+
+- **Double Hashing:**
+  We use a second hash function hash2(x) and look for the i*hash2(x) slot. If slot [hash(x)%size] is full, we try [(hash(x)+1*hash2(x))%size]. If that is full too, we try [(hash(x)+2*hash2(x))%size]…until an available space is found. No primary or secondary clustering but lot more computation here.
 
 # 2: Non-Linear DataStructure
+
 In this part, you will learn:
 
 1. **[Binary Trees](#BinaryTrees)**
@@ -987,7 +984,7 @@ We have a factor to check the balance of the tree called the balanced factor:
 ` -1 <= BF <= 1`
 
 BF should be 0,1,-1 if is greater or lower than these numbers, the tree should re-balanced itself.
- 
+
 #### Self-Balancing Tree
 
 - AVL Tree (Adelson-Velsky and Landis)
@@ -1001,6 +998,7 @@ BF should be 0,1,-1 if is greater or lower than these numbers, the tree should r
 - 2-3 Trees
 
 ### Rotations
+
 A tree rotation is necessary when we have inserted or deleted a node which leaves the tree in an unbalanced state.
 We have four types of rotation:
 
@@ -1372,7 +1370,6 @@ The idea of merge sort is to break down a list into smaller and smaller sub-list
 
 We call merge sort as **Divide and** Conquer** algorithm, it works by recursively dividing a problem into smaller sub-problems until is easy to solve.
 
-
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/mergeSort.png" alt="mergeSort.png" width="356">
 
 We should find an index of the middle by dividing the length of the array.
@@ -1402,44 +1399,44 @@ Merge Sort Implementation:
 ```csharp
 public class MergeSort
 {
-	public void sort(int[] array)
-	{
-		if (array.Length < 2)
-			return;
+    public void sort(int[] array)
+    {
+        if (array.Length < 2)
+            return;
 
-		//divide array into half
-		var middle = array.Length / 2;
-		int[] left = new int[middle];
-		for (int i = 0; i < middle; i++)
-			left[i] = array[i];
+        //divide array into half
+        var middle = array.Length / 2;
+        int[] left = new int[middle];
+        for (int i = 0; i < middle; i++)
+            left[i] = array[i];
 
-		int[] right = new int[array.Length - middle];
-		for (int i = middle; i < array.Length; i++)
-			right[i - middle] = array[i];
+        int[] right = new int[array.Length - middle];
+        for (int i = middle; i < array.Length; i++)
+            right[i - middle] = array[i];
 
-		//sort each half 
-		sort(left);
-		sort(right);
-		//Merge the result
+        //sort each half 
+        sort(left);
+        sort(right);
+        //Merge the result
 
-		merge(left, right, array);
-	}
-	private void merge(int[] left, int[] right, int[] result)
-	{
-		int i = 0, j = 0, k = 0;
-		while (i < left.Length && j < right.Length)
-		{
-			if (left[i] <= right[j])
-				result[k++] = left[i++];
-			else
-				result[k++] = right[j++];
-		}
-		while (i < right.Length)
-			result[k++] = right[j++];
+        merge(left, right, array);
+    }
+    private void merge(int[] left, int[] right, int[] result)
+    {
+        int i = 0, j = 0, k = 0;
+        while (i < left.Length && j < right.Length)
+        {
+            if (left[i] <= right[j])
+                result[k++] = left[i++];
+            else
+                result[k++] = right[j++];
+        }
+        while (i < right.Length)
+            result[k++] = right[j++];
 
-		while (j < left.Length)
-			result[k++] = left[i++];
+        while (j < left.Length)
+            result[k++] = left[i++];
 
-	}
+    }
 }
 ```
