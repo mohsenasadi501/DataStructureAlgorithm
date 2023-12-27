@@ -722,7 +722,7 @@ A Binary Tree, which is the most basic form of a tree structure, is a data struc
 
 **Different Types of Binary Search Tree:**
 
-![binarySearchTreeType.png](C:\Users\Mohsen\Desktop\binarySearchTreeType.png)
+![binarySearchTreeType.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/binarySearchTreeType.png)
 
 
 
