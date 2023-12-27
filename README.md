@@ -651,9 +651,9 @@ Another error might occur that the hash function generates two equal hash values
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/collision.png" alt="collision.png" width="464">
 
-We have three ways to fix this issue
+We have two ways to fix this issue
 
-**1-Chaining**: Store multiple items in a Linked List as shown in the above example.
+**1- Chaining**: Store multiple items in a Linked List as shown in the above example.
 
 As you can see we store A and C items in an index one but in a linked list.
 
