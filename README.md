@@ -663,8 +663,6 @@ As you can see we store A and C items in an index one but in a linked list.
 
 **2- Open Addressing**:  In this method, we do not insert duplicated data in the Linked List, we store them in an Array itself.
 
-
-
 **Types of Open Addressing:**
 
 - **Linear Probing:**
@@ -672,12 +670,8 @@ As you can see we store A and C items in an index one but in a linked list.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/linearprobing.png" alt="linearprobing.png" width="455">
 
-
-
 - **Quadratic Probing:**
   We look for the i²th iteration. If slot [hash(x)%size] is full, we try [(hash(x)+1*1)%size]. If that is also full, we try [(hash(x)+2*2)%size]…until an available space is found. Secondary clustering might arise here and there is no guarantee of finding a slot in this approach.
-  
-  
 
 - **Double Hashing:**
   We use a second hash function hash2(x) and look for the i*hash2(x) slot. If slot [hash(x)%size] is full, we try [(hash(x)+1*hash2(x))%size]. If that is full too, we try [(hash(x)+2*hash2(x))%size]…until an available space is found. No primary or secondary clustering but lot more computation here.
@@ -717,38 +711,26 @@ A Binary Tree, which is the most basic form of a tree structure, is a data struc
 - Compilers
 
 - Compression(Mp3 ,..)
-  
-  
 
-**Different Types of Binary Search Tree:**
+**Different Types of Binary Tree:**
 
 ![binarySearchTreeType.png](https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/binarySearchTreeType.png)
-
-
 
 1. **Full Binary Tree**
    
    We have a full binary tree when every node of the tree has two or zero children.
-   
-   
 
 2. **Complete Binary Tree**
    
    A complete binary tree is formed when every level of the tree is completely filled, except possibly from the last one. Also, the last level has all nodes as left as possible.
-   
-   
 
 3. **Perfect Binary Tree**
    
-   We get a perfect binary tree when all internal tree nodes have two children, as well as all leaves, are uniformed by having the same depth.
-   
-   
+   We get a perfect binary tree when all tree nodes have two children, as well as all leaves, are uniform by having the same depth.
 
 4. **Balanced Binary Tree**
    
    A balanced binary tree is formed when the tree’s height is O(Log n), with n being the number of nodes. We will explain this later on with AVL and Red-Black trees which are the most commonly used balanced binary search trees.
-
-
 
 #### Binary Search Tree
 
@@ -902,7 +884,9 @@ public void traversePostorder(Node root)
 
 #### Depth & Height:
 
-The Depth property of a Tree is the number of edges from the root to the target node and the height property is the opposite of depth, the height of the leaf in a tree is equal to zero.
+A node’s height is the number of edges to its most distant leaf node. On the other hand, a node’s depth is the number of edges back up to the root. So, the root always has a depth of 0  while leaf nodes always have a height of 0.
+
+<img src="file:///C:/Users/Mohsen/Desktop/treeHeight.png" title="" alt="treeHeight.png" width="463">
 
 We have two ways to calculate height:
 
