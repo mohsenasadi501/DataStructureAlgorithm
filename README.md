@@ -1087,9 +1087,21 @@ Heaps have two characteristics:
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/heap.png" alt="heap.png" width="383">
 
-We have two types of Heap: **MaxHeap** which sorted nodes Accenting and **MinHeap** sorted nodes Descending.
 
-###### Heap Applications:
+
+We have two types of Heap: 
+
+**MaxHeap:** which sorted nodes Accenting and root is the largest in the heap and all the values below this are less than this value.
+
+**MinHeap:** sorted nodes Descending and root is the smallest in the heap and all the values below this are greater than this value.
+
+#### The Heap property
+
+The heap property says that is the value of Parent is either **greater than or equal** to (in a **max heap** ) or **less than or equal to** (in a **min heap**) the value of the Child.
+
+
+
+#### Heap Applications:
 
 - Sorting (HeapSort)
 
