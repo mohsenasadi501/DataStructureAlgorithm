@@ -1203,7 +1203,7 @@ A graph data structure (V, E) consists of:
 
 
 
-##### Cycle Graph
+##### Cycle Graphs
 
 In graph theory, a graph that consists of a single cycle is called a cycle graph or **circular graph**.
 
@@ -1217,7 +1217,7 @@ In graph theory, a graph that consists of a single cycle is called a cycle grap
 
 
 
-##### Connected Graph
+##### Connected Graphs
 
 A Graph is said to be **connected** if every pair of vertices in the graph is connected. This means that there is a path between every pair of vertices.
 
@@ -1225,11 +1225,31 @@ A Graph is said to be **connected** if every pair of vertices in the graph i
 
 
 
-##### Weighted Graph
+##### Weighted Graphs
 
 In weighted graphs, each edge has a value associated with them (called weight). It refers to a **simple graph** that has weighted edges. The weights are usually used to compute the shortest path in the graph.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/weightedGraph.png" alt="weightedGraph.png" width="335">
+
+
+
+##### Directed Graphs
+
+The graphs where the edges have **directions** from one node towards the other node. In Directed Graphs, we can only traverse from one node to another if the edge have a direction pointing to that node.
+
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/directedGraph.png" alt="directedGraph.png" width="277">
+
+Directed graphs are used in many areas. One of the usecase you may think of is a family tree, where there can be only the edge directed from parent to children. So, family tree are directed graphs.
+
+
+
+##### Undirected Graphs
+
+Undirected graphs have edges that do not have a direction. Hence, the graph can be traversed in either direction.
+
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/undirectedGraph.png" alt="undirectedGraph.png" width="304">
+
+The above graph is undirected. Here, the edges do not point to any direction. We can travel through both the directions, so it is bidirectional. In these graphs, we can reach to one node, from any other node.
 
 
 
