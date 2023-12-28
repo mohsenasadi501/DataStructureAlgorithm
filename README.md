@@ -1225,6 +1225,12 @@ A Graph is said to be **connected** if every pair of vertices in the graph i
 
 
 
+##### Weighted Graph
+
+In weighted graphs, each edge has a value associated with them (called weight). It refers to a **simple graph** that has weighted edges. The weights are usually used to compute the shortest path in the graph.
+
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/weightedGraph.png" alt="weightedGraph.png" width="335">
+
 
 
 ### Adjacency Matrix
