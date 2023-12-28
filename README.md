@@ -1091,15 +1091,15 @@ Heaps have two characteristics:
 
 We have two types of Heap: 
 
-**MaxHeap:** which sorted nodes Accenting and root is the largest in the heap and all the values below this are less than this value.
 
-**MinHeap:** sorted nodes Descending and root is the smallest in the heap and all the values below this are greater than this value.
 
 #### The Heap property
 
-The heap property says that is the value of Parent is either **greater than or equal** to (in a **max heap** ) or **less than or equal to** (in a **min heap**) the value of the Child.
+The heap property says that if the value of the parent is either greater than or equal to (in a max heap ) or less than or equal to (in a min heap) the value of the Child.
 
+**MaxHeap:** sorted nodes Accenting and root is the largest in the heap and all the values below this are less than this value.
 
+**MinHeap:** sorted nodes Descending and root is the smallest in the heap and all the values below this are greater than this value.
 
 #### Heap Applications:
 
