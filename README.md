@@ -1221,7 +1221,7 @@ In graph theory, a graph that consists of a single cycle is called a cycle grap
 
 A Graph is said to be **connected** if every pair of vertices in the graph is connected. This means that there is a path between every pair of vertices.
 
-<img src="file:///C:/Users/Mohsen/Desktop/connectedGraph.png" title="" alt="connectedGraph.png" width="253">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/connectedGraph.png" alt="connectedGraph.png" width="253">
 
 
 
