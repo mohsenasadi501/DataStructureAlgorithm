@@ -1089,11 +1089,7 @@ Heaps have two characteristics:
 
 
 
-We have two types of Heap: 
-
-
-
-#### The Heap property
+### The Heap property
 
 The heap property says that if the value of the parent is either greater than or equal to (in a max heap ) or less than or equal to (in a min heap) the value of the Child.
 
@@ -1101,7 +1097,9 @@ The heap property says that if the value of the parent is either greater than o
 
 **MinHeap:** sorted nodes Descending and root is the smallest in the heap and all the values below this are greater than this value.
 
-#### Heap Applications:
+
+
+### Heap Applications:
 
 - Sorting (HeapSort)
 
@@ -1115,7 +1113,9 @@ In Heaps, we can only delete the root node, and to fill it we should fill the ro
 
 Another operation in the Heap tree is to find the maximum value that is super easy, the root node value is the greatest in a tree and runs on constant time **O(1)**.
 
-#### Building Heaps
+
+
+### Building Heaps
 
 We usually implement Heap using Array and we don't need a class with node, leftChild and rightChild.
 
@@ -1124,6 +1124,8 @@ When we want to insert an item in Array we should determine the indexes of each 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/heaparray.png" alt="heaparray.png" width="466">
 
 The formula for calculating parent index is: `ParentIndex = (Index -1) / 2`
+
+
 
 ## Tries
 
