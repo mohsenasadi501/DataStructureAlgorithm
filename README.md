@@ -1176,13 +1176,13 @@ internal class TriesTree
 
 A Graph in Data Structure is a collection of nodes that consist of data and are connected to other nodes of the graph like the below image.
 
-<img title="" src="file:///C:/Users/Mohsen/Desktop/graph.png" alt="graph.png" width="263">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/graph.png" alt="graph.png" width="263">
 
 #### Nodes
 
 They are also called **Vertices**. A node can represent anything such as any location, port, houses, buildings, landmarks, etc.
 
-<img src="file:///C:/Users/Mohsen/Desktop/graphnode.png" title="" alt="graphnode.png" width="378">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/graphnode.png" alt="graphnode.png" width="378">
 
 ##### Degree of a Node
 
@@ -1192,7 +1192,7 @@ The Degree of a node is the number of edges connecting the node in the graph. A
 
 It represents the relationships between various nodes in a graph. Edges are also called the **Path** in a graph.
 
-<img title="" src="file:///C:/Users/Mohsen/Desktop/graphEdge.png" alt="graphEdge.png" width="292">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/graphEdge.png" alt="graphEdge.png" width="292">
 
 The above image represents edges in a graph.
 
@@ -1213,7 +1213,7 @@ In graph theory, a graph that consists of a single cycle is called a cycle grap
 
 - In a Cycle Graph, the Degree of each vertex in a graph is two.
 
-<img src="file:///C:/Users/Mohsen/Desktop/cycleGraph.png" title="" alt="cycleGraph.png" width="316">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/cycleGraph.png" alt="cycleGraph.png" width="316">
 
 
 
