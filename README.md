@@ -1115,15 +1115,13 @@ Another operation in the Heap tree is to find the maximum value that is super ea
 
 
 
-### Building Heaps
+### Operations on Heaps
 
-We usually implement Heap using Array and we don't need a class with node, leftChild and rightChild.
-
-When we want to insert an item in Array we should determine the indexes of each node, so that we can use the formula below for each node.
-
-<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/heaparray.png" alt="heaparray.png" width="466">
-
-The formula for calculating parent index is: `ParentIndex = (Index -1) / 2`
+- **Heapify →** Process to rearrange the heap in order to maintain heap-property.
+- **Find-max (or Find-min) →** find a maximum item of a max-heap, or a minimum item of a min-heap, respectively.
+- **Insertion →** Add a new item in the heap.
+- **Deletion →** Delete an item from the heap.
+- **Extract Min-Max →** Returning and deleting the maximum or minimum element in max-heap and min-heap respectively.
 
 
 
