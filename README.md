@@ -999,13 +999,13 @@ In the balanced tree, the height of every node should be:
 
 `height(left) - height(right) <= 1`
 
-We have a factor to check the balance of the tree called the balanced factor:
+We have a factor to check the balance of the tree called the **balanced factor** which is the difference in the heights of the left and right subtrees.
 
 `BF = height(left) - height(right)`
 
-` -1 <= BF <= 1`
+` -1 <= BF <= +1`
 
-BF should be 0,1,-1 if is greater or lower than these numbers, the tree should re-balanced itself.
+The Balance factor of an AVL Tree should be 0,+1,-1, if is greater or lower than these numbers, the tree should re-balanced itself.
 
 #### Self-Balancing Tree
 
@@ -1034,17 +1034,17 @@ We have four types of rotation:
 
 ### Left Rotation(LL)
 
-We can calculate the BF of each child and node with a value of 1 is not balanced and the heavy is on the right we have to perform left rotation
+A single rotation is applied when a node is inserted in the right subtree of a right subtree. In the given example, **node 1** has a balance factor of 2 after the insertion of **node 3**. By rotating the tree left, **node 2** becomes the root resulting in a balanced tree.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/leftRotation.png" alt="leftRotation.png" width="254">
 
-After Left Rotation and tree balanced
+After the Left Rotation and tree has balanced
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/leftRotation-perform.png" alt="leftRotation-perform.png" width="210">
 
 ### Right Rotation(RR)
 
-As you can see in the below image the heavier left is than the right and the tree is unbalanced and needs to rotate to right.
+A single rotation is applied when a node is inserted in the left subtree of a left subtree. In the given example, **node 3** now has a balance factor of 2 after the insertion of **node A**. By rotating the tree right, **node 2** becomes the root resulting in a balanced tree.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/rightRotation.png" alt="rightRotation.png" width="203">
 
@@ -1054,9 +1054,7 @@ After Left Rotation and tree-balanced
 
 ### Left-Right Rotation(LR)
 
-In the below image, we have a double rotation with left and right 
-
-<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/left-rightRotation.png" alt="left-rightRotation.png" width="193">
+In the given example, **node 7** is causing an imbalance resulting in **node 10** having a balance factor of 2. As **node 7** is inserted in the right subtree of **node 5**, a *left rotation* needs to be applied. However, a single rotation will not give us the required results. Now, all we have to do is apply the *right rotation* as shown before to achieve a balanced tree.<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/left-rightRotation.png" alt="left-rightRotation.png" width="193">
 
 We should first rotate like the below image
 
@@ -1068,9 +1066,7 @@ Then we rotate it to the right same as in the below image and now the tree is ba
 
 ### Right-Left Rotation(RL)
 
-This is the opposite of LR Rotation and we should perform right-left rotation
-
-<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/rightleftRotation.png" alt="rightleftRotation.png" width="169">
+In the given example, **node 7** is causing an imbalance resulting in **node 5** having a balance factor of 2. As **node 7** is inserted in the left subtree of **node 10**, a *right rotation* needs to be applied. However, just as before, a single rotation will not give us the required results. Now, by applying the *left rotation* as shown before, we can achieve a balanced tree.<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/rightleftRotation.png" alt="rightleftRotation.png" width="169">
 
 First, we should rotate like the below image 
 
