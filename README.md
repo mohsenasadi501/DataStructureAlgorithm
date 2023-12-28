@@ -886,7 +886,7 @@ public void traversePostorder(Node root)
 
 A node’s height is the number of edges to its most distant leaf node. On the other hand, a node’s depth is the number of edges back up to the root. So, the root always has a depth of 0  while leaf nodes always have a height of 0.
 
-<img src="file:///C:/Users/Mohsen/Desktop/treeHeight.png" title="" alt="treeHeight.png" width="463">
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/treeHeight.png" alt="treeHeight.png" width="463">
 
 We have two ways to calculate height:
 
