@@ -1203,7 +1203,7 @@ A graph data structure (V, E) consists of:
 
 
 
-##### Cycle Graphs
+#### Cycle Graphs
 
 In graph theory, a graph that consists of a single cycle is called a cycle graph or **circular graph**.
 
@@ -1217,7 +1217,7 @@ In graph theory, a graph that consists of a single cycle is called a cycle grap
 
 
 
-##### Connected Graphs
+#### Connected Graphs
 
 A Graph is said to be **connected** if every pair of vertices in the graph is connected. This means that there is a path between every pair of vertices.
 
@@ -1225,7 +1225,7 @@ A Graph is said to be **connected** if every pair of vertices in the graph i
 
 
 
-##### Weighted Graphs
+#### Weighted Graphs
 
 In weighted graphs, each edge has a value associated with them (called weight). It refers to a **simple graph** that has weighted edges. The weights are usually used to compute the shortest path in the graph.
 
@@ -1233,7 +1233,7 @@ In weighted graphs, each edge has a value associated with them (called weight).
 
 
 
-##### Directed Graphs
+#### Directed Graphs
 
 The graphs where the edges have **directions** from one node towards the other node. In Directed Graphs, we can only traverse from one node to another if the edge have a direction pointing to that node.
 
@@ -1243,25 +1243,27 @@ Directed graphs are used in many areas. One of the usecase you may think of is 
 
 
 
-##### Undirected Graphs
+#### Undirected Graphs
 
 Undirected graphs have edges that do not have a direction. Hence, the graph can be traversed in either direction.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/undirectedGraph.png" alt="undirectedGraph.png" width="304">
 
-The above graph is undirected. Here, the edges do not point to any direction. We can travel through both the directions, so it is bidirectional. In these graphs, we can reach to one node, from any other node.
+The above graph is undirected. Here, the edges do not point to any direction. We can travel through both directions, so it is bidirectional. In these graphs, we can reach to one node, from any other node.
 
 
 
-### Adjacency Matrix
+### Graph Implementation
 
-The first approach (**Adjacency Matrix)** is to use a two-dimensional Array and implement using a Hash Table like the below image:
+#### Adjacency Matrix
+
+The first approach to impelement graph (**Adjacency Matrix)** is to use a two-dimensional Array and implement using a Hash Table like the below image:
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/twodgraph.png" alt="twodgraph.png" width="371">
 
 If two nodes are connected, the value should be 1 otherwise 0.
 
-The problem with this approach is the amount of space needed and space complexity is **O(n^2**)** and grows fast.
+The problem with this approach is the amount of space needed and space complexity is **O(n^2)** and grows fast.
 
 ##### Operations Time Complexity:
 
@@ -1281,7 +1283,7 @@ If you know how many nodes you need and you are not going to add an item this ty
 
 ### Adjacency List
 
-The second Approach **(Adjacency List)** and implemented with an Array of Linked Lists every element of an Array has a Linked List and contains nodes that are more space efficient with the first one and  space complexity is **O(V + E)**
+The second approach is  **(Adjacency List)** and is implemented with an Array of Linked Lists every element of an Array has a Linked List and contains nodes that are more space efficient with the first one and  space complexity is **O(V + E)**
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/adjacencyList.png" alt="adjacencyList.png" width="412">
 
