@@ -1087,8 +1087,6 @@ Heaps have two characteristics:
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/heap.png" alt="heap.png" width="383">
 
-
-
 ### The Heap property
 
 The heap property says that if the value of the parent is either greater than or equal to (in a max heap ) or less than or equal to (in a min heap) the value of the Child.
@@ -1096,8 +1094,6 @@ The heap property says that if the value of the parent is either greater than o
 **MaxHeap:** sorted nodes Accenting and root is the largest in the heap and all the values below this are less than this value.
 
 **MinHeap:** sorted nodes Descending and root is the smallest in the heap and all the values below this are greater than this value.
-
-
 
 ### Heap Applications:
 
@@ -1113,8 +1109,6 @@ In Heaps, we can only delete the root node, and to fill it we should fill the ro
 
 Another operation in the Heap tree is to find the maximum value that is super easy, the root node value is the greatest in a tree and runs on constant time **O(1)**.
 
-
-
 ### Operations on Heaps
 
 - **Heapify →** Process to rearrange the heap in order to maintain heap-property.
@@ -1123,11 +1117,9 @@ Another operation in the Heap tree is to find the maximum value that is super ea
 - **Deletion →** Delete an item from the heap.
 - **Extract Min-Max →** Returning and deleting the maximum or minimum element in max-heap and min-heap respectively.
 
-
-
 ## Tries
 
-The Tries is another type of tree but is not a BST one, each child can have several nodes.
+The Tries (Prefix Tree) is another type of tree but is not a BST one, each child can have several nodes.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/triesTree.png" alt="triesTree.png" width="431">
 
@@ -1182,23 +1174,62 @@ internal class TriesTree
 
 ## Graphs
 
-We use graphs for connected objects, exp: people on a social media platform and we can say the tree is a kind of graph without a cycle and root node.
+A Graph in Data Structure is a collection of nodes that consist of data and are connected to other nodes of the graph like the below image.
 
-Instead of Node in trees we call **Vertex** in graphs
+<img title="" src="file:///C:/Users/Mohsen/Desktop/graph.png" alt="graph.png" width="263">
 
-<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/graph.png" alt="graph.png" width="281">
+#### Nodes
 
-If two nodes are connected directly to each other we call **adjacent** or neighbor 
+They are also called **Vertices**. A node can represent anything such as any location, port, houses, buildings, landmarks, etc.
 
-If edges have direction we say is a **Directed Graph** like Twitter, if you follow someone is a connection from your account to their account and is the one-way direction and undirected graphs are Facebook and LinkedIn.
+<img src="file:///C:/Users/Mohsen/Desktop/graphnode.png" title="" alt="graphnode.png" width="378">
 
-Each edge can have a Weight like the below image that we use to represent how strong the connection is.
+##### Degree of a Node
 
-<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/weightGraph.png" alt="weightGraph.png" width="296">
+The Degree of a node is the number of edges connecting the node in the graph. A simple example would be, suppose in Facebook, if you have 100 friends then the node that represents you has a degree of 100.
+
+#### Edges
+
+It represents the relationships between various nodes in a graph. Edges are also called the **Path** in a graph.
+
+<img title="" src="file:///C:/Users/Mohsen/Desktop/graphEdge.png" alt="graphEdge.png" width="292">
+
+The above image represents edges in a graph.
+
+A graph data structure (V, E) consists of:
+
+1. A collection of vertices (V) or nodes.
+2. A collection of edges (E) or path.
+
+
+
+##### Cycle Graph
+
+In graph theory, a graph that consists of a single cycle is called a cycle graph or **circular graph**.
+
+- A Cycle Graph or Circular Graph is a graph that consists of a single cycle.
+
+- In a Cycle Graph number of vertices is equal to a number of edges.
+
+- In a Cycle Graph, the Degree of each vertex in a graph is two.
+
+<img src="file:///C:/Users/Mohsen/Desktop/cycleGraph.png" title="" alt="cycleGraph.png" width="316">
+
+
+
+##### Connected Graph
+
+A Graph is said to be **connected** if every pair of vertices in the graph is connected. This means that there is a path between every pair of vertices.
+
+<img src="file:///C:/Users/Mohsen/Desktop/connectedGraph.png" title="" alt="connectedGraph.png" width="253">
+
+
+
+
 
 ### Adjacency Matrix
 
-The first approach **(**Adjacency Matrix)** is to use a two-dimensional Array and implement using a Hash Table like the below image:
+The first approach (**Adjacency Matrix)** is to use a two-dimensional Array and implement using a Hash Table like the below image:
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/twodgraph.png" alt="twodgraph.png" width="371">
 
