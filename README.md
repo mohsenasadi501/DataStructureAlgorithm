@@ -1528,15 +1528,15 @@ Binary Search is a searching algorithm for finding an element's position in a so
 
 1. This is an Array we want to search **X=4**.
    
-   <img src="file:///C:/Users/Mohsen/Desktop/binarySearchArray.png" title="" alt="binarySearchArray.png" width="317">
+   <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/binarySearchArray.png" alt="binarySearchArray.png" width="317">
 
 2. Set two pointers low and high at the lowest and the highest positions respectively.
    
-   <img src="file:///C:/Users/Mohsen/Desktop/binarySearchPointer.png" title="" alt="binarySearchPointer.png" width="318">
+   <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/binarySearchPointer.png" alt="binarySearchPointer.png" width="318">
 
 3. Find the index of the middle element of the array ie. `arr[(low + high)/2] = 3`
    
-   <img src="file:///C:/Users/Mohsen/Desktop/binarySearchMiddle.png" title="" alt="binarySearchMiddle.png" width="311">
+   <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/binarySearchMiddle.png" alt="binarySearchMiddle.png" width="311">
 
 4. If x == mid, then return mid. Else, compare the element to be searched with m.
 
@@ -1544,8 +1544,8 @@ Binary Search is a searching algorithm for finding an element's position in a so
 
 6. Otherwise, compare x with the middle element of the elements on the left side of mid. This is done by setting high to `high = mid - 1`.
    
-   <img src="file:///C:/Users/Mohsen/Desktop/binarySearch2Middle.png" title="" alt="binarySearch2Middle.png" width="299">
+   <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/binarySearch4Middle.png" alt="binarySearch2Middle.png" width="299">
 
 7. Repeat steps 3 to 6 until low meets high and finally find X.
    
-   <img title="" src="file:///C:/Users/Mohsen/Desktop/binarySearch5Middle.png" alt="binarySearch5Middle.png" width="149">
+   <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/binarySearch5Middle.png" alt="binarySearch5Middle.png" width="149">
