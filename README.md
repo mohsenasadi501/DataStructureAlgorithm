@@ -269,6 +269,14 @@ As you can see above code we have a Node class that stores the value of the item
 
 ### Arrays vs Linked Lists:
 
+There are two different types of access: **random access** and **sequential access**
+
+- [x] Sequential access means reading the elements one by one like **Linked List**.
+
+- [x] Random access means you jump directly to the 10th element like **Array**.
+  
+  
+
 We want to compare in terms of space and time complexity.
 
 - Static arrays have a fixed size 
@@ -1550,7 +1558,7 @@ Binary Search is a searching algorithm for finding an element's position in a so
    
    <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/binarySearch5Middle.png" alt="binarySearch5Middle.png" width="149">
 
-#### Recap:
+#### Recap
 
 - Binary search is a lot faster than simple search.
 
