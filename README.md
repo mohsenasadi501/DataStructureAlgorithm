@@ -1549,3 +1549,19 @@ Binary Search is a searching algorithm for finding an element's position in a so
 7. Repeat steps 3 to 6 until low meets high and finally find X.
    
    <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/binarySearch5Middle.png" alt="binarySearch5Middle.png" width="149">
+
+#### Recap:
+
+- Binary search is a lot faster than simple search.
+
+- O(log n) is faster than O(n), but it gets a lot faster once the list of items you're searching through grows.
+
+- Algorithm times are measured in terms of the growth of an algorithm.
+
+#### Time Complexity
+
+| Case         | Time Complexity | Space Complexity |
+|:------------ |:---------------:|:----------------:|
+| Best Case    | O(1)            | O(1)             |
+| Average Case | O(logn)         | O(1)             |
+| Worst Case   | O(logn)         | O(1)             |
