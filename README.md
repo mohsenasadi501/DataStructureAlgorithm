@@ -1201,8 +1201,6 @@ A graph data structure (V, E) consists of:
 1. A collection of vertices (V) or nodes.
 2. A collection of edges (E) or path.
 
-
-
 #### Cycle Graphs
 
 In graph theory, a graph that consists of a single cycle is called a cycle graph or **circular graph**.
@@ -1215,23 +1213,17 @@ In graph theory, a graph that consists of a single cycle is called a cycle grap
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/cycleGraph.png" alt="cycleGraph.png" width="316">
 
-
-
 #### Connected Graphs
 
 A Graph is said to be **connected** if every pair of vertices in the graph is connected. This means that there is a path between every pair of vertices.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/connectedGraph.png" alt="connectedGraph.png" width="253">
 
-
-
 #### Weighted Graphs
 
 In weighted graphs, each edge has a value associated with them (called weight). It refers to a **simple graph** that has weighted edges. The weights are usually used to compute the shortest path in the graph.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/weightedGraph.png" alt="weightedGraph.png" width="335">
-
-
 
 #### Directed Graphs
 
@@ -1241,8 +1233,6 @@ The graphs where the edges have **directions** from one node towards the other
 
 Directed graphs are used in many areas. One of the usecase you may think of is a family tree, where there can be only the edge directed from parent to children. So, family tree are directed graphs.
 
-
-
 #### Undirected Graphs
 
 Undirected graphs have edges that do not have a direction. Hence, the graph can be traversed in either direction.
@@ -1250,8 +1240,6 @@ Undirected graphs have edges that do not have a direction. Hence, the graph can
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/undirectedGraph.png" alt="undirectedGraph.png" width="304">
 
 The above graph is undirected. Here, the edges do not point to any direction. We can travel through both directions, so it is bidirectional. In these graphs, we can reach to one node, from any other node.
-
-
 
 ### Graph Implementation
 
@@ -1529,3 +1517,35 @@ public class MergeSort
     }
 }
 ```
+
+
+
+## Searching
+
+### Binary Search
+
+Binary Search is a searching algorithm for finding an element's position in a sorted Array. Binary search can be implemented only on a sorted list of items. If the elements are not sorted already, we need to sort them first.
+
+1. This is an Array we want to search **X=4**.
+   
+   <img src="file:///C:/Users/Mohsen/Desktop/binarySearchArray.png" title="" alt="binarySearchArray.png" width="317">
+
+2. Set two pointers low and high at the lowest and the highest positions respectively.
+   
+   <img src="file:///C:/Users/Mohsen/Desktop/binarySearchPointer.png" title="" alt="binarySearchPointer.png" width="318">
+
+3. Find the index of the middle element of the array ie. `arr[(low + high)/2] = 3`
+   
+   <img src="file:///C:/Users/Mohsen/Desktop/binarySearchMiddle.png" title="" alt="binarySearchMiddle.png" width="311">
+
+4. If x == mid, then return mid. Else, compare the element to be searched with m.
+
+5. If `x > mid`, compare x with the middle element of the elements on the right side of mid. This is done by setting low to `low = mid + 1`.
+
+6. Otherwise, compare x with the middle element of the elements on the left side of mid. This is done by setting high to `high = mid - 1`.
+   
+   <img src="file:///C:/Users/Mohsen/Desktop/binarySearch2Middle.png" title="" alt="binarySearch2Middle.png" width="299">
+
+7. Repeat steps 3 to 6 until low meets high and finally find X.
+   
+   <img title="" src="file:///C:/Users/Mohsen/Desktop/binarySearch5Middle.png" alt="binarySearch5Middle.png" width="149">
