@@ -274,8 +274,6 @@ There are two different types of access: **random access** and **sequential acce
 - [x] Sequential access means reading the elements one by one like **Linked List**.
 
 - [x] Random access means you jump directly to the 10th element like **Array**.
-  
-  
 
 We want to compare in terms of space and time complexity.
 
@@ -1386,6 +1384,8 @@ Then our array has two parts, sorted and unsorted like below.
 
 Now we should repeat this action in the unsorted part until all array items are sorted.
 
+As we understand for sorting one item in the list we should apply **Simple Search** to find the **lowest** or **highest** value and we should apply this search for each item to sort then we will have **O(n*n) = O(n^2)**.
+
 #### Time Complexity:
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/ssTimeComlexity.png" alt="ssTimeComlexity.png" width="310">
@@ -1525,8 +1525,6 @@ public class MergeSort
     }
 }
 ```
-
-
 
 ## Searching
 
