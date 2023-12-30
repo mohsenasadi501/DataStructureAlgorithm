@@ -1390,6 +1390,12 @@ Here are the steps involved:
 
 As an example, we can use this method for the [MergeSort](#MergeSort) algorithm.
 
+### Divide and Conquer Applications
+
+- [BinarySearch](#BinarySearch)
+- [MergeSort](#MergeSort)
+- [QuickSort](#QuickSort)
+
 ## Sorting
 
 In the Sorting algorithm, we learn:
@@ -1609,7 +1615,7 @@ public class MergeSort
 
 ## Searching
 
-### Binary Search
+### BinarySearch
 
 Binary Search is a searching algorithm for finding an element's position in a sorted Array. Binary search can be implemented only on a sorted list of items. If the elements are not sorted already, we need to sort them first.
 
