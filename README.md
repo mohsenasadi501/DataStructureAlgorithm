@@ -1305,11 +1305,13 @@ In this part of the document you will learn:
 
 1. **[Recursion](#Recursion)**
 
-2. **[Sorting](#Sorting)**
+2. [**Divide&Conquer**](#Divide&Conquer)
 
-3. **[Searching](#Searching)**
+3. **[Sorting](#Sorting)**
 
-4. **[String Manipulation](#StringManipulation)**
+4. **[Searching](#Searching)**
+
+5. **[String Manipulation](#StringManipulation)**
 
 ## Recursion
 
@@ -1367,6 +1369,26 @@ public void CountDown(int i)
 There's no performance benefit to using recursion; in fact, loops are sometimes better for performance. ***Loops may achieve a performance gain for your program, but Recursion may achieve a performance gain for your programmer.***
 
 While calling a recursive function, each call is stored in **Call Stack** until the Base Case condition executes, then it will start by popping calls from the last to the first.
+
+## Divide&Conquer
+
+The divide-and-conquer technique involves taking a large-scale problem and dividing it into similar sub-problems of a smaller scale and recursively solving each of these sub-problems. Generally, a problem is divided into sub-problems repeatedly until the resulting sub-problems are very easy to solve.
+
+A **divide and conquer algorithm** is a strategy of solving a large problem by
+
+1. breaking the problem into smaller sub-problems
+2. solving the sub-problems, and
+3. combining them to get the desired output.
+   
+   
+
+Here are the steps involved:
+
+1. **Divide**: Divide the given problem into sub-problems using recursion.
+2. **Conquer**: Solve the smaller sub-problems recursively. If the subproblem is small enough, then solve it directly.
+3. **Combine:** Combine the solutions of the sub-problems that are part of the recursive process to solve the actual problem.
+
+As an example, we can use this method for the [MergeSort](#MergeSort) algorithm.
 
 ## Sorting
 
