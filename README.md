@@ -1332,11 +1332,39 @@ What does Stack Frame have?
 - Information about the caller's stack frame
 - The *return address*—what the program should do after the function returns (i.e.: where it should "return to"). This is usually somewhere in the middle of the caller's code.
 
-In recursive functions on each recursion, we will have one Stack Frame that takes memory until finishing the function and in recursive calls end up with huge call stacks.
+In recursive functions on each recursion, we will have one Stack Frame that takes memory until finishing the function and recursive calls end up with huge call stacks.
 
+The Recursive function has two parts:
 
+**Base Case:** The base case is when the function doesn't call itself again, so it doesn't go into an infinite loop.
+
+**Recursive Case:** The recursive case is when the function calls itself.
+
+```csharp
+public void CountDown(int i)
+{
+    Console.WriteLine(i);
+
+    // Base Case
+    if(i<=0)
+    {
+        return;
+    }
+    //Recursive Case
+    else
+    {
+        Countdown(i-1);
+    }
+ }
+```
+
+There's no performance benefit to using recursion; in fact, loops are sometimes better for performance. ***Loops may achieve a performance gain for your program, but Recursion may achieve a performance gain for your programmer.***
+
+While calling a recursive function, each call is stored in **Call Stack** until the Base Case condition executes, then it will start by popping calls from the last to the first.
 
 ### Recursive Functions
+
+A Recursive function can be defined as a routine that calls itself directly or indirectly.
 
 
 
