@@ -1332,6 +1332,12 @@ What does Stack Frame have?
 - Information about the caller's stack frame
 - The *return address*—what the program should do after the function returns (i.e.: where it should "return to"). This is usually somewhere in the middle of the caller's code.
 
+
+
+### Recursive Functions
+
+A Recursive function can be defined as a routine that calls itself directly or indirectly.
+
 In recursive functions on each recursion, we will have one Stack Frame that takes memory until finishing the function and recursive calls end up with huge call stacks.
 
 The Recursive function has two parts:
@@ -1361,12 +1367,6 @@ public void CountDown(int i)
 There's no performance benefit to using recursion; in fact, loops are sometimes better for performance. ***Loops may achieve a performance gain for your program, but Recursion may achieve a performance gain for your programmer.***
 
 While calling a recursive function, each call is stored in **Call Stack** until the Base Case condition executes, then it will start by popping calls from the last to the first.
-
-### Recursive Functions
-
-A Recursive function can be defined as a routine that calls itself directly or indirectly.
-
-
 
 ## Sorting
 
