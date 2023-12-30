@@ -1303,11 +1303,42 @@ As you can see in the above images if you have a dense graph both approaches tak
 
 In this part of the document you will learn:
 
-1. **[Sorting](#Sorting)**
+1. **[Recursion](#Recursion)**
 
-2. **[Searching](#Searching)**
+2. **[Sorting](#Sorting)**
 
-3. **[String Manipulation](#StringManipulation)**
+3. **[Searching](#Searching)**
+
+4. **[String Manipulation](#StringManipulation)**
+
+## Recursion
+
+Recursion is when a function calls itself.
+
+### Call Stack
+
+In computer science, a call stack is a stack data structure that stores information about the active subroutines of a computer program, and in software development, the **call stack** is what a program uses to keep track of method calls.
+
+While you're calling a method that has another method in it, What will happen?
+
+The computer stores **Pushes** the main method first to the Stack and then **Pushes** the inner method to the Stack and starts to calculate from the Stack by popping the method and calling it.
+
+As we know each function call has an input and return value, where do these values store? These values are stored in the **Stack Frame**. 
+
+What does Stack Frame have?
+
+- Local variables
+- Arguments passed into the method
+- Information about the caller's stack frame
+- The *return address*—what the program should do after the function returns (i.e.: where it should "return to"). This is usually somewhere in the middle of the caller's code.
+
+In recursive functions on each recursion, we will have one Stack Frame that takes memory until finishing the function and in recursive calls end up with huge call stacks.
+
+
+
+### Recursive Functions
+
+
 
 ## Sorting
 
