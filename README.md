@@ -1388,13 +1388,13 @@ Here are the steps involved:
 2. **Conquer**: Solve the smaller sub-problems recursively. If the subproblem is small enough, then solve it directly.
 3. **Combine:** Combine the solutions of the sub-problems that are part of the recursive process to solve the actual problem.
 
-As an example, we can use this method for the [MergeSort](#MergeSort) algorithm.
-
 ### Divide and Conquer Applications
 
 - [BinarySearch](#BinarySearch)
 - [MergeSort](#MergeSort)
 - [QuickSort](#QuickSort)
+
+
 
 ## Sorting
 
