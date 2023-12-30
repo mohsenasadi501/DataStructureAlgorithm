@@ -1305,7 +1305,7 @@ In this part of the document you will learn:
 
 1. **[Recursion](#Recursion)**
 
-2. [**Divide&Conquer**](#Divide&Conquer)
+2. **[DivideAndConquer](#DivideAndConquer)**
 
 3. **[Sorting](#Sorting)**
 
@@ -1370,7 +1370,7 @@ There's no performance benefit to using recursion; in fact, loops are sometimes 
 
 While calling a recursive function, each call is stored in **Call Stack** until the Base Case condition executes, then it will start by popping calls from the last to the first.
 
-## Divide&Conquer
+## DivideAndConquer
 
 The divide-and-conquer technique involves taking a large-scale problem and dividing it into similar sub-problems of a smaller scale and recursively solving each of these sub-problems. Generally, a problem is divided into sub-problems repeatedly until the resulting sub-problems are very easy to solve.
 
