@@ -1400,7 +1400,7 @@ In the Sorting algorithm, we learn:
 
 - Implementation
 
-### Bubble Sort
+### BubbleSort
 
 This one is the simplest type of sort algorithm:
 
@@ -1453,7 +1453,7 @@ public class BubbleSort
 }
 ```
 
-### Selection Sort
+### SelectionSort
 
 In this sort we need to find a minimum item in Array that is 1 in index 3 we need to swap the item to item zero, Now 1 is in the correct position.
 
@@ -1498,7 +1498,7 @@ public class SelectionSort
 }
 ```
 
-### Insertion Sort
+### InsertionSort
 
 The best way to understand insertion sort is by playing a card game, imagine each Array represents a card, every time you get a card insert it in the right position, first you get 8 then you get 2 insert it before then you get 4, you should insert it between 2 and 8 and 1 insert before all item and finally get 3 insert it after 2.
 
@@ -1530,7 +1530,7 @@ public class InsertionSort
 }
 ```
 
-### Merge Sort
+### MergeSort
 
 The idea of merge sort is to break down a list into smaller and smaller sub-lists sort those and merge them back to each other to a completely sorted list. we should divide an array until we can not divide anymore and should compare each array that has a single item to sort them and again merge them.
 
