@@ -1334,8 +1334,6 @@ What does Stack Frame have?
 - Information about the caller's stack frame
 - The *return address*—what the program should do after the function returns (i.e.: where it should "return to"). This is usually somewhere in the middle of the caller's code.
 
-
-
 ### Recursive Functions
 
 A Recursive function can be defined as a routine that calls itself directly or indirectly.
@@ -1379,8 +1377,6 @@ A **divide and conquer algorithm** is a strategy of solving a large problem by
 1. breaking the problem into smaller sub-problems
 2. solving the sub-problems, and
 3. combining them to get the desired output.
-   
-   
 
 Here are the steps involved:
 
@@ -1393,8 +1389,6 @@ Here are the steps involved:
 - [BinarySearch](#BinarySearch)
 - [MergeSort](#MergeSort)
 - [QuickSort](#QuickSort)
-
-
 
 ## Sorting
 
@@ -1538,9 +1532,9 @@ public class InsertionSort
 
 ### MergeSort
 
-The idea of merge sort is to break down a list into smaller and smaller sub-lists sort those and merge them back to each other to a completely sorted list. we should divide an array until we can not divide anymore and should compare each array that has a single item to sort them and again merge them.
+The idea of merge sort is to break down a list into smaller and smaller sub-lists then sort them and merge them back to each other to a completely sorted list. we should divide an array until we can not divide anymore and should compare each array that has a single item to sort them and again merge them.
 
-We call merge sort as **Divide and** Conquer** algorithm, it works by recursively dividing a problem into smaller sub-problems until is easy to solve.
+We can say Merge Sort is **Divide and Conquer** algorithm, it works by recursively dividing a problem into smaller sub-problems until is easy to solve. If our array is like below:
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/mergeSort.png" alt="mergeSort.png" width="356">
 
@@ -1558,7 +1552,13 @@ Now we have a single item array and we should merge and combine two left Array.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/thirdmergesort.png" alt="thirdmergesort.png" width="354">
 
-Now we should repeat to the right array and split and merge it.
+Now we should repeat to the right array and split and merge it until the array is fully sorted.
+
+Real Example with numbers:
+
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/mergeSortSample.png" alt="mergeSortSample.png" width="478">
+
+
 
 #### Time Complexity:
 
