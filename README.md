@@ -708,9 +708,9 @@ Nonlinear elements of data structures aren't ordered in a particular way, as opp
 
 In this part, you will learn:
 
-1. **[Binary Trees](#BinaryTrees)**
+1. **[Binary Trees](#Binary-Trees)**
 
-2. **[AVL Trees](#AVLTrees)**
+2. **[AVL Trees](#AVL-Trees)**
 
 3. **[Heaps](#Heaps)**
 
@@ -718,7 +718,7 @@ In this part, you will learn:
 
 5. **[Graphs](#Graphs)**
 
-## Binary Trees
+## Binary-Trees
 
 The Tree is a data structure that stores elements in the hierarchy, referring to elements called nodes and connected lines called edges.
 
@@ -1020,7 +1020,7 @@ public bool isBinarySearchTree(Node root, int min, int max)
 }
 ```
 
-## AVL Trees
+## AVL-Trees
 
 As mentioned before every operation in BTS is run on O(log(n)) which this condition happens when the tree is balanced.
 AVL trees are a special type of BST that automatically re-balance themselves every time we add or remove nodes.
