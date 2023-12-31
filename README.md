@@ -847,15 +847,17 @@ internal class Tree
 
 There are some approaches to traverse the tree, It classified into two main categories
 
-- **Breadth First**
+- **Breadth First Seach (BFS)**
   
   Also called **Level Order** traversing which you should visit all the nodes at the same level before visiting the nodes at the next level.
   
   <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/levelordertraverse.png" alt="levelordertraverse.png" width="505">
   
   As you can see in the above image, first you visit 7 then 4,9,1,6,8 and 10.
+  
+  For implementing this search algorithm for Trees and Graphs we should use **Queue** Data Structure.
 
-- **Depth First**
+- **Depth First Search (DFS)**
   
   In this method, we have three different ways
   
@@ -907,6 +909,8 @@ public void traversePostorder(Node root)
     Console.WriteLine(root.value);
 }
 ```
+
+For implementing this search algorithm for Trees and Graphs we should use **Stack** Data Structure.
 
 #### Depth & Height:
 
