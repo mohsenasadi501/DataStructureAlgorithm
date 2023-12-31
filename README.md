@@ -1558,8 +1558,6 @@ Real Example with numbers:
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/mergeSortSample.png" alt="mergeSortSample.png" width="478">
 
-
-
 #### Time Complexity:
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/mergesorttimeComplexity.png" alt="mergesorttimeComplexity.png" width="268">
@@ -1612,6 +1610,50 @@ public class MergeSort
     }
 }
 ```
+
+### QuickSort
+
+Like Merge Sort, quicksort uses divide-and-conquer and so it's a recursive algorithm. The way that Quicksort uses divide-and-conquer is a little different from how merge sort does.
+
+Quicksort has a couple of other differences from merge sort. Quicksort works in place. And its worst-case running time is as bad as selection sort's and insertion sort's. But its average-case running time is as good as merge sort.
+
+So why think about quicksort when merge sort is at least as good? That's because the **constant factor** hidden in the big-Θ notation for quicksort is quite good.
+
+**Here are the divide, conquer, and combine steps that Quicksort uses:**
+
+1. Pick a pivot element
+
+2. Partition, or rearrange, the array into two subarrays, such that all elements are less than and such that all elements are greater than or equal to.
+
+3. Sort the subarrays and recursively with quicksort.
+
+Picking a good pivot is the key for a fast implementation of quicksort; The best-case pivot would divide the array into two equal parts.
+
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/quickSortSample.png" alt="quickSortSample.png" width="465">
+
+
+
+#### Advantages of quicksort
+
+- The average-case time complexity to sort an array of n elements is O(n lg n).
+- Generally, it runs very fast. It is even faster than merge sort.
+- No extra storage is required
+
+#### Disadvantages of quicksort
+
+- Its running time can be different for different array contents.
+- The worst-case quick sort takes place when the array is already sorted. 
+- It is not stable.
+
+#### Time Complexity
+
+| Case         | Time Complexity |
+| ------------ | --------------- |
+| Best Case    | O(n log n)      |
+| Average Case | O(n log n)      |
+| Worst Case   | O(n^2)          |
+
+
 
 ## Searching
 
