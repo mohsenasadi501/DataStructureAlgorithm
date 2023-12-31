@@ -521,6 +521,14 @@ What do we call other programming languages' Hash Tables implementation:
 |:--------:|:----------:|:----------:|:----------:|
 | Hash Map | Object     | Dictionary | Dictionary |
 
+#### Hash Function
+
+A hash function is a function where you put in a string and you get back a number, so a hash function maps strings to numbers.
+
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/hashFunction.png" alt="hashFunction.png" width="393">
+
+
+
 #### Operations in HashTables:
 
 - Insert()   
@@ -655,7 +663,13 @@ In this scenario we should hash the key, if the key is an integer we get the rem
 
 `1 = 1% 5;`
 
-Another error might occur that the hash function generates two equal hash values, we can not store two items in the same index, this is what we call a **Collision**  like the below image
+
+
+#### Collisions
+
+Another error might occur that the hash function generates two equal hash values, we can not store two items in the same index, this is what we call a **Collision**  like the below image.
+
+If we use a good hash function the collisions will not happen a lot.
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/collision.png" alt="collision.png" width="464">
 
@@ -681,6 +695,12 @@ As you can see we store A and C items in an index one but in a linked list.
 
 - **Double Hashing:**
   We use a second hash function hash2(x) and look for the i*hash2(x) slot. If slot [hash(x)%size] is full, we try [(hash(x)+1*hash2(x))%size]. If that is full too, we try [(hash(x)+2*hash2(x))%size]…until an available space is found. No primary or secondary clustering but lot more computation here.
+
+#### Recap
+
+You will almost never have to implement a hash table yourself. The programming language you use should provide an implementation for you.
+
+
 
 # 2: Non-Linear DataStructure
 
