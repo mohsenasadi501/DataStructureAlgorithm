@@ -1303,21 +1303,53 @@ Given a weighted graph and a source vertex in the graph, find the ****shortest 
 
 It is easier to start with an example and then think about the algorithm.
 
+
+
 1. Start with a weighted graph
+   
+   <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/Dijkstra-1.png" alt="Dijkstra-1.png" width="428"> 
+   
+   
 
-2. Choose a starting vertex and assign infinity path values to all other devices
+2. Choose a starting vertex and assign infinity path values to all other devices.
+   
+   <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/Dijkstra-2.png" alt="Dijkstra-2.png" width="461"> 
+   
+   
 
-3. Go to each vertex and update its path length
+3. Go to each vertex and update its path length.
+   
+   <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/Dijkstra-3.png" alt="Dijkstra-3.png" width="444"> 
+   
+   
 
-4. If the path length of the adjacent vertex is lesser than new path length, don't update it
+4. If the path length of the adjacent vertex is lesser than new path length, don't update it.
+   
+   <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/Dijkstra-4.png" alt="Dijkstra-4.png" width="457"> 
+   
+   
 
 5. Avoid updating path lengths of already visited vertices
+   
+   <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/Dijkstra-5.png" alt="Dijkstra-5.png" width="449"> 
+   
+   
 
-6. After each iteration, we pick the unvisited vertex with the least path length. So we choose 5 before 7
+6. After each iteration, we pick the unvisited vertex with the least path length. So we choose 5 before 7.
+   
+   <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/Dijkstra-6.png" alt="Dijkstra-6.png" width="436"> 
+   
+   
 
 7. Notice how the rightmost vertex has its path length updated twice
+   
+   <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/Dijkstra-7.png" alt="Dijkstra-7.png" width="446"> 
+   
+   
 
 8. Repeat until all the vertices have been visited
+   
+   <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/Dijkstra-8.png" alt="Dijkstra-8.png" width="421"> 
 
 
 
