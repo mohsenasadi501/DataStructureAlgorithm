@@ -1293,6 +1293,34 @@ The space complexity of the algorithm is **`O(V)`**.
 
 
 
+### Dijkstra's Algorithm
+
+Given a weighted graph and a source vertex in the graph, find the ****shortest paths**** from the source to all the other vertices in the given graph.
+
+****Note:**** The given graph does not contain any negative edge.
+
+##### Example:
+
+It is easier to start with an example and then think about the algorithm.
+
+1. Start with a weighted graph
+
+2. Choose a starting vertex and assign infinity path values to all other devices
+
+3. Go to each vertex and update its path length
+
+4. If the path length of the adjacent vertex is lesser than new path length, don't update it
+
+5. Avoid updating path lengths of already visited vertices
+
+6. After each iteration, we pick the unvisited vertex with the least path length. So we choose 5 before 7
+
+7. Notice how the rightmost vertex has its path length updated twice
+
+8. Repeat until all the vertices have been visited
+
+
+
 ### Graph Implementation
 
 #### Adjacency Matrix
