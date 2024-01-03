@@ -527,8 +527,6 @@ A hash function is a function where you put in a string and you get back a numbe
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/hashFunction.png" alt="hashFunction.png" width="393">
 
-
-
 #### Operations in HashTables:
 
 - Insert()   
@@ -663,8 +661,6 @@ In this scenario we should hash the key, if the key is an integer we get the rem
 
 `1 = 1% 5;`
 
-
-
 #### Collisions
 
 Another error might occur that the hash function generates two equal hash values, we can not store two items in the same index, this is what we call a **Collision**  like the below image.
@@ -699,8 +695,6 @@ As you can see we store A and C items in an index one but in a linked list.
 #### Recap
 
 You will almost never have to implement a hash table yourself. The programming language you use should provide an implementation for you.
-
-
 
 # 2: Non-Linear DataStructure
 
@@ -1271,6 +1265,34 @@ Undirected graphs have edges that do not have a direction. Hence, the graph can
 
 The above graph is undirected. Here, the edges do not point to any direction. We can travel through both directions, so it is bidirectional. In these graphs, we can reach to one node, from any other node.
 
+
+
+### Breadth-first Search
+
+Breadth First Traversal or Breadth First Search is a recursive algorithm for searching all the vertices of a graph or tree data structure.
+
+A standard BFS implementation puts each vertex of the graph into one of two categories:
+
+1. **Visited**
+2. **Not Visited**
+
+The purpose of the algorithm is to mark each vertex as visited while avoiding cycles.
+
+The algorithm works as follows:
+
+1. Start by putting any one of the graph's vertices at the back of a queue.
+2. Take the front item of the queue and add it to the visited list.
+3. Create a list of that vertex's adjacent nodes. Add the ones that aren't in the visited list to the back of the queue.
+4. Keep repeating steps 2 and 3 until the queue is empty.
+
+#### Time Complexity:
+
+The time complexity of the BFS algorithm is represented in the form of **`O(V + E)`**, where V is the number of nodes and E is the number of edges.
+
+The space complexity of the algorithm is **`O(V)`**.
+
+
+
 ### Graph Implementation
 
 #### Adjacency Matrix
@@ -1655,8 +1677,6 @@ Picking a good pivot is the key for a fast implementation of quicksort; The best
 
 <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/quickSortSample.png" alt="quickSortSample.png" width="465">
 
-
-
 #### Advantages of quicksort
 
 - The average-case time complexity to sort an array of n elements is O(n lg n).
@@ -1676,8 +1696,6 @@ Picking a good pivot is the key for a fast implementation of quicksort; The best
 | Best Case    | O(n log n)      |
 | Average Case | O(n log n)      |
 | Worst Case   | O(n^2)          |
-
-
 
 ## Searching
 
