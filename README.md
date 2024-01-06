@@ -1265,8 +1265,6 @@ Undirected graphs have edges that do not have a direction. Hence, the graph can
 
 The above graph is undirected. Here, the edges do not point to any direction. We can travel through both directions, so it is bidirectional. In these graphs, we can reach to one node, from any other node.
 
-
-
 ### Breadth-first Search
 
 Breadth First Traversal or Breadth First Search is a recursive algorithm for searching all the vertices of a graph or tree data structure.
@@ -1291,8 +1289,6 @@ The time complexity of the BFS algorithm is represented in the form of **`O(V +
 
 The space complexity of the algorithm is **`O(V)`**.
 
-
-
 ### Dijkstra's Algorithm
 
 Given a weighted graph and a source vertex in the graph, find the ****shortest paths**** from the source to all the other vertices in the given graph.
@@ -1303,55 +1299,37 @@ Given a weighted graph and a source vertex in the graph, find the ****shortest 
 
 It is easier to start with an example and then think about the algorithm.
 
-
-
 1. Start with a weighted graph
    
    <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/Dijkstra-1.png" alt="Dijkstra-1.png" width="428"> 
-   
-   
 
 2. Choose a starting vertex and assign infinity path values to all other devices.
    
    <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/Dijkstra-2.png" alt="Dijkstra-2.png" width="461"> 
-   
-   
 
 3. Go to each vertex and update its path length.
    
    <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/Dijkstra-3.png" alt="Dijkstra-3.png" width="444"> 
-   
-   
 
 4. If the path length of the adjacent vertex is lesser than new path length, don't update it.
    
    <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/Dijkstra-4.png" alt="Dijkstra-4.png" width="457"> 
-   
-   
 
 5. Avoid updating path lengths of already visited vertices
    
    <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/Dijkstra-5.png" alt="Dijkstra-5.png" width="449"> 
-   
-   
 
 6. After each iteration, we pick the unvisited vertex with the least path length. So we choose 5 before 7.
    
    <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/Dijkstra-6.png" alt="Dijkstra-6.png" width="436"> 
-   
-   
 
 7. Notice how the rightmost vertex has its path length updated twice
    
    <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/Dijkstra-7.png" alt="Dijkstra-7.png" width="446"> 
-   
-   
 
 8. Repeat until all the vertices have been visited
    
    <img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/Dijkstra-8.png" alt="Dijkstra-8.png" width="421"> 
-
-
 
 ### Graph Implementation
 
@@ -1417,7 +1395,7 @@ In this part of the document you will learn:
 
 4. **[Searching](#Searching)**
 
-5. **[String Manipulation](#StringManipulation)**
+5. **[Greedy](#GreedyAlgorithm)**
 
 ## Recursion
 
@@ -1802,3 +1780,62 @@ Binary Search is a searching algorithm for finding an element's position in a so
 | Best Case    | O(1)            | O(1)             |
 | Average Case | O(logn)         | O(1)             |
 | Worst Case   | O(logn)         | O(1)             |
+
+
+
+## GreedyAlgorithm
+
+A greedy algorithm is an approach for solving a problem by selecting the best option available at the moment.It doesn't worry whether the current best result will bring the overall optimal result.
+
+This algorithm may not produce the best result for all the problems. It's because it always goes for the local best choice to produce the global best result.
+
+#### Advantages of Greedy Approach
+
+- The algorithm is **easier to describe**.
+- This algorithm can **perform better** than other algorithms (but, not in all cases).
+  
+  
+
+#### Example1:
+
+As mentioned earlier, the greedy algorithm doesn't always produce the optimal solution. This is the major disadvantage of the algorithm
+
+For example, suppose we want to find the longest path in the graph below from root to leaf. Let's use the greedy algorithm here.
+
+<img title="" src="https://github.com/mohsenasadi501/DataStructureAlgorithm/blob/main/images/greedy.png" alt="greedy.png" width="395">
+
+
+
+1. Let's start with the root node **20**. The weight of the right child is **3** and the weight of the left child is **2**.
+
+2. Our problem is to find the largest path. And, the optimal solution at the moment is **3**. So, the greedy algorithm will choose **3**.
+
+3. Finally the weight of an only child of **3** is **1**. This gives us our final result `20 + 3 + 1 = 24`.
+
+However, it is not the optimal solution. There is another path that carries more weight (`20 + 2 + 10 = 32`).
+
+
+
+#### Example2:
+
+```bash
+Problem: You have to make a change of an amount using the smallest 
+possible number of coins.
+
+Amount: $18
+
+Available coins are
+  $5 coin
+  $2 coin
+  $1 coin
+There is no limit to the number of each coin you can use.
+```
+
+1. Create an empty `solution-set = { }`. Available coins are `{5, 2, 1}`.
+2. We are supposed to find the `sum = 18`. Let's start with `sum = 0`.
+3. Always select the coin with the largest value (i.e. 5) until the `sum > 18`. (When we select the largest value at each step, we hope to reach the destination faster. This concept is called **greedy choice property**.)
+4. In the first iteration, `solution-set = {5}` and `sum = 5`.
+5. In the second iteration, `solution-set = {5, 5}` and `sum = 10`.
+6. In the third iteration, `solution-set = {5, 5, 5}` and `sum = 15`.
+7. In the fourth iteration, `solution-set = {5, 5, 5, 2}` and `sum = 17`. (We cannot select 5 here because if we do so, `sum = 20` which is greater than 18. So, we select the 2nd largest item which is 2.)
+8. Similarly, in the fifth iteration, select 1. Now `sum = 18` and `solution-set = {5, 5, 5, 2, 1}`.
